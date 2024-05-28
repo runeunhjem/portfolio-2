@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+}
+
+
+.MuiPaper-root-MuiAccordion-root,
+/* .MuiAccordion-root, */
+.MuiAccordionSummary-root,
+.MuiTypography-root,
+.MuiTypography-body1,
+.Mui-expanded:first-of-type {
+  transition: all 0.3s ease-in-out;
+  margin: -8px auto;
+  padding-bottom: 0;
+}
+
+.MuiPaper-root-MuiAccordion-root:hover,
+/* .MuiAccordion-root, */
+.MuiAccordionSummary-root:hover,
+.MuiTypography-root:hover,
+.MuiTypography-body1:hover,
+.Mui-expanded:first-of-type:hover {
+  background-color: #fed7aa;
+  color: #333;
+}
