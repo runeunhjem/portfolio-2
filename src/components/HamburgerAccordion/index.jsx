@@ -49,6 +49,25 @@ const portfolioLink = {
   url: "https://github.com/runeunhjem/portfolio1-ca/blob/main/README.md",
 };
 
+const linkStyles = {
+  transition: "all 0.2s ease-in-out",
+  "&:hover": {
+    color: "stone-600",
+    backgroundColor: "#fed7aa",
+    borderRadius: "12px",
+    paddingLeft: "0.4rem",
+  },
+};
+
+const accordionSummaryStyles = {
+  transition: "all 0.3s ease-in-out",
+  alignItems: "center",
+  padding: "0 1rem",
+  "&:hover": {
+    backgroundColor: "transparent !important",
+  },
+};
+
 const HamburgerAccordion = () => {
   const handleClick = (url) => {
     window.open(url, "_blank");
@@ -65,6 +84,7 @@ const HamburgerAccordion = () => {
         width: "fit-content",
         zIndex: 1000,
         boxShadow: "none",
+        borderRadius: "12px",
       }}
     >
       <AccordionSummary
@@ -72,10 +92,11 @@ const HamburgerAccordion = () => {
         aria-controls="panel1a-content"
         id="panel1a-header"
         sx={{
-          transition: "all 0.3s ease-in-out",
-          alignItems: "center",
-          paddingLeft: "1rem",
-          paddingRight: "0",
+          ...accordionSummaryStyles,
+          "&.Mui-expanded": {
+            backgroundColor: "#fed7aa",
+            
+          },
         }}
       >
         <Typography
@@ -97,7 +118,7 @@ const HamburgerAccordion = () => {
               onClick={() => handleClick(link.url)}
               className="!py-0"
             >
-              <ListItemText primary={link.text} sx={{ color: "stone-600" }} />
+              <ListItemText primary={link.text} sx={{ ...linkStyles }} />
             </ListItemButton>
           ))}
           <Accordion sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
@@ -105,18 +126,12 @@ const HamburgerAccordion = () => {
               expandIcon={<ExpandMore sx={{ color: "black" }} />}
               aria-controls="panel2a-content"
               id="panel2a-header"
-              sx={{
-                color: "stone-600",
-                alignItems: "center",
-                backgroundColor: "#fed7aa",
-                padding: "0 1rem",
-                "&.MuiAccordionSummary-root.MUI-expanded": {
-                  backgroundColor: "#fed7aa",
-                },
-                "&:hover": {},
-              }}
+              sx={accordionSummaryStyles}
             >
-              <Typography className="whitespace-nowrap pe-2 ps-4">
+              <Typography
+                className="whitespace-nowrap pe-2 ps-4"
+                sx={{ color: "stone-600" }}
+              >
                 School Projects
               </Typography>
             </AccordionSummary>
@@ -128,7 +143,7 @@ const HamburgerAccordion = () => {
                   expandIcon={<ExpandMore sx={{ color: "black" }} />}
                   aria-controls="panel2c-content"
                   id="panel2c-header"
-                  sx={{ alignItems: "center", padding: "0 1rem" }}
+                  sx={accordionSummaryStyles}
                 >
                   <Typography
                     className="whitespace-nowrap pe-2 ps-4"
@@ -147,7 +162,7 @@ const HamburgerAccordion = () => {
                       >
                         <ListItemText
                           primary={link.text}
-                          sx={{ color: "stone-600" }}
+                          sx={{ ...linkStyles }}
                         />
                       </ListItemButton>
                     ))}
@@ -161,7 +176,7 @@ const HamburgerAccordion = () => {
                   expandIcon={<ExpandMore sx={{ color: "black" }} />}
                   aria-controls="panel2b-content"
                   id="panel2b-header"
-                  sx={{ alignItems: "center", padding: "0 1rem" }}
+                  sx={accordionSummaryStyles}
                 >
                   <Typography
                     className="whitespace-nowrap pe-2 ps-4"
@@ -180,7 +195,7 @@ const HamburgerAccordion = () => {
                       >
                         <ListItemText
                           primary={link.text}
-                          sx={{ color: "stone-600" }}
+                          sx={{ ...linkStyles }}
                         />
                       </ListItemButton>
                     ))}
@@ -194,11 +209,7 @@ const HamburgerAccordion = () => {
               expandIcon={<ExpandMore sx={{ color: "black" }} />}
               aria-controls="panel3a-content"
               id="panel3a-header"
-              sx={{
-                alignItems: "center",
-                padding: "0 1rem",
-                borderBottom: "1px solid #4b5563",
-              }}
+              sx={accordionSummaryStyles}
             >
               <Typography
                 className="whitespace-nowrap pe-2 ps-4"
@@ -207,9 +218,7 @@ const HamburgerAccordion = () => {
                 Other Projects
               </Typography>
             </AccordionSummary>
-            <AccordionDetails
-              sx={{ padding: 0, borderBottom: "1px solid #4b5563" }}
-            >
+            <AccordionDetails sx={{ padding: 0 }}>
               <List>
                 {otherProjectsLinks.map((link) => (
                   <ListItemButton
@@ -217,10 +226,7 @@ const HamburgerAccordion = () => {
                     onClick={() => handleClick(link.url)}
                     className="!py-0"
                   >
-                    <ListItemText
-                      primary={link.text}
-                      sx={{ color: "stone-600" }}
-                    />
+                    <ListItemText primary={link.text} sx={{ ...linkStyles }} />
                   </ListItemButton>
                 ))}
               </List>

@@ -35,12 +35,32 @@ header {
   padding-bottom: 0;
 }
 
-.MuiPaper-root-MuiAccordion-root:hover,
-/* .MuiAccordion-root, */
+
+/* .MuiPaper-root-MuiAccordion-root:hover, */
+.MuiAccordion-root,
 .MuiAccordionSummary-root:hover,
 .MuiTypography-root:hover,
 .MuiTypography-body1:hover,
-.Mui-expanded:first-of-type:hover {
+.Mui-expanded:first-of-type:hover
+{
   background-color: #fed7aa;
-  color: #333;
+  /* color: #333; */
+  box-shadow: inset -1px -2px 3px 0  rgb(0, 0, 0 , 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.Mui-expanded:first-of-type:hover {
+  border-radius: 12px;
+  box-shadow: none;
+}
+.Mui-expanded:nth-of-type(2):hover {
+  background-color: #fed7aa;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.MuiButtonBase-root,
+.MuiPaper-root {
+  background-color: transparent !important;
+  box-shadow: 1px 1px 3px 0  rgb(0, 0, 0 , 0.0);
 }
