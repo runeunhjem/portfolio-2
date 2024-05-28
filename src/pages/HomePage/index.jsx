@@ -1,7 +1,7 @@
 const HomePage = () => {
   return (
-    <div>
-      <h2>Home Page</h2>
+    <div className="max-w-xl mx-auto">
+      <h1>Home Page</h1>
       <p>Welcome to the homepage!</p>
     </div>
   );
