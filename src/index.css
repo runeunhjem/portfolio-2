@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 /* Custom styles */
+
+:root {
+  --orange-100: #ffedd5;
+  --orange-200: #fed7aa;
+  --stone-300: #d6d3d1;
+  --stone-400: #a8a29e;
+  --stone-600: #57534e;
+  --red-600: #dc2626;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f9f9f9;
+  background-color: var(--orange-100);
   color: #333;
 }
 
@@ -23,7 +33,6 @@ header {
   position: relative;
 }
 
-
 .MuiPaper-root-MuiAccordion-root,
 /* .MuiAccordion-root, */
 .MuiAccordionSummary-root,
@@ -33,34 +42,80 @@ header {
   transition: all 0.3s ease-in-out;
   margin: -8px auto;
   padding-bottom: 0;
+  box-shadow: none;
+  border-radius: 12px;
 }
-
 
 /* .MuiPaper-root-MuiAccordion-root:hover, */
 .MuiAccordion-root,
 .MuiAccordionSummary-root:hover,
 .MuiTypography-root:hover,
 .MuiTypography-body1:hover,
-.Mui-expanded:first-of-type:hover
-{
-  background-color: #fed7aa;
+.Mui-expanded:first-of-type:hover {
+  /* background-color: var(--orange-200); */
   /* color: #333; */
-  box-shadow: inset -1px -2px 3px 0  rgb(0, 0, 0 , 0.2);
+  box-shadow: inset -1px -2px 3px 0 rgb(0, 0, 0, 0.2);
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
 }
 .Mui-expanded:first-of-type:hover {
   border-radius: 12px;
-  box-shadow: none;
+  box-shadow: none !important;
 }
-.Mui-expanded:nth-of-type(2):hover {
-  background-color: #fed7aa;
-  border-radius: 12px;
-  box-shadow: none;
-}
+
 
 .MuiButtonBase-root,
 .MuiPaper-root {
   background-color: transparent !important;
-  box-shadow: 1px 1px 3px 0  rgb(0, 0, 0 , 0.0);
+  box-shadow: none !important;
+  width: 100% !important;
+  margin-bottom: 0 !important;
 }
+
+.MuiAccordionDetails-root {
+  padding-bottom: 0 !important;
+
+}
+.MuiAccordion-root {
+  background-color: var(--orange-200);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  text-indent: 0.5rem;
+}
+/* .MuiAccordionSummary-root:hover, */
+/* .MuiTypography-root:hover, */
+.MuiTypography-body1:hover,
+.Mui-expanded:nth-of-type(2):hover
+{
+  background-color: var(--orange-200);
+  box-shadow: none !important;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  text-indent: 1rem;
+  border-bottom: 1px solid var(--red-600);
+}
+.MuiTypography-body1,
+.Mui-expanded:nth-of-type(2)
+{
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.MuiButtonBase-root, .MuiAccordionSummary-root {
+  background-color: transparent !important;
+}
+
+.hover-links {
+  transition: transform 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+  padding: 0 0.5rem; /* Add padding to create space around the text */
+  border-radius: 12px;
+  display: inline-block;
+  width: auto; /* Ensure the width is auto to prevent jumping */
+}
+
+.hover-links:hover {
+  border-bottom: 1px solid var(--red-600);
+  transform: scale(1.1);
+}
+
