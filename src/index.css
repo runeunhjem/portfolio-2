@@ -57,6 +57,7 @@ header {
   box-shadow: inset -1px -2px 3px 0 rgb(0, 0, 0, 0.2);
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
+
 }
 .Mui-expanded:first-of-type:hover {
   border-radius: 12px;
@@ -82,23 +83,34 @@ header {
   transition: all 0.3s ease-in-out;
   text-indent: 0.5rem;
 }
+
+.Mui-expanded:nth-of-type(3),
+.Mui-expanded:nth-of-type(2),
+.MuiListItemButton-gutters
+ {
+  padding: 0 !important;
+}
+.MuiTypography-root {
+  margin: 0 0.5rem !important;
+
+}
 /* .MuiAccordionSummary-root:hover, */
 /* .MuiTypography-root:hover, */
 .MuiTypography-body1:hover,
-.Mui-expanded:nth-of-type(2):hover
+.Mui-expanded:nth-of-type(3):hover
 {
   background-color: var(--orange-200);
   box-shadow: none !important;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
-  text-indent: 1rem;
+  text-indent: 0.8rem;
   border-bottom: 1px solid var(--red-600);
 }
 .MuiTypography-body1,
 .Mui-expanded:nth-of-type(2)
 {
   border-radius: 12px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border-bottom: 1px solid transparent;
 }
 

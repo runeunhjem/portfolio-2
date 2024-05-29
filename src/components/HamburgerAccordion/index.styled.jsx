@@ -9,7 +9,7 @@ import {
 
 export const Accordion = styled(MuiAccordion)`
   background-color: transparent;
-  color: black;
+  color: var(--stone-600);
   width: fit-content;
   box-shadow: none !important;
   border-radius: 12px;
@@ -19,6 +19,7 @@ export const AccordionSummary = styled(MuiAccordionSummary)`
   transition: all 0.3s ease-in-out;
   align-items: center;
   padding: 0 1rem;
+  /* width: 100% !important; */
   &:hover {
     background-color: transparent !important;
   }
@@ -30,13 +31,13 @@ export const AccordionSummary = styled(MuiAccordionSummary)`
 export const AccordionDetails = styled(MuiAccordionDetails)`
   padding: 0;
   white-space: nowrap;
-  margin-top: 30px !important;
+  /* margin-top: 30px !important; */
 `;
 
 export const ListItemButton = styled(MuiListItemButton)`
   &.MuiListItemButton-root {
     padding: 0 1rem;
-    width: 100% !important;
+    /* width: 100% !important; */
     transition: all 0.2s ease-in-out;
   }
   &:hover {

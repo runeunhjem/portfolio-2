@@ -42,16 +42,15 @@ const HamburgerAccordion = () => {
       <S.AccordionSummary
         expandIcon={
           <S.IconContainer className="hover-links">
-            <MenuIcon className="mx-1" sx={{ color: "black" }} />
+            <MenuIcon className="mx-1" sx={{ color: "var(--stone-600)" }} />
           </S.IconContainer>
         }
         aria-controls="panel1a-content"
         id="panel1a-header"
         sx={{
-          "&.MuiAccordionSummary-root":
-            {
-              height: "30px !important",
-            },
+          "&.MuiAccordionSummary-root": {
+            height: "30px !important",
+          },
         }}
       >
         <Typography
@@ -68,7 +67,11 @@ const HamburgerAccordion = () => {
           Menu
         </Typography>
       </S.AccordionSummary>
-      <S.AccordionDetails>
+      <S.AccordionDetails
+        sx={ {
+          marginTop: "30px !important",
+          width: "250px",
+      }}>
         <List className="hamburger-accordion rounded-xl bg-orange-100">
           {mainLinks.map((link) => (
             <S.ListItemButton
@@ -80,7 +83,7 @@ const HamburgerAccordion = () => {
           ))}
           <S.Accordion>
             <S.AccordionSummary
-              expandIcon={<ExpandMore sx={{ color: "black" }} />}
+              expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
@@ -94,7 +97,7 @@ const HamburgerAccordion = () => {
             <S.AccordionDetails>
               <S.Accordion>
                 <S.AccordionSummary
-                  expandIcon={<ExpandMore sx={{ color: "black" }} />}
+                  expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
                   aria-controls="panel2c-content"
                   id="panel2c-header"
                 >
@@ -120,7 +123,7 @@ const HamburgerAccordion = () => {
               </S.Accordion>
               <S.Accordion>
                 <S.AccordionSummary
-                  expandIcon={<ExpandMore sx={{ color: "black" }} />}
+                  expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
                   aria-controls="panel2b-content"
                   id="panel2b-header"
                 >
@@ -150,7 +153,9 @@ const HamburgerAccordion = () => {
           <S.Accordion>
             <S.StyledAccordionSummaryWithBorders
               expandIcon={
-                <ExpandMore sx={{ color: "black", width: "100% !important" }} />
+                <ExpandMore
+                  sx={{ color: "var(--stone-600)", width: "100% !important" }}
+                />
               }
               aria-controls="panel3a-content"
               id="panel3a-header"
