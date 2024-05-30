@@ -1,8 +1,7 @@
-// links.js
 export const mainLinks = [
-  { text: "Home", url: "index.html" },
-  { text: "About", url: "about.html" },
-  { text: "Contact", url: "contact.html" },
+  { text: "Home", url: "/" },
+  { text: "About", url: "/about" },
+  { text: "Contact", url: "/contact" },
 ];
 
 export const firstYearLinks = [

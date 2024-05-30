@@ -15,7 +15,7 @@ export const Accordion = styled(MuiAccordion)`
   `;
 
 export const AccordionSummary = styled(MuiAccordionSummary)`
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   align-items: center;
   padding: 0 1rem;
   &:hover {
@@ -27,7 +27,7 @@ export const AccordionSummary = styled(MuiAccordionSummary)`
 `;
 
 export const SubmenuAccordionSummary = styled(MuiAccordionSummary)`
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   align-items: center;
   padding: 0 1rem;
   &:hover {
@@ -49,7 +49,7 @@ export const ListItemButton = styled(MuiListItemButton)`
   &.MuiListItemButton-root {
     padding: 0 1rem;
     width: 100% !important;
-    transition: all 0.2s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
   }
   &:hover {
     color: var(--stone-600);
@@ -59,7 +59,7 @@ export const ListItemButton = styled(MuiListItemButton)`
 `;
 
 export const StyledAccordionSummaryWithBorders = styled(MuiAccordionSummary)`
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   align-items: center;
   padding: 0 1rem;
   width: 100% !important;

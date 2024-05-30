@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ExpandMore } from "@mui/icons-material";
 import { List, ListItemText, Typography } from "@mui/material";
@@ -14,9 +15,15 @@ import * as S from "./index.styled";
 const HamburgerAccordion = () => {
   const [expanded, setExpanded] = useState(false);
   const accordionRef = useRef(null);
+  const navigate = useNavigate();
 
-  const handleClick = (url) => {
-    window.open(url, "_blank");
+  const handleClick = (url, isInternal) => {
+    setExpanded(false);
+    if (isInternal) {
+      navigate(url);
+    } else {
+      window.open(url, "_blank");
+    }
   };
 
   const handleOutsideClick = (event) => {
@@ -40,16 +47,14 @@ const HamburgerAccordion = () => {
     >
       <S.AccordionSummary
         expandIcon={
-          <S.IconContainer className="hover-links xs:!mx-1 !mx-3">
-            <MenuIcon
-              className="xs:!text-2xl !text-4xl"
-              sx={{ color: "var(--stone-600)" }}
-            />
+          <S.IconContainer className="hover-links">
+            <MenuIcon className="mx-1" sx={{ color: "var(--stone-600)" }} />
           </S.IconContainer>
         }
         aria-controls="panel1a-content"
         id="panel1a-header"
         sx={{
+          
           "&.MuiAccordionSummary-root": {
             height: "30px !important",
           },
@@ -63,7 +68,6 @@ const HamburgerAccordion = () => {
             textAlign: "right",
             "&:hover": {
               borderBottom: "1px solid transparent",
-              backgroundColor: "transparent",
             },
           }}
         >
@@ -74,6 +78,8 @@ const HamburgerAccordion = () => {
         sx={{
           marginTop: "30px !important",
           width: "260px",
+          maxHeight: "100vh",
+          overflowY: "auto",
         }}
       >
         <List
@@ -88,7 +94,7 @@ const HamburgerAccordion = () => {
           {mainLinks.map((link) => (
             <S.ListItemButton
               key={link.text}
-              onClick={() => handleClick(link.url)}
+              onClick={() => handleClick(link.url, true)}
             >
               <ListItemText primary={link.text} />
             </S.ListItemButton>
@@ -132,7 +138,7 @@ const HamburgerAccordion = () => {
                     {secondYearLinks.reverse().map((link) => (
                       <S.ListItemButton
                         key={link.text}
-                        onClick={() => handleClick(link.url)}
+                        onClick={() => handleClick(link.url, false)}
                       >
                         <ListItemText primary={link.text} />
                       </S.ListItemButton>
@@ -159,7 +165,7 @@ const HamburgerAccordion = () => {
                       <S.ListItemButton
                         className="w-full"
                         key={link.text}
-                        onClick={() => handleClick(link.url)}
+                        onClick={() => handleClick(link.url, false)}
                       >
                         <ListItemText primary={link.text} />
                       </S.ListItemButton>
@@ -191,7 +197,7 @@ const HamburgerAccordion = () => {
                 {otherProjectsLinks.map((link) => (
                   <S.ListItemButton
                     key={link.text}
-                    onClick={() => handleClick(link.url)}
+                    onClick={() => handleClick(link.url, false)}
                   >
                     <ListItemText primary={link.text} />
                   </S.ListItemButton>
@@ -199,7 +205,9 @@ const HamburgerAccordion = () => {
               </List>
             </S.AccordionDetails>
           </S.Accordion>
-          <S.ListItemButton onClick={() => handleClick(portfolioLink.url)}>
+          <S.ListItemButton
+            onClick={() => handleClick(portfolioLink.url, false)}
+          >
             <ListItemText
               className="whitespace-nowrap !ps-1"
               primary={portfolioLink.text}
