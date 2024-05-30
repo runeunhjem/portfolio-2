@@ -2,6 +2,7 @@
 import HamburgerAccordion from "../HamburgerAccordion";
 import NavBar from "../NavBar";
 import logo from "../../assets/logos/rundev-logo-in-brackets.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
         borderBottom: "1px solid var(--stone-400)",
     }}>
       <div className="header-container mx-auto flex w-full max-w-4xl justify-between">
+        <Link to="/">
         <img src={logo} alt="RUNDEV Logo" className="max-w-64 z-[5000]" />
+        </Link>
         <div className="nav-container relative mx-auto flex w-full max-w-4xl flex-col items-end">
           <div style={{ position: "absolute", top: 0, right: 0, zIndex: 1000 }}>
             <HamburgerAccordion />
