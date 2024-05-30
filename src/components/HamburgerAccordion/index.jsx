@@ -1,4 +1,3 @@
-// index.jsx
 import { useState, useRef, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ExpandMore } from "@mui/icons-material";
@@ -91,7 +90,7 @@ const HamburgerAccordion = () => {
             </S.ListItemButton>
           ))}
           <S.Accordion>
-            <S.AccordionSummary
+            <S.SubmenuAccordionSummary
               expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
               aria-controls="panel2a-content"
               id="panel2a-header"
@@ -102,18 +101,17 @@ const HamburgerAccordion = () => {
               >
                 School Projects
               </Typography>
-            </S.AccordionSummary>
+            </S.SubmenuAccordionSummary>
             <S.AccordionDetails
               sx={{
                 "&.MuiAccordionDetails-root": {
                   paddingTop: "0",
                   whiteSpace: "nowrap",
-                  // width: "100% !important",
                 },
               }}
             >
               <S.Accordion>
-                <S.AccordionSummary
+                <S.SubmenuAccordionSummary
                   expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
                   aria-controls="panel2c-content"
                   id="panel2c-header"
@@ -124,7 +122,7 @@ const HamburgerAccordion = () => {
                   >
                     Second Year
                   </Typography>
-                </S.AccordionSummary>
+                </S.SubmenuAccordionSummary>
                 <S.AccordionDetails>
                   <List>
                     {secondYearLinks.reverse().map((link) => (
@@ -139,7 +137,7 @@ const HamburgerAccordion = () => {
                 </S.AccordionDetails>
               </S.Accordion>
               <S.Accordion>
-                <S.AccordionSummary
+                <S.SubmenuAccordionSummary
                   expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}
                   aria-controls="panel2b-content"
                   id="panel2b-header"
@@ -150,7 +148,7 @@ const HamburgerAccordion = () => {
                   >
                     First Year
                   </Typography>
-                </S.AccordionSummary>
+                </S.SubmenuAccordionSummary>
                 <S.AccordionDetails>
                   <List>
                     {firstYearLinks.reverse().map((link) => (

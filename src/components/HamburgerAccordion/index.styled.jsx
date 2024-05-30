@@ -1,4 +1,3 @@
-// index.styled.jsx
 import styled from "styled-components";
 import {
   Accordion as MuiAccordion,
@@ -13,13 +12,24 @@ export const Accordion = styled(MuiAccordion)`
   width: fit-content;
   box-shadow: none !important;
   border-radius: 12px;
-`;
+  `;
 
 export const AccordionSummary = styled(MuiAccordionSummary)`
   transition: all 0.3s ease-in-out;
   align-items: center;
   padding: 0 1rem;
-  /* width: 100% !important; */
+  &:hover {
+    background-color: transparent !important;
+  }
+  &.Mui-expanded {
+    background-color: transparent !important;
+  }
+`;
+
+export const SubmenuAccordionSummary = styled(MuiAccordionSummary)`
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  padding: 0 1rem;
   &:hover {
     background-color: transparent !important;
   }
@@ -31,21 +41,20 @@ export const AccordionSummary = styled(MuiAccordionSummary)`
 export const AccordionDetails = styled(MuiAccordionDetails)`
   padding: 0;
   white-space: nowrap;
-  /* margin-top: 30px !important; */
+  max-height: 100vh;
+  overflow-y: auto;
 `;
 
 export const ListItemButton = styled(MuiListItemButton)`
   &.MuiListItemButton-root {
     padding: 0 1rem;
-    /* width: 100% !important; */
+    width: 100% !important;
     transition: all 0.2s ease-in-out;
   }
   &:hover {
     color: var(--stone-600);
     background-color: var(--orange-200);
     border-radius: 12px;
-    /* padding-left: 1.4rem; */
-    /* border-left: 4px solid var(--red-600); */
   }
 `;
 

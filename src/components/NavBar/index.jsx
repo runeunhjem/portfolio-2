@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar xs:flex mr-3 mt-12 hidden justify-between z-[1001]">
+    <nav className="nav-bar xs:flex mr-3 mt-11 hidden justify-between z-[1001]">
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `hover-links mr-4 ${isActive ? "font-bold" : ""}`
+          `hover-links mr-2 ${isActive ? "font-bold" : ""}`
         }
       >
         Home
@@ -14,7 +14,7 @@ const NavBar = () => {
       <NavLink
         to="/about"
         className={({ isActive }) =>
-          `hover-links mr-4 ${isActive ? "font-bold" : ""}`
+          `hover-links mr-2 ${isActive ? "font-bold" : ""}`
         }
       >
         About
