@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom styles */
-
 :root {
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
@@ -11,19 +11,12 @@
   --stone-400: #a8a29e;
   --stone-600: #57534e;
   --red-600: #dc2626;
-}
 
-body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
-}
-
-main {
-  background-color: var(--orange-100);
-  color: var(--stone-600);
+  --font-family-koho: "KoHo", sans-serif;
 }
 
 * {
+  font-family: var(--font-family-koho) !important;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -33,12 +26,20 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: relative;
 }
 
+main {
+  background-color: var(--orange-100);
+  color: var(--stone-600);
+}
+
 .MuiPaper-root-MuiAccordion-root,
-/* .MuiAccordion-root, */
 .MuiAccordionSummary-root,
 .MuiTypography-root,
 .MuiTypography-body1,
@@ -50,14 +51,11 @@ header {
   border-radius: 12px;
 }
 
-/* .MuiPaper-root-MuiAccordion-root:hover, */
 .MuiAccordion-root,
 .MuiAccordionSummary-root:hover,
 .MuiTypography-root:hover,
 .MuiTypography-body1:hover,
 .Mui-expanded:first-of-type:hover {
-  /* background-color: var(--orange-200); */
-  /* color: #333; */
   box-shadow: inset -1px -2px 3px 0 rgb(0, 0, 0, 0.2);
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
@@ -93,8 +91,7 @@ header {
 .MuiTypography-root {
   margin: 0 0.5rem !important;
 }
-/* .MuiAccordionSummary-root:hover, */
-/* .MuiTypography-root:hover, */
+
 .MuiTypography-body1:hover,
 .Mui-expanded:nth-of-type(3):hover {
   background-color: var(--orange-200);
@@ -127,10 +124,10 @@ header {
   transition:
     transform 0.2s ease-in-out,
     border-bottom 0.2s ease-in-out;
-  padding: 0 0.5rem; /* Add padding to create space around the text */
+  padding: 0 0.5rem;
   border-radius: 12px;
   display: inline-block;
-  width: auto; /* Ensure the width is auto to prevent jumping */
+  width: auto;
 }
 
 .hover-links:hover {

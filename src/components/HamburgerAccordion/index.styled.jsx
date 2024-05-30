@@ -41,7 +41,7 @@ export const SubmenuAccordionSummary = styled(MuiAccordionSummary)`
 export const AccordionDetails = styled(MuiAccordionDetails)`
   padding: 0;
   white-space: nowrap;
-  max-height: 100vh;
+  max-height: 70vh;
   overflow-y: auto;
 `;
 
