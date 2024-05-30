@@ -39,30 +39,33 @@ const HamburgerAccordion = () => {
     };
   }, []);
 
-  return (
-    <S.Accordion
-      expanded={expanded}
-      onChange={() => setExpanded(!expanded)}
-      ref={accordionRef}
-    >
+  const handleIconClick = (event) => {
+    event.stopPropagation();
+    setExpanded(!expanded);
+  };
 
+  return (
+    <S.Accordion expanded={expanded} ref={accordionRef}>
       <S.AccordionSummary
         expandIcon={
-          <S.IconContainer className="hover-links !mx-3 xs:!mx-1 !cursor-pointer">
+          <S.IconContainer
+            className="hover-links xs:!mx-1 !mx-3 !cursor-pointer"
+            onClick={handleIconClick}
+          >
             <MenuIcon
-              className="mx-1 !text-4xl xs:!text-2xl"
-              sx={{ color: "var(--stone-600)"}}
+              className="xs:!text-2xl mx-1 !text-4xl"
+              sx={{ color: "var(--stone-600)" }}
             />
           </S.IconContainer>
         }
         aria-controls="panel1a-content"
         id="panel1a-header"
-        sx={ {
+        sx={{
           "&.MuiAccordionSummary-root": {
             height: "30px !important",
           },
         }}
-        >
+      >
         <Typography
           className="xs:block hidden"
           sx={{
