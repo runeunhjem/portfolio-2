@@ -20,11 +20,12 @@ export const AccordionSummary = styled(MuiAccordionSummary)`
   padding: 0 1rem;
   &:hover {
     background-color: transparent !important;
+    cursor: default !important;
   }
   &.Mui-expanded {
     background-color: transparent !important;
   }
-`;
+  `;
 
 export const SubmenuAccordionSummary = styled(MuiAccordionSummary)`
   /* transition: all 0.3s ease-in-out; */

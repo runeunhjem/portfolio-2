@@ -44,7 +44,6 @@ main {
 .MuiTypography-root,
 .MuiTypography-body1,
 .Mui-expanded:first-of-type {
-  /* transition: all 0.3s ease-in-out; */
   margin: -8px auto;
   padding-bottom: 0;
   box-shadow: none;
@@ -60,6 +59,7 @@ main {
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
 }
+
 .Mui-expanded:first-of-type:hover {
   border-radius: 12px;
   box-shadow: none !important;
@@ -67,6 +67,7 @@ main {
 
 .MuiButtonBase-root,
 .MuiPaper-root {
+  cursor: default;
   background-color: transparent !important;
   box-shadow: none !important;
   width: 100% !important;
@@ -76,10 +77,10 @@ main {
 .MuiAccordionDetails-root {
   padding-bottom: 0 !important;
 }
+
 .MuiAccordion-root {
   background-color: var(--orange-200);
   border-radius: 12px;
-  /* transition: all 0.3s ease-in-out; */
   text-indent: 0.5rem;
 }
 
@@ -88,6 +89,7 @@ main {
 .MuiListItemButton-gutters {
   padding: 0 !important;
 }
+
 .MuiTypography-root {
   margin: 0 0.5rem !important;
 }
@@ -101,10 +103,10 @@ main {
   text-indent: 0.8rem;
   border-bottom: 1px solid var(--red-600);
 }
+
 .MuiTypography-body1,
 .Mui-expanded:nth-of-type(2) {
   border-radius: 12px;
-  /* transition: all 0.1s ease-in-out; */
   border-bottom: 1px solid transparent;
 }
 
@@ -113,6 +115,7 @@ main {
   padding-right: 0.5rem !important;
   background-color: transparent !important;
 }
+
 @media (max-width: 466px) {
   .MuiButtonBase-root,
   .MuiAccordionSummary-root {
