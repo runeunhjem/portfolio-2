@@ -68,11 +68,20 @@ const HamburgerAccordion = () => {
         </Typography>
       </S.AccordionSummary>
       <S.AccordionDetails
-        sx={ {
+        sx={{
           marginTop: "30px !important",
-          width: "250px",
-      }}>
-        <List className="hamburger-accordion rounded-xl bg-orange-100">
+          width: "260px",
+        }}
+      >
+        <List
+          className="hamburger-accordion"
+          style={{
+            border: "1px solid var(--stone-300)",
+            boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.1)",
+            backgroundColor: "var(--orange-100)",
+            borderRadius: "12px",
+          }}
+        >
           {mainLinks.map((link) => (
             <S.ListItemButton
               key={link.text}
@@ -94,7 +103,15 @@ const HamburgerAccordion = () => {
                 School Projects
               </Typography>
             </S.AccordionSummary>
-            <S.AccordionDetails>
+            <S.AccordionDetails
+              sx={{
+                "&.MuiAccordionDetails-root": {
+                  paddingTop: "0",
+                  whiteSpace: "nowrap",
+                  // width: "100% !important",
+                },
+              }}
+            >
               <S.Accordion>
                 <S.AccordionSummary
                   expandIcon={<ExpandMore sx={{ color: "var(--stone-600)" }} />}

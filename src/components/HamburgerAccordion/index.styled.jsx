@@ -53,6 +53,7 @@ export const StyledAccordionSummaryWithBorders = styled(MuiAccordionSummary)`
   transition: all 0.3s ease-in-out;
   align-items: center;
   padding: 0 1rem;
+  width: 100% !important;
   border-bottom: 1px solid var(--stone-300) !important;
   &:hover {
     background-color: transparent !important;
