@@ -41,7 +41,7 @@ const HamburgerAccordion = () => {
       <S.AccordionSummary
         expandIcon={
           <S.IconContainer className="hover-links">
-            <MenuIcon className="mx-1" sx={{ color: "var(--stone-600)" }} />
+            <MenuIcon className="ms-1 me-2 xs:!mx-1 !text-4xl xs:!text-xl" sx={{ color: "var(--stone-600)" }} />
           </S.IconContainer>
         }
         aria-controls="panel1a-content"
