@@ -1,38 +1,56 @@
 import * as S from "./index.styled";
-import introImage from "../../assets/images/image-rune-bw.png";
+import introImage from "../../assets/images/rune-profile-pic-medium.png";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const Intro = () => {
   return (
     <S.IntroSection>
-      <div className="flex flex-wrap sm:flex-col">
+      <S.FlexContainer>
         <S.IntroImageContainer>
           <img src={introImage} alt="Illustration of Rune Unhjem" />
         </S.IntroImageContainer>
         <S.AllText>
-          Hi there and welcome. Based in Kristiansand, I just finished up a 2
-          year study of Front End Development at Noroff School of Technology and
-          Digital Media. Take a look at my relevant projects, or if interested,
-          get a little more personal information in the about section.
-          Don&apos;t hesitate to contact me if you like what you see. I am
-          available for hire.{" "}
+          <p>Hi there and welcome.</p>
+          <p>
+            Based in Kristiansand, I just finished up a 2 year study of{" "}
+            <strong>Front End Development</strong> at Noroff School of
+            Technology and Digital Media.
+          </p>
+          <p>
+            Take a look at my relevant projects, or if interested, get a little
+            more personal information in the about section.
+          </p>
+          <p>Don&apos;t hesitate to contact me if you like what you see.</p>
+          <p>I am available for hire.</p>
           <Link to="/about">
-            <S.HighlightText>READ ALL ABOUT ME</S.HighlightText>
+            <S.HighlightText>
+              About section <FaArrowRight />
+            </S.HighlightText>
           </Link>{" "}
         </S.AllText>
         <S.InitialText>
-          Hi there and welcome. Based in Kristiansand, I just finished up a 2
-          year study of Front End Development at Noroff School of Technology and
-          Digital Media.
+          <p>
+            Hi there and welcome. Based in Kristiansand, I just finished up a 2
+            year study of <strong>Front End Development</strong> at Noroff
+            School of Technology and Digital Media.
+          </p>
         </S.InitialText>
-      </div>
+      </S.FlexContainer>
       <S.IntroTextContainer>
         <S.RemainingText>
-          Take a look at my relevant projects, or if interested, get a little
-          more personal information in the about section. Don&apos;t hesitate to
-          contact me if you like what you see. I am available for hire.{" "}
-          <S.HighlightText>READ ALL ABOUT ME</S.HighlightText> Click to go to
-          about me.
+          <p>
+            Take a look at my relevant projects, or if interested, get a little
+            more personal information in the about section.
+          </p>
+          <p>Don&apos;t hesitate to contact me if you like what you see.</p>
+          <p>I am available for hire. </p>
+          <Link to="/about">
+            <S.HighlightText>
+              About section
+              <FaArrowRight />
+            </S.HighlightText>
+          </Link>{" "}
         </S.RemainingText>
       </S.IntroTextContainer>
     </S.IntroSection>

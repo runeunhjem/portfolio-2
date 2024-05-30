@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
 import Intro from "../../components/Intro";
+import * as S from "./index.styled";
 
 const HomePage = () => {
   return (
-    <div className="mx-auto w-full max-w-4xl">
-      <h1>Home Page</h1>
-      <p>Welcome to the homepage!</p>
-
+    <S.Container>
+      <S.Heading>
+        <Link to="https://portfolio1-ca.netlify.app/" target="_blank">
+          Old portfolio here (No frameworks)
+        </Link>
+      </S.Heading>
       <Intro />
-    </div>
+    </S.Container>
   );
 };
 
