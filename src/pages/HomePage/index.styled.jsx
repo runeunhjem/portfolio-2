@@ -15,21 +15,40 @@ export const Heading = styled.h1`
   transition: transform 0.3s ease-in-out;
 
   a {
+    transition: transform 0.3s ease-in-out;
+    height: 30px;
     &:hover {
       transform: scale(1.05);
-      color: var(--red-600);
-      text-decoration: underline;
+      /* color: var(--red-600); */
+      /* text-decoration: underline; */
     }
   }
 `;
 
 export const ProjectCount = styled.div`
   display: flex;
-  justify-content: space-between;
+  white-space: nowrap;
+  justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem auto;
+  gap: 1rem;
+  font-weight: 700;
 
+  button {
+    width: 100px;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: var(--red-600);
+      box-shadow: none;
+      border-bottom: 1px solid var(--red-600);
+      transform: scale(1.05)
+    }
+  }
   .project-count {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 `;

@@ -7,7 +7,7 @@ export const Project = styled.div`
   border: 1px solid var(--stone-300);
   border-radius: 4px;
   text-align: center;
-  width: 60%;
+  width: 90%;
   /* max-width: 100%; */
   max-width: 95vw;
   height: 100%;
@@ -53,11 +53,17 @@ export const Project = styled.div`
     }
 
     img {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
+      /* max-height: 100%; */
+      width: 600px;
+      height: 400px;
       border-radius: 4px;
     }
+    /* @media screen and (min-width: 641px) {
+      height: 300px;
+    }
+    @media screen and (min-width: 769px) {
+      height: 300px;
+    } */
   }
 
   .carousel-counter {
@@ -76,12 +82,16 @@ export const Project = styled.div`
   }
 
   .buttons-container {
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1rem;
+    gap: 1rem;
 
     button {
-      padding: 0.5rem 1rem;
+      padding: 0 0.5rem;
+      white-space: nowrap;
       border: none;
       border-radius: 4px;
       cursor: pointer;

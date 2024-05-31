@@ -20,9 +20,12 @@ const ProjectGallery = forwardRef((_props, ref) => {
   return (
     <S.Projects>
       <Slider ref={ref} {...gallerySettings}>
-        {projectsData.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        {projectsData
+          .slice()
+          .reverse()
+          .map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
       </Slider>
     </S.Projects>
   );

@@ -1,38 +1,44 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Intro from "../../components/Intro";
 import ProjectGallery from "../../components/ProjectGallery";
 import * as S from "./index.styled";
-import { Button } from "@mui/material";
 
-const HomePage = ({ projectNumber = 1, numberOfProjects = 7 }) => {
+const HomePage = ({ numberOfProjects }) => {
   const sliderRef = useRef(null);
+  const [projectNumber, setProjectNumber] = useState(1);
 
   const nextProject = () => {
     sliderRef.current.slickNext();
+    setProjectNumber((prev) => (prev < numberOfProjects ? prev + 1 : 1));
   };
 
   const previousProject = () => {
     sliderRef.current.slickPrev();
+    setProjectNumber((prev) => (prev > 1 ? prev - 1 : numberOfProjects));
   };
 
   return (
     <S.Container>
       <S.Heading>
-        <Link to="https://portfolio1-ca.netlify.app/" target="_blank">
+        <Link
+          className="hover-links"
+          to="https://portfolio1-ca.netlify.app/"
+          target="_blank"
+        >
           Old portfolio here (No frameworks)
         </Link>
       </S.Heading>
       <Intro />
-      <h2 className="my-6 text-center text-5xl font-bold">School Projects</h2>
+      <h2 className="mt-12 mb-0 text-center text-3xl font-bold">School Projects</h2>
 
       <S.ProjectCount>
-        <Button onClick={previousProject}>Previous</Button>
+        <button onClick={previousProject}>PREVIOUS</button>
         <div className="project-count">
-          Project {projectNumber} / {numberOfProjects}
+          {projectNumber} / {numberOfProjects}
         </div>
-        <Button onClick={nextProject}>Next</Button>
+        <button onClick={nextProject}>NEXT</button>
       </S.ProjectCount>
 
       <ProjectGallery ref={sliderRef} />
@@ -41,8 +47,7 @@ const HomePage = ({ projectNumber = 1, numberOfProjects = 7 }) => {
 };
 
 HomePage.propTypes = {
-  projectNumber: PropTypes.number,
-  numberOfProjects: PropTypes.number,
+  numberOfProjects: PropTypes.number.isRequired,
 };
 
 export default HomePage;

@@ -22,9 +22,16 @@ const ProjectCard = ({ project }) => {
       <p>{project.tagline}</p>
       <div className="carousel-container p-6">
         <Slider {...imageSliderSettings}>
-          {project.images.map((image, idx) => (
+          {project.images.slice().reverse().map((image, idx) => (
             <div key={idx}>
-              <img src={image} alt={`${project.title} screenshot ${idx + 1}`} />
+              <img
+                src={image}
+                alt={
+                  project.title
+                    ? `${project.title} screenshot ${project.images.length - idx}`
+                    : `Project screenshot ${project.images.length - idx}`
+                }
+              />
             </div>
           ))}
         </Slider>
