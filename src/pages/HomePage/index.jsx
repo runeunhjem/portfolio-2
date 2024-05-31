@@ -23,7 +23,7 @@ const HomePage = ({ numberOfProjects }) => {
     <S.Container>
       <S.Heading>
         <Link
-          className="mb-2 flex flex-wrap justify-end"
+          className="hover-links mb-2 flex flex-wrap justify-end"
           to="https://portfolio1-ca.netlify.app/"
           target="_blank"
         >

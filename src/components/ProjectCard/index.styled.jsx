@@ -65,10 +65,14 @@ export const Project = styled.div`
     }
 
     img {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
       /* max-height: 100%; */
       width: 100% !important;
       height: 400px;
       border-radius: 4px;
+      padding-left: 0.525rem;
       object-fit: cover;
       @media screen and (max-width: 641px) {
         height: 300px;
