@@ -5,21 +5,21 @@
 
 /* Custom styles */
 :root {
+  --white: #ffffff;
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
   --stone-300: #d6d3d1;
   --stone-400: #a8a29e;
   --stone-600: #57534e;
+  --stone-950: #0c0a09;
   --red-600: #dc2626;
 
   --color-yellow-gamehub: #f5c618;
   --color-burgundy-chefs-table: #5e0a24;
   --color-blue-csm: #0052bd;
-  --color-secondary-dreambids: #1572b9;
-  --color-white-dreambids: #ffffff;
-  --color-secondary-purple-cgg: rgb(128, 0, 145);
-  --color-white-cgg: #ffffff;
-  --color-secondary-holidaze: rgb(125, 211, 252);
+  --color-blue-dreambids: #1572b9;
+  --color-purple-cgg: rgb(128, 0, 145);
+  --color-sky-holidaze: rgb(125, 211, 252);
 
   --font-family-koho: "KoHo", sans-serif;
 }
