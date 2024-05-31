@@ -5,7 +5,7 @@ export const Container = styled.div`
   margin-right: auto;
   max-width: 1200px;
   width: 100%;
-  padding: 0 20px; /* Add padding for smaller screens */
+  padding: 0 20px;
 `;
 
 export const Heading = styled.h1`
@@ -19,14 +19,13 @@ export const Heading = styled.h1`
     height: 30px;
     &:hover {
       transform: scale(1.05);
-      /* color: var(--red-600); */
-      /* text-decoration: underline; */
     }
   }
 `;
 
 export const ProjectCount = styled.div`
   display: flex;
+  width: 100%;
   white-space: nowrap;
   justify-content: center;
   align-items: center;
@@ -37,9 +36,10 @@ export const ProjectCount = styled.div`
   button {
     width: 100px;
     border-radius: 12px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease-in-out;
+    font-size: calc(0.7rem + 0.5vw);
     &:hover {
       color: var(--red-600);
       box-shadow: none;
@@ -48,7 +48,9 @@ export const ProjectCount = styled.div`
     }
   }
   .project-count {
-    font-size: 1rem;
+    width: 50px;
+    text-align: right;
+    font-size: calc(1rem + 0.5vw);
     font-weight: 700;
   }
 `;

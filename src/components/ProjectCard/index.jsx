@@ -22,18 +22,21 @@ const ProjectCard = ({ project }) => {
       <p>{project.tagline}</p>
       <div className="carousel-container p-6">
         <Slider {...imageSliderSettings}>
-          {project.images.slice().reverse().map((image, idx) => (
-            <div key={idx}>
-              <img
-                src={image}
-                alt={
-                  project.title
-                    ? `${project.title} screenshot ${project.images.length - idx}`
-                    : `Project screenshot ${project.images.length - idx}`
-                }
-              />
-            </div>
-          ))}
+          {project.images
+            .slice()
+            .reverse()
+            .map((image, idx) => (
+              <div key={idx}>
+                <img
+                  src={image}
+                  alt={
+                    project.title
+                      ? `${project.title} screenshot ${project.images.length - idx}`
+                      : `Project screenshot ${project.images.length - idx}`
+                  }
+                />
+              </div>
+            ))}
         </Slider>
         <div className="carousel-counter py-4">
           {project.images.length} images
@@ -45,7 +48,10 @@ const ProjectCard = ({ project }) => {
           <button
             key={idx}
             onClick={() => window.open(link.url, "_blank")}
-            className={`button-${project.title.replace(/\s+/g, "-").toLowerCase()}`}
+            className={`button-${project.title
+              .replace(/[^a-zA-Z0-9\s]/g, "")
+              .replace(/\s+/g, "-")
+              .toLowerCase()}`}
           >
             {link.label}
           </button>
@@ -65,7 +71,7 @@ ProjectCard.propTypes = {
       PropTypes.shape({
         label: PropTypes.string,
         url: PropTypes.string,
-      })
+      }),
     ),
   }),
 };

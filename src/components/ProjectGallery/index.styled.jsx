@@ -4,9 +4,7 @@ export const Projects = styled.div`
   .slick-slide {
     display: flex;
     justify-content: center;
-    /* width: 600px; */
     width: 95vw;
-    /* height: 600px; */
   }
 
   .navigation-buttons {
@@ -16,8 +14,8 @@ export const Projects = styled.div`
 
     button {
       padding: 0.5rem 1rem;
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
+      background-color: var(--orange-200) !important;
+      color: var(--stone-950) !important;
       border: none;
       border-radius: 4px;
       cursor: pointer;

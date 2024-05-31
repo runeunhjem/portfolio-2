@@ -17,8 +17,9 @@ export const Project = styled.div`
   }
 
   h3 {
-    margin: 1rem 0;
+    margin: 0 1rem;
     font-size: 1.5rem;
+    font-weight: 700;
 
     @media (max-width: 600px) {
       font-size: 1.2rem;
@@ -27,8 +28,9 @@ export const Project = styled.div`
   }
 
   p {
-    margin: 0.5rem 0;
+    margin: 0;
     font-size: 1rem;
+    font-weight: 500;
 
     @media (max-width: 600px) {
       font-size: 0.875rem;
@@ -37,10 +39,8 @@ export const Project = styled.div`
   }
 
   .carousel-container {
-
     overflow: hidden;
     margin: 0 auto;
-
 
     @media (max-width: 600px) {
       margin: 0.5rem 0;
@@ -50,6 +50,18 @@ export const Project = styled.div`
     .slick-slide {
       display: flex;
       justify-content: center;
+      padding: 0 1rem;
+    }
+    /* .slick-slider {
+
+    } */
+    .slick-prev {
+      left: 0;
+      z-index: 1000;
+    }
+    .slick-next {
+      z-index: 1000;
+      right: 5px;
     }
 
     img {
@@ -90,10 +102,10 @@ export const Project = styled.div`
     gap: 1rem;
 
     button {
-      padding: 0 0.5rem;
+      padding: 0.5rem 1rem;
       white-space: nowrap;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       cursor: pointer;
       background-color: inherit;
       color: inherit;
@@ -103,7 +115,7 @@ export const Project = styled.div`
         color: var(--stone-950);
       }
 
-      &.button-chef-s-table {
+      &.button-chefs-table {
         background-color: var(--color-burgundy-chefs-table);
         color: var(--white);
       }
@@ -111,6 +123,12 @@ export const Project = styled.div`
       &.button-csm {
         background-color: var(--color-blue-csm);
         color: var(--white);
+      }
+
+      &.button-movietalk {
+        background-color: var(--color-dark-movietalk);
+        color: var(--color-yellow-gamehub);
+        border: 1px solid var(--color-yellow-gamehub);
       }
 
       &.button-dreambids {

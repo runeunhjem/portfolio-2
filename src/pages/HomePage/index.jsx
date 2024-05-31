@@ -23,15 +23,19 @@ const HomePage = ({ numberOfProjects }) => {
     <S.Container>
       <S.Heading>
         <Link
-          className="hover-links"
+          className="mb-2 flex flex-wrap justify-end"
           to="https://portfolio1-ca.netlify.app/"
           target="_blank"
         >
-          Old portfolio here (No frameworks)
+          <span>Old portfolio here </span>
+
+          <span>&nbsp;(No frameworks)</span>
         </Link>
       </S.Heading>
       <Intro />
-      <h2 className="mt-12 mb-0 text-center text-3xl font-bold">School Projects</h2>
+      <h2 className="mb-0 mt-12 text-center text-3xl font-bold">
+        School Projects
+      </h2>
 
       <S.ProjectCount>
         <button onClick={previousProject}>PREVIOUS</button>

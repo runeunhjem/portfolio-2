@@ -76,7 +76,7 @@ const projectsData = [
   {
     id: 1,
     title: "Game Hub",
-    tagline: "Buy and sell your games easily and affordably.",
+    tagline: "The universe of games.",
     description:
       "Our very first school project. Only HTML and CSS were used, but it has later on been expanded to also involve Vanilla JS. No libraries or frameworks were used.",
     images: [
