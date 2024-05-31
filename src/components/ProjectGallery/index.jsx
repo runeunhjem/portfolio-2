@@ -5,13 +5,20 @@ import projectsData from "./projectsData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProjectGallery = forwardRef((_props , ref) => {
+const ProjectGallery = forwardRef((_props, ref) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
+    adaptiveHeight: false,
+    arrows: false,
   };
 
   return (
@@ -21,7 +28,7 @@ const ProjectGallery = forwardRef((_props , ref) => {
           <S.Project key={project.id}>
             <h3>{project.title}</h3>
             <p>{project.tagline}</p>
-            <div className="carousel-container">
+            <div className="carousel-container p-6">
               <Slider {...settings}>
                 {project.images.map((image, idx) => (
                   <div key={idx}>
@@ -32,7 +39,7 @@ const ProjectGallery = forwardRef((_props , ref) => {
                   </div>
                 ))}
               </Slider>
-              <div className="carousel-counter">
+              <div className="carousel-counter py-4">
                 {project.images.length} images
               </div>
             </div>
@@ -42,6 +49,7 @@ const ProjectGallery = forwardRef((_props , ref) => {
                 <button
                   key={idx}
                   onClick={() => window.open(link.url, "_blank")}
+                  className={`button-${project.title.replace(/\s+/g, "-").toLowerCase()}`}
                 >
                   {link.label}
                 </button>

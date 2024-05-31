@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: 4xl;
+  max-width: 1200px;
   width: 100%;
+  padding: 0 20px; /* Add padding for smaller screens */
 `;
 
 export const Heading = styled.h1`
@@ -16,7 +17,7 @@ export const Heading = styled.h1`
   a {
     &:hover {
       transform: scale(1.05);
-      color: red;
+      color: var(--red-600);
       text-decoration: underline;
     }
   }
