@@ -154,17 +154,20 @@ main {
 
 }
 
-/* .slick-prev:before {
-
-}
-.slick-next:before {
-
-} */
 .slick-dots {
-  bottom: -30px;
-
+  position: relative !important;
+  /* bottom: -50px; */
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
+.slick-dots ::before {
+  color: var(--orange-100) !important;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-burgundy-chefs-table);
+}
 .carousel-counter {
   padding-top: 2rem;
 }

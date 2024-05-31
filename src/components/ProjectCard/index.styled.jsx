@@ -42,6 +42,7 @@ export const Project = styled.div`
     overflow: hidden;
     margin: 0 auto;
 
+
     @media (max-width: 600px) {
       margin: 0.5rem 0;
       height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
@@ -51,10 +52,9 @@ export const Project = styled.div`
       display: flex;
       justify-content: center;
       padding: 0 1rem;
-    }
-    /* .slick-slider {
 
-    } */
+    }
+
     .slick-prev {
       left: 0;
       z-index: 1000;
@@ -66,16 +66,17 @@ export const Project = styled.div`
 
     img {
       /* max-height: 100%; */
-      width: 600px;
+      width: 100% !important;
       height: 400px;
       border-radius: 4px;
+      object-fit: cover;
+      @media screen and (max-width: 641px) {
+        height: 300px;
+      }
+      @media screen and (max-width: 468px) {
+        height: 200px;
+      }
     }
-    /* @media screen and (min-width: 641px) {
-      height: 300px;
-    }
-    @media screen and (min-width: 769px) {
-      height: 300px;
-    } */
   }
 
   .carousel-counter {

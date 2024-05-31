@@ -39,7 +39,7 @@ export const ProjectCount = styled.div`
     box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease-in-out;
-    font-size: calc(0.7rem + 0.5vw);
+    font-size: calc(0.7rem + 0.2vw);
     &:hover {
       color: var(--red-600);
       box-shadow: none;
@@ -49,8 +49,8 @@ export const ProjectCount = styled.div`
   }
   .project-count {
     width: 50px;
-    text-align: right;
-    font-size: calc(1rem + 0.5vw);
+    text-align: center;
+    font-size: calc(0.rem + 0.5vw);
     font-weight: 700;
   }
 `;
