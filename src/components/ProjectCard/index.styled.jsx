@@ -42,7 +42,6 @@ export const Project = styled.div`
     overflow: hidden;
     margin: 0 auto;
 
-
     @media (max-width: 600px) {
       margin: 0.5rem 0;
       height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
@@ -52,7 +51,6 @@ export const Project = styled.div`
       display: flex;
       justify-content: center;
       padding: 0 1rem;
-
     }
 
     .slick-prev {
@@ -68,7 +66,6 @@ export const Project = styled.div`
       display: flex;
       justify-content: center;
       margin: 0 auto;
-      /* max-height: 100%; */
       width: 100% !important;
       height: 400px;
       border-radius: 4px;

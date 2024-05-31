@@ -169,5 +169,5 @@ main {
   background-color: var(--color-burgundy-chefs-table);
 } */
 .carousel-counter {
-  /* padding-top: 2rem; */
+  padding-bottom: -2rem !important;
 }

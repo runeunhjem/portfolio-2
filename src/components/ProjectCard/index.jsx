@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
   };
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
     <S.Project>
       <h3>{project.title}</h3>
       <p>{project.tagline}</p>
-      <div className="carousel-container p-6">
+      <div className="carousel-container pt-6 pb-2 px-6">
         <Slider {...imageSliderSettings}>
           {project.images
             .slice()
@@ -38,14 +38,18 @@ const ProjectCard = ({ project }) => {
               </div>
             ))}
         </Slider>
-        <div className="carousel-counter py-4">
+        <div className="carousel-counter !mb-0 pt-4 ">
           {project.images.length} images
         </div>
       </div>
-      <p style={ {
-        margin: "0 auto",
-        width: "80%",
-      }}>{project.description}</p>
+      <p
+        style={{
+          margin: "0 auto",
+          width: "80%",
+        }}
+      >
+        {project.description}
+      </p>
       <div className="buttons-container">
         {project.links.map((link, idx) => (
           <button
