@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Projects = styled.div`
-  max-width: 1000px !important;
+  max-width: 1200px !important;
+  /* height: 735px !important; */
   margin: 0 auto;
-  /* display: flex; */
+  padding: 0;
   justify-content: center;
-  /* margin: 0 auto; */
+  overflow: hidden;
+  align-items: center;
   .project-slick-slide {
     display: flex;
     justify-content: center;
@@ -14,16 +16,15 @@ export const Projects = styled.div`
     /* background-color: red; */
     border-radius: 4px;
     /* max-height: 95% !important; */
-    overflow: hidden;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .navigation-buttons {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
     margin-top: 1rem;
 
-    button {
+    /* button {
       padding: 0.5rem 1rem;
       background-color: var(--orange-200) !important;
       color: var(--stone-950) !important;
@@ -34,6 +35,6 @@ export const Projects = styled.div`
       &:hover {
         background-color: var(--stone-600) !important;
       }
-    }
+    } */
   }
 `;

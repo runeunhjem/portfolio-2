@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const Project = styled.div`
-  padding: 1rem;
+  padding: 0;
   margin: 0 auto;
   background: var(--orange-200);
-  border: 1px solid var(--stone-300);
+  /* border: 1px solid var(--stone-400); */
+  box-shadow: inset -1px -1px 10px rgba(0, 0, 0, 0.6);
   border-radius: 4px;
   text-align: center;
+  overflow: hidden;
   /* width: 90%; */
-  max-width: 80vw !important;
+  /* max-width: 80vw !important; */
   /* max-width: 95vw; */
-  height: 100%;
+  /* height: 100%; */
 
   @media (max-width: 600px) {
     padding: 0.5rem;
@@ -44,38 +46,57 @@ export const Project = styled.div`
     }
   }
 
+  .description {
+    overflow-y: auto;
+    height: 74px;
+  }
+
   .carousel-container {
     overflow: hidden;
     margin: 0 auto;
+    position: relative !important;
     /* max-width: 90% !important; */
     /* position:  relative; */
-    justify-content:  center;
+    justify-content: center;
 
     @media (max-width: 600px) {
       margin: 0.5rem 0;
       height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
     }
 
-    .slick-slide, .slick-active, .slick-current {
-      /* display: flex;
-      justify-content: center;
-      padding: 0 1rem; */
-      /* width: 800px; */
-      /* max-width: 100%; */
+    .slick-slide {
+      border-radius: 14px !important;
+    }
+    .slick-dots {
+      display: block !important;
+    }
+
+    @media (max-width: 768px) {
+      .slick-dots {
+        display: none !important;;
+      }
     }
 
     .slick-prev {
-      left: 0;
+      left: 2px;
       z-index: 1000;
-
     }
     .slick-next {
       z-index: 1000;
-      right: 12px;
-
+      right: 20px;
+      @media (max-width: 600px) {
+        right: 0px;
+      }
+      @media (max-width: 1069px) {
+        right: 14px;
+      }
     }
 
+    .image-wrap {
+      border-radius: 14px !important;
+    }
     img {
+      border: 1px solid var(--stone-600);
       display: flex;
       justify-content: center;
       margin: 0 auto;
@@ -83,9 +104,7 @@ export const Project = styled.div`
       max-width: 100% !important;
       height: 400px;
       max-height: 100%;
-      padding: 1rem 0;
-      border-radius: 4px;
-      /* padding-left: 0.525rem; */
+      border-radius: 14px;
       object-fit: cover;
       object-position: top center;
       @media screen and (max-width: 641px) {

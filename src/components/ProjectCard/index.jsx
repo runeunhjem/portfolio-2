@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
   };
@@ -43,9 +43,10 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <p
+        className="description"
         style={{
           margin: "0 auto",
-          
+
         }}
       >
         {project.description}
