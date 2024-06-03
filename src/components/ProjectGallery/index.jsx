@@ -19,7 +19,7 @@ const ProjectGallery = forwardRef((_props, ref) => {
 
   return (
     <S.Projects>
-      <Slider ref={ref} {...gallerySettings}>
+      <Slider className="project-slick-slide" ref={ref} {...gallerySettings}>
         {projectsData
           .slice()
           .reverse()

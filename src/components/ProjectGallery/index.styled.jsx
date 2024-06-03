@@ -1,15 +1,26 @@
 import styled from "styled-components";
 
 export const Projects = styled.div`
-  .slick-slide {
+  max-width: 1000px !important;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: center;
+  /* margin: 0 auto; */
+  .project-slick-slide {
     display: flex;
     justify-content: center;
-    width: 95vw;
+    /* width: 100vw !important; */
+    max-width: 100% !important;
+    /* background-color: red; */
+    border-radius: 4px;
+    /* max-height: 95% !important; */
+    overflow: hidden;
+    padding: 0 1rem;
   }
 
   .navigation-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1rem;
 
     button {

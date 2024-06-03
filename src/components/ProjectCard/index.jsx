@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
   };
@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
             .slice()
             .reverse()
             .map((image, idx) => (
-              <div key={idx} className="w-full">
+              <div key={idx} className="image-wrap w-full">
                 <img
                   src={image}
                   alt={
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
       <p
         style={{
           margin: "0 auto",
-          width: "80%",
+          
         }}
       >
         {project.description}

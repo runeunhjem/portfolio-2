@@ -7,17 +7,22 @@ export const Project = styled.div`
   border: 1px solid var(--stone-300);
   border-radius: 4px;
   text-align: center;
-  width: 90%;
-  /* max-width: 100%; */
-  max-width: 95vw;
+  /* width: 90%; */
+  max-width: 80vw !important;
+  /* max-width: 95vw; */
   height: 100%;
 
   @media (max-width: 600px) {
     padding: 0.5rem;
   }
-
+  @media (min-width: 1200px) {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto !important;
+  }
   h3 {
-    margin: 0 1rem;
+    margin: 0 auto;
+    max-width: 90%;
     font-size: 1.5rem;
     font-weight: 700;
 
@@ -28,7 +33,8 @@ export const Project = styled.div`
   }
 
   p {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 90%;
     font-size: 1rem;
     font-weight: 500;
 
@@ -41,36 +47,47 @@ export const Project = styled.div`
   .carousel-container {
     overflow: hidden;
     margin: 0 auto;
+    /* max-width: 90% !important; */
+    /* position:  relative; */
+    justify-content:  center;
 
     @media (max-width: 600px) {
       margin: 0.5rem 0;
       height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
     }
 
-    .slick-slide {
-      display: flex;
+    .slick-slide, .slick-active, .slick-current {
+      /* display: flex;
       justify-content: center;
-      padding: 0 1rem;
+      padding: 0 1rem; */
+      /* width: 800px; */
+      /* max-width: 100%; */
     }
 
     .slick-prev {
       left: 0;
       z-index: 1000;
+
     }
     .slick-next {
       z-index: 1000;
-      right: 5px;
+      right: 12px;
+
     }
 
     img {
       display: flex;
       justify-content: center;
       margin: 0 auto;
-      width: 100% !important;
+      width: 800px;
+      max-width: 100% !important;
       height: 400px;
+      max-height: 100%;
+      padding: 1rem 0;
       border-radius: 4px;
-      padding-left: 0.525rem;
+      /* padding-left: 0.525rem; */
       object-fit: cover;
+      object-position: top center;
       @media screen and (max-width: 641px) {
         height: 300px;
       }
