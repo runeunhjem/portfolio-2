@@ -148,9 +148,20 @@ main {
   transform: scale(1.1);
 }
 
+.info-links {
+  width: 200px;
+  height: 30px;
+}
+
+.active-link {
+  background-color: var(--orange-200);
+}
+
+
 .slick-prev:before, .slick-next:before {
   color: var(--red-600) !important;
   font-size: calc(1.5rem + 1vw) !important;
+  /* box-shadow: none !important; */
 }
 
 .slick-dots {
