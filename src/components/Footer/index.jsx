@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import footerLogo from "../../assets/logos/rd-rundev-with-info.svg";
 import {
   FaLinkedin,
@@ -7,165 +7,113 @@ import {
   FaGithub,
   FaSpotify,
 } from "react-icons/fa";
+import * as S from "./index.styled";
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-orange-100 pb-8 text-center text-stone-600"
-      style={{ width: "100%" }}
-    >
-      <div
-        style={{
-          boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.6)",
-          margin: "2rem auto",
-          width: "92vw",
-          maxWidth: "1160px",
-        }}
-        className="footer-container flex justify-between px-10 py-8"
-      >
-        <div className="footer-left flex w-1/3 flex-col justify-between !py-2">
-          <NavLink
-            exact
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "hover-links active-link" : "hover-links"
-            }
-            style={{
-              width: "120px",
-              boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.6)",
-            }}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? "hover-links active-link" : "hover-links"
-            }
-            style={{
-              width: "120px",
-              boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.6)",
-            }}
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "hover-links active-link" : "hover-links"
-            }
-            style={{
-              width: "120px",
-              boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.6)",
-            }}
-          >
-            Contact
-          </NavLink>
-          <a
+    <S.FooterWrapper>
+      <S.FooterContainer>
+        <S.FooterSection>
+          <S.FooterLink to="/" end>
+            {({ isActive }) => (
+              <div className={isActive ? "active-link" : ""}>Home</div>
+            )}
+          </S.FooterLink>
+          <S.FooterLink to="/about">
+            {({ isActive }) => (
+              <div className={isActive ? "active-link" : ""}>About</div>
+            )}
+          </S.FooterLink>
+          <S.FooterLink to="/contact">
+            {({ isActive }) => (
+              <div className={isActive ? "active-link" : ""}>Contact</div>
+            )}
+          </S.FooterLink>
+          <S.ExternalLink
             href="https://github.com/runeunhjem/portfolio-2/blob/main/README.md"
-            className="hover-links"
-            style={{
-              width: "120px",
-              boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.6)",
-            }}
+            style={{ width: "120px" }}
           >
             README
-          </a>
-        </div>
-        <div className="footer-middle flex w-1/3 flex-col items-center justify-between">
-          <div className="flex h-full flex-col items-center justify-between">
-            <a
-              className="hover-links info-links"
-              href="tel:+4793267611"
-              target="_blank"
-            >
+          </S.ExternalLink>
+        </S.FooterSection>
+        <S.FooterSection>
+          <div className="flex flex-col gap-6">
+            <S.ExternalLink href="tel:+4793267611">
               + 47 93 26 76 11
-            </a>
-            <a
-              className="hover-links info-links"
+            </S.ExternalLink>
+            <S.ExternalLink
               href="https://portfolio1-ca.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Portfolio (Old)
-            </a>
-            <a
-              className="hover-links info-links"
+            </S.ExternalLink>
+            <S.ExternalLink
               href="https://flowcv.com/resume/otcg7cttth"
               target="_blank"
               rel="noopener noreferrer"
             >
               My Resume / CV
-            </a>
-            <a
-              className="hover-links info-links"
+            </S.ExternalLink>
+            <S.ExternalLink
               href="mailto:runeunhjem@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               runeunhjem@gmail.com
-            </a>
+            </S.ExternalLink>
           </div>
-          <div className="hover-icons social-media mt-3 flex space-x-4">
-            <a
+          <div className="hover-icons social-media mb-6 mt-3 flex space-x-4 md:mb-1">
+            <S.SocialLink
               href="https://www.linkedin.com/in/rune-unhjem-7b0b4b1b0/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-stone-500 p-2 text-orange-100 hover:bg-red-600"
             >
-              <FaLinkedin size={30} />
+              <FaLinkedin />
               <span className="hidden">Visit Rune LinkedIn</span>
-            </a>
-            <a
+            </S.SocialLink>
+            <S.SocialLink
               href="https://www.facebook.com/runeunhjem"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-stone-500 p-2 text-orange-100 hover:bg-red-600"
             >
-              <FaFacebook size={30} />
+              <FaFacebook />
               <span className="hidden">Visit Rune Facebook</span>
-            </a>
-            <a
+            </S.SocialLink>
+            <S.SocialLink
               href="https://www.instagram.com/runeunhjem/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-stone-500 p-2 text-orange-100 hover:bg-red-600"
             >
-              <FaInstagram size={30} />
+              <FaInstagram />
               <span className="hidden">Visit Rune Instagram</span>
-            </a>
-            <a
+            </S.SocialLink>
+            <S.SocialLink
               href="https://github.com/runeunhjem/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-stone-500 p-2 text-orange-100 hover:bg-red-600"
             >
-              <FaGithub size={30} />
+              <FaGithub />
               <span className="hidden">Visit Rune GitHub</span>
-            </a>
-            <a
+            </S.SocialLink>
+            <S.SocialLink
               href="https://open.spotify.com/artist/56ZSG2Q1JKydX5X9rTZxrq?si=787xAZCQT2yu8PKN5Dhopw&nd=1&dlsi=5c67be9f98204381"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-stone-500 p-2 text-orange-100 hover:bg-red-600"
             >
-              <FaSpotify size={30} />
+              <FaSpotify />
               <span className="hidden">Visit Rune Spotify</span>
-            </a>
+            </S.SocialLink>
           </div>
-        </div>
-        <div className="footer-right flex w-1/3 flex-col items-end">
+        </S.FooterSection>
+        <S.FooterSection>
           <Link to="/">
-            <img
-              src={footerLogo}
-              alt="Illustration of RUNDEV Logo"
-              className="footer-logo flex w-60 justify-end"
-            />
+            <S.Logo src={footerLogo} alt="Illustration of RUNDEV Logo" />
           </Link>
-        </div>
-      </div>
+        </S.FooterSection>
+      </S.FooterContainer>
       <p>&copy; 2024 Rune Unhjem. All rights reserved.</p>
-    </footer>
+    </S.FooterWrapper>
   );
 };
 

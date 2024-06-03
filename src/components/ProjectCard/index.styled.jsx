@@ -147,6 +147,7 @@ export const Project = styled.div`
       cursor: pointer;
       background-color: inherit;
       color: inherit;
+      width: 160px;
 
       &.button-game-hub {
         background-color: var(--color-yellow-gamehub);
