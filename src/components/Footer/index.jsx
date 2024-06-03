@@ -70,7 +70,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaLinkedin />
-              <span className="hidden">Visit Rune LinkedIn</span>
+              <span className="visually-hidden">Visit Rune LinkedIn</span>
             </S.SocialLink>
             <S.SocialLink
               href="https://www.facebook.com/runeunhjem"
@@ -78,7 +78,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaFacebook />
-              <span className="hidden">Visit Rune Facebook</span>
+              <span className="visually-hidden">Visit Rune Facebook</span>
             </S.SocialLink>
             <S.SocialLink
               href="https://www.instagram.com/runeunhjem/"
@@ -86,7 +86,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaInstagram />
-              <span className="hidden">Visit Rune Instagram</span>
+              <span className="visually-hidden">Visit Rune Instagram</span>
             </S.SocialLink>
             <S.SocialLink
               href="https://github.com/runeunhjem/"
@@ -94,7 +94,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaGithub />
-              <span className="hidden">Visit Rune GitHub</span>
+              <span className="visually-hidden">Visit Rune GitHub</span>
             </S.SocialLink>
             <S.SocialLink
               href="https://open.spotify.com/artist/56ZSG2Q1JKydX5X9rTZxrq?si=787xAZCQT2yu8PKN5Dhopw&nd=1&dlsi=5c67be9f98204381"
@@ -102,7 +102,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaSpotify />
-              <span className="hidden">Visit Rune Spotify</span>
+              <span className="visually-hidden">Visit Rune Spotify</span>
             </S.SocialLink>
           </div>
         </S.FooterSection>
