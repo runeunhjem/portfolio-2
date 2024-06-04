@@ -1,8 +1,17 @@
+import SectionCardNow from "../../components/SectionCardNow";
+import SectionCardHistory from "../../components/SectionCardHistory";
+import SectionCardGoals from "../../components/SectionCardGoals";
+import SectionCardSkills from "../../components/SectionCardSkills";
+import SectionCardFollow from "../../components/SectionCardFollow";
+
 const AboutPage = () => {
   return (
     <div>
-      <h2>About Page</h2>
-      <p>Learn more about us.</p>
+      <SectionCardNow />
+      <SectionCardHistory />
+      <SectionCardGoals />
+      <SectionCardSkills />
+      <SectionCardFollow />
     </div>
   );
 };

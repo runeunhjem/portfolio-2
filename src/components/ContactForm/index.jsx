@@ -44,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <S.FormContainer onSubmit={handleSubmit(onSubmit)}>
-      <S.ContactInfoHeader>Send me a message</S.ContactInfoHeader>
+      {/* <S.ContactInfoHeader>Mail Me</S.ContactInfoHeader> */}
       <S.FormGroup>
         <S.InputLabel htmlFor="name">Name</S.InputLabel>
         <S.FormInput
