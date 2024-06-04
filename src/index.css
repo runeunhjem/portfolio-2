@@ -6,6 +6,7 @@
 /* Custom styles */
 :root {
   --white: #ffffff;
+  --black: #000000;
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
   --stone-300: #d6d3d1;
@@ -13,7 +14,10 @@
   --stone-500: #78716c;
   --stone-600: #57534e;
   --stone-950: #0c0a09;
+  --red-200: #fecaca;
   --red-600: #dc2626;
+  --green-200: #bbf7d0;
+  --green-700: #15803d;
 
   --color-yellow-gamehub: #f5c618;
   --color-burgundy-chefs-table: #5e0a24;
@@ -59,6 +63,8 @@ main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .MuiPaper-root-MuiAccordion-root,
