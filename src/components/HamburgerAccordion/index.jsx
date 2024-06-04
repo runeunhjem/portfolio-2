@@ -67,7 +67,7 @@ const HamburgerAccordion = () => {
         }}
       >
         <Typography
-          className="xs:block hidden"
+          className="hidden"
           sx={{
             cursor: "default",
             width: "100%",
