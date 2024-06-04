@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    lazyLoad: "ondemand",
+    // lazyLoad: "ondemand",
   };
 
   return (
