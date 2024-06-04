@@ -15,18 +15,23 @@ const SectionCardGoals = () => {
           <ul>
             <li>
               My main goal at the moment is to acquire the skills and experience
-              needed to produce professional content.
+              needed to produce professional content. I am focused on mastering
+              the latest technologies and best practices in web development.
             </li>
             <li>
-              Eventually get that perfect job where I can show off my skills.
+              Eventually get that perfect job where I can show off my skills. I
+              aim to work in a dynamic and innovative environment where I can
+              continuously learn and contribute.
             </li>
             <li>
               Contribute in all levels of the field within the business that
-              chooses me.
+              chooses me. I am keen on collaborating with cross-functional teams
+              to deliver exceptional products and solutions.
             </li>
             <li>
-              100% devotion to the company that hires me fulltime, until the day
-              I retire.
+              100% devotion to the company that hires me full-time, until the
+              day I retire. I am committed to professional growth and long-term
+              success, both for myself and the organization I join.
             </li>
           </ul>
         </S.IntroRight>

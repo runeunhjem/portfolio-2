@@ -15,6 +15,7 @@ const ProjectGallery = forwardRef((_props, ref) => {
     slidesToScroll: 1,
     autoplay: false,
     arrows: false,
+    // lazyLoad: "ondemand",
   };
 
   return (

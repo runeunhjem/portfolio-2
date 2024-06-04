@@ -53,6 +53,34 @@ export const IntroRight = styled.div`
     margin-bottom: 0.5rem;
     color: var(--stone-600);
   }
+  a.social-link {
+    display: flex;
+    align-items: center;
+    color: var(--stone-600);
+    text-decoration: none;
+    width: 100px;
+    &:hover {
+      text-decoration: underline;
+      color: var(--red-600);
+      svg {
+        transform: scale(1.2);
+        text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+`;
+
+export const IconContainer = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const SkillIcons = styled.div`
@@ -65,6 +93,13 @@ export const SkillIcons = styled.div`
     img {
       width: 40px;
       height: 40px;
+      transition:
+        transform 0.2s ease-in-out,
+        text-shadow 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+      }
     }
     span {
       position: absolute;

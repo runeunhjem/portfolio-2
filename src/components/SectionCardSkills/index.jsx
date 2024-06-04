@@ -13,18 +13,54 @@ const SectionCardSkills = () => {
         </S.ProfilePic>
         <S.IntroRight>
           <ul>
-            <li>Photoshop since the late &apos;90&apos;s</li>
-            <li>Figma for design and prototyping</li>
-            <li>WordPress with WooCommerce</li>
-            <li>Visual Studio Code (VSC)</li>
-            <li>HTML 5</li>
-            <li>CSS 3 & SCSS</li>
-            <li>Sass</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Vite</li>
-            <li>React</li>
-            <li>Tailwind CSS</li>
+            <li>
+              <strong>Photoshop</strong> since the late &apos;90&apos;s:
+              Advanced skills in graphic design and image editing.
+            </li>
+            <li>
+              <strong>Figma</strong> for design and prototyping: Expertise in
+              creating wireframes, mockups, and interactive prototypes.
+            </li>
+            <li>
+              <strong>WordPress with WooCommerce</strong>: Experienced in
+              building and managing e-commerce websites.
+            </li>
+            <li>
+              <strong>Visual Studio Code (VSC)</strong>: Experienced in using
+              VSC for coding, debugging, and version control.
+            </li>
+            <li>
+              <strong>HTML 5</strong>: Strong foundation in semantic HTML and
+              web accessibility standards.
+            </li>
+            <li>
+              <strong>CSS 3 & SCSS</strong>: Advanced knowledge in styling,
+              responsive design, and pre-processing with SCSS.
+            </li>
+            <li>
+              <strong>Sass</strong>: Skilled in writing efficient, maintainable
+              CSS using Sass.
+            </li>
+            <li>
+              <strong>JavaScript</strong>: Experienced in vanilla JavaScript,
+              ES6+, and asynchronous programming.
+            </li>
+            <li>
+              <strong>Bootstrap</strong>: Experienced in using Bootstrap for
+              quick and responsive UI development.
+            </li>
+            <li>
+              <strong>Vite</strong>: Familiar with Vite for fast and optimized
+              development builds.
+            </li>
+            <li>
+              <strong>React</strong>: Competent in building dynamic and
+              interactive web applications using React.
+            </li>
+            <li>
+              <strong>Tailwind CSS</strong>: Experienced in using Tailwind for
+              utility-first CSS styling and rapid prototyping.
+            </li>
           </ul>
           <S.SkillIcons>
             <a
