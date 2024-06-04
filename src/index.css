@@ -5,12 +5,23 @@
 
 /* Custom styles */
 :root {
+  --white: #ffffff;
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
   --stone-300: #d6d3d1;
   --stone-400: #a8a29e;
+  --stone-500: #78716c;
   --stone-600: #57534e;
+  --stone-950: #0c0a09;
   --red-600: #dc2626;
+
+  --color-yellow-gamehub: #f5c618;
+  --color-burgundy-chefs-table: #5e0a24;
+  --color-blue-csm: #0052bd;
+  --color-dark-movietalk: #1f2937;
+  --color-blue-dreambids: #1572b9;
+  --color-purple-cgg: rgb(128, 0, 145);
+  --color-sky-holidaze: rgb(125, 211, 252);
 
   --font-family-koho: "KoHo", sans-serif;
 }
@@ -37,6 +48,17 @@ header {
 main {
   background-color: var(--orange-100);
   color: var(--stone-600);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .MuiPaper-root-MuiAccordion-root,
@@ -136,4 +158,30 @@ main {
 .hover-links:hover {
   border-bottom: 1px solid var(--red-600);
   transform: scale(1.1);
+}
+
+.info-links {
+  width: 200px;
+  height: 30px;
+}
+
+.active-link {
+  background-color: var(--orange-200);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--red-600) !important;
+  font-size: calc(1.5rem + 1vw) !important;
+  /* box-shadow: none !important; */
+}
+
+.slick-dots {
+  position: relative !important;
+  padding: 0 !important;
+  margin: -1rem 0 1rem 0 !important;
+}
+
+.carousel-counter {
+  padding-bottom: -2rem !important;
 }

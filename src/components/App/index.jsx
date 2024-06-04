@@ -4,6 +4,9 @@ import AboutPage from "../../pages/AboutPage";
 import ContactPage from "../../pages/ContactPage";
 import Layout from "../Layout";
 import { CssBaseline } from "@mui/material";
+import projectsData from "../ProjectGallery/projectsData";
+
+const totalProjects = projectsData.length;
 
 const App = () => {
   return (
@@ -11,7 +14,10 @@ const App = () => {
       <CssBaseline />
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={<HomePage numberOfProjects={totalProjects} />}
+          />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
@@ -21,4 +27,3 @@ const App = () => {
 };
 
 export default App;
-

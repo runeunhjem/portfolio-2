@@ -17,7 +17,7 @@ const Header = () => {
     >
       <div className="header-container mx-auto flex w-full max-w-4xl justify-between">
         <Link to="/" className="z-[5000] max-w-64">
-          <img src={logo} alt="RUNDEV Logo" className="max-w-64" />
+          <img src={logo} alt="RUNDEV Logo" className="max-w-64 ms-3" />
         </Link>
         <div className="nav-container relative mx-auto flex w-full max-w-4xl flex-col items-end">
           <div style={{ position: "absolute", top: 0, right: 0, zIndex: 1000 }}>
