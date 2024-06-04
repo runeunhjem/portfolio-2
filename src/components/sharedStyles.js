@@ -37,7 +37,8 @@ export const ProfilePic = styled.div`
 
   img {
     max-width: 300px;
-    width: 100%;
+    width: 90%;
+    margin-bottom: 2rem;
     border-radius: 50%;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
   }
