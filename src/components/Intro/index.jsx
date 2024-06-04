@@ -14,8 +14,9 @@ const Intro = () => {
           <p>Hi there and welcome.</p>
           <p>
             Based in Kristiansand, I just finished up a 2 year study of{" "}
-            <strong>Front End Development</strong> at Noroff School of
-            Technology and Digital Media.
+            <strong>Frontend Development</strong> at Noroff School of
+            Technology and Digital Media, and have signed up for a 1 year study of{" "}
+            <strong>Backend Development</strong> from August &apos;24.
           </p>
           <p>
             Take a look at my relevant projects, or if interested, get a little
@@ -32,8 +33,9 @@ const Intro = () => {
         <S.InitialText>
           <p>
             Hi there and welcome. Based in Kristiansand, I just finished up a 2
-            year study of <strong>Front End Development</strong> at Noroff
-            School of Technology and Digital Media.
+            year study of <strong>Frontend Development</strong> at Noroff
+            School of Technology and Digital Media, and have signed up for a 1 year study of{" "}
+            <strong>Backend Development</strong> from August &apos;24.
           </p>
         </S.InitialText>
       </S.FlexContainer>
