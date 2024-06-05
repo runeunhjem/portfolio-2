@@ -24,10 +24,9 @@ export const IntroImageContainer = styled.div`
   width: 33%;
   justify-content: center;
   img {
-    width: 250px;
     max-width: 100%;
-    height: 250px;
-    max-height: 100%;
+    width: 250px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
   }

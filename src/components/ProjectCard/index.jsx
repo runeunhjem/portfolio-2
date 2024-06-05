@@ -32,10 +32,10 @@ const ProjectCard = ({ project }) => {
               <div key={idx} className="image-wrap w-full">
                 <img
                   style={ {
-                    width: "800px",
-                    maxWidth: "100%",
-                    height: "400px",
-                    maxHeight: "100%",
+                    maxWidth: "800px",
+                    width: "100%",
+                    maxHeight: "400px",
+                    height: "100%",
                   }}
                   src={image}
                   alt={
