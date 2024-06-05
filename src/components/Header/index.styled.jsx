@@ -28,17 +28,20 @@ export const InnerContainer = styled.div`
 
 export const LogoLink = styled(Link)`
   z-index: 5000;
-  max-width: 300px;
+  width: 300px;
   align-items: center;
 
   img {
-    max-width: 300px;
+    width: 300px;
+    height: 86.422px;
     margin-left: 0.75rem;
     @media screen and (max-width: 468px) {
-      max-width: 250px;
+      width: 250px;
+      height: 72.0185px;
     }
     @media screen and (max-width: 368px) {
-      max-width: 200px;
+      width: 200px;
+      height: 57.6148px;
     }
   }
 `;

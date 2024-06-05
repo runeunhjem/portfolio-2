@@ -31,6 +31,12 @@ const ProjectCard = ({ project }) => {
             .map((image, idx) => (
               <div key={idx} className="image-wrap w-full">
                 <img
+                  style={ {
+                    width: "800px",
+                    maxWidth: "100%",
+                    height: "400px",
+                    maxHeight: "100%",
+                  }}
                   src={image}
                   alt={
                     project.title
