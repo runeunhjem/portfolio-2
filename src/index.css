@@ -167,6 +167,15 @@ main {
   transform: scale(1.1);
 }
 
+.portfolio-link {
+  height: 50px !important;
+}
+@media (min-width: 350px) {
+  .portfolio-link {
+    height: 30px !important;
+  }
+}
+
 .info-links {
   width: 200px;
   height: 30px;

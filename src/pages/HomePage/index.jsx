@@ -23,13 +23,12 @@ const HomePage = ({ numberOfProjects }) => {
     <S.Container>
       <S.Heading>
         <Link
-          className="hover-links mb-2 flex flex-wrap justify-end"
+          className="hover-links portfolio-link mb-2 !flex !flex-wrap whitespace-pre-line justify-center xs:justify-end"
           to="https://portfolio1-ca.netlify.app/"
           target="_blank"
         >
-          <span>Old portfolio here </span>
-
-          <span>&nbsp;(No frameworks)</span>
+          <span className="whitespace-nowrap">Old portfolio here</span>
+          <span className="whitespace-nowrap">&nbsp;(No frameworks)</span>
         </Link>
       </S.Heading>
       <Intro />

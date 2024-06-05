@@ -71,7 +71,7 @@ export const Project = styled.div`
 
     @media (max-width: 768px) {
       .slick-dots {
-        display: none !important;;
+        display: none !important;
       }
     }
 
@@ -92,24 +92,24 @@ export const Project = styled.div`
 
     .image-wrap {
       border-radius: 14px !important;
-    }
-    img {
-      border: 1px solid var(--stone-600);
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      width: 800px;
-      max-width: 100% !important;
-      height: 400px;
-      max-height: 100%;
-      border-radius: 14px;
-      object-fit: cover;
-      object-position: top center;
-      @media screen and (max-width: 641px) {
-        height: 300px;
-      }
-      @media screen and (max-width: 468px) {
-        height: 200px;
+      img {
+        border: 1px solid var(--stone-600);
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 800px;
+        max-width: 100% !important;
+        height: 400px;
+        max-height: 100%;
+        border-radius: 14px;
+        object-fit: cover;
+        object-position: top center;
+        @media screen and (max-width: 641px) {
+          height: 300px;
+        }
+        @media screen and (max-width: 468px) {
+          height: 200px;
+        }
       }
     }
   }

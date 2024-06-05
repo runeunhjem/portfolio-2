@@ -52,6 +52,7 @@ export const InitialText = styled.div`
     width: 100%;
     padding-left: 0;
     margin-bottom: 10px;
+    min-height: 200px;
   }
 `;
 
@@ -95,8 +96,8 @@ export const AllText = styled.div`
   font-size: 1.2rem;
   line-height: 1.5;
   color: var(--stone-600);
-
   @media (min-width: 641px) {
+    min-height: 200px;
     display: block;
   }
 `;
