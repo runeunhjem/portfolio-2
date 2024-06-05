@@ -6,15 +6,21 @@ export const FooterWrapper = styled.footer`
   background-color: var(--orange-100);
   padding-bottom: 2rem;
   text-align: center;
-  color: #4b5563; /* text-stone-600 */
+  color: var(--stone-600);
 `;
 
 export const FooterContainer = styled.div`
   background-color: var(--orange-100);
+  /* border-bottom: 1px solid var(--stone-600); */
+  margin-bottom: 2rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
-  margin: 2rem auto;
+`;
+
+export const FooterContent = styled.div`
   width: 92vw;
-  max-width: 1160px;
+  max-width: 1400px;
+  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6); */
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,8 +49,8 @@ export const FooterLink = styled(NavLink)`
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   transition:
-  transform 0.2s ease-in-out,
-  border-bottom 0.2s ease-in-out;
+    transform 0.2s ease-in-out,
+    border-bottom 0.2s ease-in-out;
   background-color: ${({ isActive }) =>
     isActive ? "var(--orange-200)" : "transparent"};
   .active-link {
@@ -58,12 +64,12 @@ export const FooterLink = styled(NavLink)`
     transform: scale(1.1);
     border-bottom: 1px solid var(--red-600);
   }
-  `;
+`;
 
 export const ExternalLink = styled.a`
   transition:
-  transform 0.2s ease-in-out,
-  border-bottom 0.2s ease-in-out;
+    transform 0.2s ease-in-out,
+    border-bottom 0.2s ease-in-out;
   border-radius: 12px;
   height: 24px;
   border-radius: 12px;
