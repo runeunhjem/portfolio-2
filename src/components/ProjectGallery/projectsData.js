@@ -77,6 +77,7 @@ const projectsData = [
     id: 1,
     title: "Game Hub",
     tagline: "The universe of games.",
+    login: "Backend discontinued, Some features may not work.",
     description:
       "Our very first school project. Only HTML and CSS were used, but it has later on been expanded to also involve Vanilla JS. No libraries or frameworks were used.",
     images: [
@@ -123,6 +124,7 @@ const projectsData = [
     id: 3,
     title: "CHEF'S TABLE",
     tagline: "Cooking With Love.",
+    login: "Backend discontinued, Some features may not work.",
     description:
       "Project Exam 1. Make a blog for a fictional restaurant. The site should be responsive, and the audience is assumed to be people who are interested in food and cooking. Made with HTML, CSS, and JS. No libraries or frameworks were used.",
     images: [
