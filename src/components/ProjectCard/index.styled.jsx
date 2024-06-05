@@ -3,16 +3,11 @@ import styled from "styled-components";
 export const Project = styled.div`
   padding: 0;
   margin: 0 auto;
-  background: var(--orange-200);
-  /* border: 1px solid var(--stone-400); */
-  box-shadow: inset -1px -1px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 4px;
+  background: var(--orange-100);
+  /* box-shadow: inset -1px -1px 10px rgba(0, 0, 0, 0.6); */
+  border-radius: 12px;
   text-align: center;
   overflow: hidden;
-  /* width: 90%; */
-  /* max-width: 80vw !important; */
-  /* max-width: 95vw; */
-  /* height: 100%; */
 
   @media (max-width: 600px) {
     padding: 0.5rem;

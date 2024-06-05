@@ -21,6 +21,7 @@ const ProjectCard = ({ project }) => {
     <S.Project>
       <h3>{project.title}</h3>
       <p>{project.tagline}</p>
+      <p className="text-red-600">{project.login}</p>
       <div className="carousel-container pt-6 pb-2 px-6">
         <Slider {...imageSliderSettings}>
           {project.images
@@ -74,6 +75,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string,
     tagline: PropTypes.string,
+    login: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.string,
     links: PropTypes.arrayOf(

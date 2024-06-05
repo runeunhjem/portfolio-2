@@ -154,6 +154,8 @@ const projectsData = [
     id: 4,
     title: "movieTALK",
     tagline: "Lets talk movies!",
+    login:
+      "Requires login (mail: movieTALKVisitor@stud.noroff.no, password: movieTALKVisitor)",
     description:
       "JavaScript 2 Course Assignment. You have been tasked with producing a new JavaScript front-end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.",
     images: [
@@ -185,6 +187,8 @@ const projectsData = [
     id: 5,
     title: "DreamBids",
     tagline: "Find That Dreamy Item!",
+    login:
+      "Requires login (mail: DreamBidsVisitor@stud.noroff.no, password: DreamBidsVisitor)",
     description:
       "An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction. Vanilla JS, Bootstrap and Sass were primaries on this project.JavaScript 2 Course Assignment. You have been tasked with producing a new JavaScript front-end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.",
     images: [
@@ -237,6 +241,8 @@ const projectsData = [
     id: 7,
     title: "Holidaze",
     tagline: "Travels made easy!",
+    login:
+      "Requires login (mail: HolidazeVisitor@stud.noroff.no, password: HolidazeVisitor)",
     description:
       "A newly launched accommodation booking site called Holidaze has approached you to develop a brand new front end for their application. While they have a list of required features, the design and user experience has not been specified.",
     images: [
