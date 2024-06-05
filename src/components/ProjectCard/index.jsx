@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const ProjectCard = ({ project }) => {
   const imageSliderSettings = {
     dots: true,
+    fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
