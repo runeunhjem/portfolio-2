@@ -47,13 +47,14 @@ const HamburgerAccordion = () => {
   return (
     <S.Accordion expanded={expanded} ref={accordionRef}>
       <S.AccordionSummary
+
         expandIcon={
           <S.IconContainer
             className="hover-links xs:!mx-1 !mx-3 !cursor-pointer"
             onClick={handleIconClick}
           >
             <MenuIcon
-              className="sm:!text-2xl sm:me-3 mx-1 !text-4xl"
+              className="mx-1 !text-4xl sm:!text-2xl"
               sx={{ color: "var(--stone-600)" }}
             />
           </S.IconContainer>
@@ -63,6 +64,11 @@ const HamburgerAccordion = () => {
         sx={{
           "&.MuiAccordionSummary-root": {
             height: "30px !important",
+            padding: "0 1rem 0 0 !important",
+            "@media (max-width: 640px)": {
+              padding: "0 0 0 0 !important",
+
+            },
           },
         }}
       >

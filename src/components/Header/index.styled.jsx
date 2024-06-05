@@ -29,10 +29,17 @@ export const InnerContainer = styled.div`
 export const LogoLink = styled(Link)`
   z-index: 5000;
   max-width: 300px;
+  align-items: center;
 
   img {
     max-width: 300px;
     margin-left: 0.75rem;
+    @media screen and (max-width: 468px) {
+      max-width: 250px;
+    }
+    @media screen and (max-width: 368px) {
+      max-width: 200px;
+    }
   }
 `;
 
@@ -43,9 +50,9 @@ export const NavContainer = styled.div`
   max-width: 100%;
   flex-direction: column;
   align-items: end;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto 0 auto;
 
-  > div {
+  > div { // Menu container
     position: absolute;
     top: 0;
     right: 0;

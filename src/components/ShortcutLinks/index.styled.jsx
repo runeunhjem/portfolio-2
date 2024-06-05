@@ -4,7 +4,7 @@ export const ShortcutLinks = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   gap: 0.5rem;
   a {
     text-align: center;

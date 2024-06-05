@@ -34,6 +34,8 @@ export const SubmenuAccordionSummary = styled(MuiAccordionSummary)`
   }
   &.Mui-expanded {
     background-color: var(--orange-200) !important;
+    border-bottom: 1px solid var(--stone-400) !important;
+    cursor: default !important;
   }
 `;
 
@@ -66,6 +68,8 @@ export const StyledAccordionSummaryWithBorders = styled(MuiAccordionSummary)`
   }
   &.Mui-expanded {
     background-color: var(--orange-200) !important;
+    border-bottom: 1px solid var(--stone-400) !important;
+    cursor: default !important;
   }
 `;
 

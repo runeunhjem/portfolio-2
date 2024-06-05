@@ -4,9 +4,10 @@ import { NavLink } from "react-router-dom";
 export const NavBarContainer = styled.nav`
   display: none;
   justify-content: space-between;
-  margin-right: 0.75rem;
-  margin-top: 2.75rem;
+  margin-right: 1.3rem;
+  margin-top: 3rem;
   z-index: 1001;
+  gap: 1.2rem;
 
   @media (min-width: 640px) {
     display: flex;
@@ -14,8 +15,10 @@ export const NavBarContainer = styled.nav`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  margin-right: 0.5rem;
+  /* margin-right: 1.20rem; */
   text-decoration: none;
+  font-size: 1.25rem;
+  height: 30px;
   color: var(--stone-600);
   padding: 0 0.5rem;
   border-radius: 12px;
