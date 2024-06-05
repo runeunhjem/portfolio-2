@@ -22,8 +22,8 @@ const ProjectCard = ({ project }) => {
     <S.Project>
       <h3>{project.title}</h3>
       <p className="!text-xl">{project.tagline}</p>
-      <p className="text-red-600 text-center">{project.login}</p>
-      <div className="carousel-container pt-6 pb-2 px-6">
+      <p className="text-center text-red-600">{project.login}</p>
+      <div className="carousel-container px-6 pb-2 pt-6">
         <Slider {...imageSliderSettings}>
           {project.images
             .slice()
@@ -49,7 +49,6 @@ const ProjectCard = ({ project }) => {
         className="description"
         style={{
           margin: "0 auto",
-
         }}
       >
         {project.description}

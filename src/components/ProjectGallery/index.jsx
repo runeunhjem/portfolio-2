@@ -1,5 +1,6 @@
-import { forwardRef } from "react";
+import { forwardRef, useEffect } from "react";
 import Slider from "react-slick";
+import { addAriaLabels } from "../../utilities/accessibilityUtils";
 import * as S from "./index.styled";
 import projectsData from "./projectsData";
 import ProjectCard from "../ProjectCard";
@@ -7,6 +8,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ProjectGallery = forwardRef((_props, ref) => {
+  useEffect(() => {
+    addAriaLabels();
+  }, []);
+
   const gallerySettings = {
     dots: false,
     infinite: true,
