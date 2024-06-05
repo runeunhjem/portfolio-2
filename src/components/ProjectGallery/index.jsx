@@ -1,6 +1,9 @@
 import { forwardRef, useEffect } from "react";
 import Slider from "react-slick";
-import { addAriaLabels } from "../../utilities/accessibilityUtils";
+import {
+  addAriaLabels,
+  updateFocusableElements,
+} from "../../utilities/accessibilityUtils";
 import * as S from "./index.styled";
 import projectsData from "./projectsData";
 import ProjectCard from "../ProjectCard";
@@ -10,6 +13,13 @@ import "slick-carousel/slick/slick-theme.css";
 const ProjectGallery = forwardRef((_props, ref) => {
   useEffect(() => {
     addAriaLabels();
+    updateFocusableElements();
+
+    // Add aria-hidden to cloned slides
+    const clonedSlides = document.querySelectorAll(".slick-cloned");
+    clonedSlides.forEach((slide) => {
+      slide.setAttribute("aria-hidden", "true");
+    });
   }, []);
 
   const gallerySettings = {

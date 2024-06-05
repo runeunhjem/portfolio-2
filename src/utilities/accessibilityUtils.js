@@ -12,3 +12,17 @@ export const addAriaLabels = () => {
     });
   });
 };
+
+export const updateFocusableElements = () => {
+  const ariaHiddenElements = document.querySelectorAll('[aria-hidden="true"]');
+
+  ariaHiddenElements.forEach((element) => {
+    const focusableElements = element.querySelectorAll(
+      "a, button, input, textarea, select, [tabindex]",
+    );
+
+    focusableElements.forEach((focusableElement) => {
+      focusableElement.setAttribute("tabindex", "-1");
+    });
+  });
+};
