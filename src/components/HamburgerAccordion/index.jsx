@@ -53,7 +53,7 @@ const HamburgerAccordion = () => {
             onClick={handleIconClick}
           >
             <MenuIcon
-              className="xs:!text-2xl mx-1 !text-4xl"
+              className="sm:!text-2xl sm:me-3 mx-1 !text-4xl"
               sx={{ color: "var(--stone-600)" }}
             />
           </S.IconContainer>

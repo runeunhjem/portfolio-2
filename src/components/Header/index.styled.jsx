@@ -20,17 +20,18 @@ export const HeaderContainer = styled.header`
 export const InnerContainer = styled.div`
   display: flex;
   width: 100%;
-  max-width: 64rem;
+  max-width: 1200px;
   justify-content: between;
   margin: 0 auto;
+  padding: 0 0.5rem;
 `;
 
 export const LogoLink = styled(Link)`
   z-index: 5000;
-  max-width: 64px;
+  max-width: 300px;
 
   img {
-    max-width: 64px;
+    max-width: 300px;
     margin-left: 0.75rem;
   }
 `;
@@ -39,10 +40,10 @@ export const NavContainer = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 64rem;
+  max-width: 100%;
   flex-direction: column;
   align-items: end;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
 
   > div {
     position: absolute;

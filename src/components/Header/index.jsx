@@ -1,32 +1,23 @@
-// Header.jsx
+import * as S from "./index.styled";
 import HamburgerAccordion from "../HamburgerAccordion";
 import NavBar from "../NavBar";
 import logo from "../../assets/logos/rundev-logo-in-brackets.svg";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header
-      className="mx-auto flex w-full justify-between px-1 py-4 sm:p-4"
-      style={{
-        color: "var(--stone-600)",
-        backgroundColor: "var(--orange-200)",
-        boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.2)",
-        borderBottom: "1px solid var(--stone-400)",
-      }}
-    >
-      <div className="header-container mx-auto flex w-full max-w-4xl justify-between">
-        <Link to="/" className="z-[5000] max-w-64">
-          <img src={logo} alt="RUNDEV Logo" className="max-w-64 ms-3" />
-        </Link>
-        <div className="nav-container relative mx-auto flex w-full max-w-4xl flex-col items-end">
-          <div style={{ position: "absolute", top: 0, right: 0, zIndex: 1000 }}>
+    <S.HeaderContainer>
+      <S.InnerContainer>
+        <S.LogoLink to="/">
+          <img src={logo} alt="RUNDEV Logo" />
+        </S.LogoLink>
+        <S.NavContainer>
+          <div>
             <HamburgerAccordion />
           </div>
           <NavBar />
-        </div>
-      </div>
-    </header>
+        </S.NavContainer>
+      </S.InnerContainer>
+    </S.HeaderContainer>
   );
 };
 

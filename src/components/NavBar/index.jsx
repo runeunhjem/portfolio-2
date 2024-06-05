@@ -1,33 +1,27 @@
-import { NavLink } from "react-router-dom";
+import * as S from "./index.styled";
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar xs:flex mr-3 mt-11 hidden justify-between z-[1001]">
-      <NavLink
+    <S.NavBarContainer className="nav-bar">
+      <S.StyledNavLink
         to="/"
-        className={({ isActive }) =>
-          `hover-links mr-2 ${isActive ? "font-bold" : ""}`
-        }
+        className={({ isActive }) => (isActive ? "active" : "hover-links")}
       >
         Home
-      </NavLink>
-      <NavLink
+      </S.StyledNavLink>
+      <S.StyledNavLink
         to="/about"
-        className={({ isActive }) =>
-          `hover-links mr-2 ${isActive ? "font-bold" : ""}`
-        }
+        className={({ isActive }) => (isActive ? "active" : "hover-links")}
       >
         About
-      </NavLink>
-      <NavLink
+      </S.StyledNavLink>
+      <S.StyledNavLink
         to="/contact"
-        className={({ isActive }) =>
-          `hover-links ${isActive ? "font-bold" : ""}`
-        }
+        className={({ isActive }) => (isActive ? "active" : "hover-links")}
       >
         Contact
-      </NavLink>
-    </nav>
+      </S.StyledNavLink>
+    </S.NavBarContainer>
   );
 };
 
