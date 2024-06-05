@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
             ))}
         </Slider>
         <div className="carousel-counter !mb-0 pt-4 ">
-          {project.images.length} images
+          {project.images.length} images (Hover to stop slider)
         </div>
       </div>
       <p
