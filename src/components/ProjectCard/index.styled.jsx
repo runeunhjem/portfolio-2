@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const Project = styled.div`
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto !important;
   background: var(--orange-100);
   /* box-shadow: inset -1px -1px 10px rgba(0, 0, 0, 0.6); */
   border-radius: 12px;
   text-align: center;
   overflow: hidden;
+  /* align-items: center; */
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     padding: 0.5rem;
   }
   @media (min-width: 1200px) {
@@ -18,24 +19,26 @@ export const Project = styled.div`
     margin: 0 auto !important;
   }
   h3 {
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-width: 90%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
 
-    @media (max-width: 600px) {
-      font-size: 1.2rem;
+    @media (max-width: 640px) {
+      font-size: 1.5rem;
       margin: 0.5rem 0;
     }
   }
 
   p {
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-width: 90%;
     font-size: 1rem;
     font-weight: 500;
+    text-align: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       font-size: 0.875rem;
       margin: 0.25rem 0;
     }
@@ -54,7 +57,7 @@ export const Project = styled.div`
     /* position:  relative; */
     justify-content: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       margin: 0.5rem 0;
       height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
     }
@@ -79,7 +82,7 @@ export const Project = styled.div`
     .slick-next {
       z-index: 1000;
       right: 20px;
-      @media (max-width: 600px) {
+      @media (max-width: 640px) {
         right: 0px;
       }
       @media (max-width: 1069px) {

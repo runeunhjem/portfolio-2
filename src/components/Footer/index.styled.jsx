@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const FooterWrapper = styled.footer`
   width: 100%;
-  background-color: var(--orange-100);
+  background-color: var(--orange-200);
   padding-bottom: 2rem;
   text-align: center;
   color: var(--stone-600);
@@ -20,7 +20,7 @@ export const FooterContent = styled.div`
   width: 92vw;
   max-width: 1400px;
   /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6); */
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

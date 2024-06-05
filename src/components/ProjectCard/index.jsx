@@ -20,8 +20,8 @@ const ProjectCard = ({ project }) => {
   return (
     <S.Project>
       <h3>{project.title}</h3>
-      <p>{project.tagline}</p>
-      <p className="text-red-600">{project.login}</p>
+      <p className="!text-xl">{project.tagline}</p>
+      <p className="text-red-600 text-center">{project.login}</p>
       <div className="carousel-container pt-6 pb-2 px-6">
         <Slider {...imageSliderSettings}>
           {project.images
