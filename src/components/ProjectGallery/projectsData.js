@@ -30,47 +30,47 @@ import chefsTable8 from "../../assets/images/chefs-table/ct-8.webp";
 
 import movieTalk1 from "../../assets/images/movietalk/mt-1.png";
 import movieTalk2 from "../../assets/images/movietalk/mt-2.png";
-import movieTalk3 from "../../assets/images/movietalk/mt-3.png";
+import movieTalk3 from "../../assets/images/movietalk/mt-3.webp";
 import movieTalk4 from "../../assets/images/movietalk/mt-4.png";
 import movieTalk5 from "../../assets/images/movietalk/mt-5.png";
 import movieTalk6 from "../../assets/images/movietalk/mt-6.png";
 import movieTalk7 from "../../assets/images/movietalk/mt-7.png";
-import movieTalk8 from "../../assets/images/movietalk/mt-8.png";
+import movieTalk8 from "../../assets/images/movietalk/mt-8.webp";
 
-import dreamBids1 from "../../assets/images/dreambids/db-1.png";
-import dreamBids2 from "../../assets/images/dreambids/db-2.png";
+import dreamBids1 from "../../assets/images/dreambids/db-1.webp";
+import dreamBids2 from "../../assets/images/dreambids/db-2.webp";
 import dreamBids3 from "../../assets/images/dreambids/db-3.png";
 import dreamBids4 from "../../assets/images/dreambids/db-4.png";
-import dreamBids5 from "../../assets/images/dreambids/db-5.png";
+import dreamBids5 from "../../assets/images/dreambids/db-5.webp";
 import dreamBids6 from "../../assets/images/dreambids/db-6.png";
-import dreamBids7 from "../../assets/images/dreambids/db-7.png";
-import dreamBids8 from "../../assets/images/dreambids/db-8.png";
-import dreamBids9 from "../../assets/images/dreambids/db-9.png";
+import dreamBids7 from "../../assets/images/dreambids/db-7.webp";
+import dreamBids8 from "../../assets/images/dreambids/db-8.webp";
+import dreamBids9 from "../../assets/images/dreambids/db-9.webp";
 import dreamBids10 from "../../assets/images/dreambids/db-10.png";
 
-import cgg1 from "../../assets/images/cgg/cgg-1.png";
-import cgg2 from "../../assets/images/cgg/cgg-2.png";
-import cgg3 from "../../assets/images/cgg/cgg-3.png";
-import cgg4 from "../../assets/images/cgg/cgg-4.png";
-import cgg5 from "../../assets/images/cgg/cgg-5.png";
-import cgg6 from "../../assets/images/cgg/cgg-6.png";
-import cgg7 from "../../assets/images/cgg/cgg-7.png";
-import cgg8 from "../../assets/images/cgg/cgg-8.png";
-import cgg9 from "../../assets/images/cgg/cgg-9.png";
+import cgg1 from "../../assets/images/cgg/cgg-1.webp";
+import cgg2 from "../../assets/images/cgg/cgg-2.webp";
+import cgg3 from "../../assets/images/cgg/cgg-3.webp";
+import cgg4 from "../../assets/images/cgg/cgg-4.webp";
+import cgg5 from "../../assets/images/cgg/cgg-5.webp";
+import cgg6 from "../../assets/images/cgg/cgg-6.webp";
+import cgg7 from "../../assets/images/cgg/cgg-7.webp";
+import cgg8 from "../../assets/images/cgg/cgg-8.webp";
+import cgg9 from "../../assets/images/cgg/cgg-9.webp";
 
-import holidaze1 from "../../assets/images/holidaze/hd-01.png";
-import holidaze2 from "../../assets/images/holidaze/hd-02.png";
-import holidaze3 from "../../assets/images/holidaze/hd-03.png";
-import holidaze4 from "../../assets/images/holidaze/hd-04.png";
+import holidaze1 from "../../assets/images/holidaze/hd-01.webp";
+import holidaze2 from "../../assets/images/holidaze/hd-02.webp";
+import holidaze3 from "../../assets/images/holidaze/hd-03.webp";
+import holidaze4 from "../../assets/images/holidaze/hd-04.webp";
 import holidaze5 from "../../assets/images/holidaze/hd-05.png";
-import holidaze6 from "../../assets/images/holidaze/hd-06.png";
+import holidaze6 from "../../assets/images/holidaze/hd-06.webp";
 import holidaze7 from "../../assets/images/holidaze/hd-07.png";
 import holidaze8 from "../../assets/images/holidaze/hd-08.png";
-import holidaze9 from "../../assets/images/holidaze/hd-09.png";
-import holidaze10 from "../../assets/images/holidaze/hd-10.png";
-import holidaze11 from "../../assets/images/holidaze/hd-11.png";
-import holidaze12 from "../../assets/images/holidaze/hd-12.png";
-import holidaze13 from "../../assets/images/holidaze/hd-13.png";
+import holidaze9 from "../../assets/images/holidaze/hd-09.webp";
+import holidaze10 from "../../assets/images/holidaze/hd-10.webp";
+import holidaze11 from "../../assets/images/holidaze/hd-11.webp";
+import holidaze12 from "../../assets/images/holidaze/hd-12.webp";
+import holidaze13 from "../../assets/images/holidaze/hd-13.webp";
 
 const projectsData = [
   {
