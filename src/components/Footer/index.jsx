@@ -9,6 +9,11 @@ import {
 } from "react-icons/fa";
 import * as S from "./index.styled";
 
+/**
+ * Footer component for the application.
+ * Provides navigation links, contact information, and social media links.
+ * @returns {JSX.Element} The Footer component.
+ */
 const Footer = () => {
   return (
     <S.FooterWrapper>
@@ -32,7 +37,8 @@ const Footer = () => {
             </S.FooterLink>
             <S.ExternalLink
               href="https://github.com/runeunhjem/portfolio-2/blob/main/README.md"
-              style={{ width: "120px" }}
+              style={ { width: "120px" } }
+              target="_blank"
             >
               README
             </S.ExternalLink>

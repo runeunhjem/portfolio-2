@@ -1,5 +1,10 @@
 import * as S from "./index.styled";
 
+/**
+ * NavBar component that provides navigation links for the application.
+ *
+ * @returns {JSX.Element} The NavBar component.
+ */
 const NavBar = () => {
   return (
     <S.NavBarContainer className="nav-bar">

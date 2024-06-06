@@ -16,11 +16,20 @@ import {
   updateFocusableElements,
 } from "../../utilities/accessibilityUtils";
 
+/**
+ * A responsive HamburgerAccordion component for navigation.
+ * @returns {JSX.Element} The HamburgerAccordion component.
+ */
 const HamburgerAccordion = () => {
   const [expanded, setExpanded] = useState(false);
   const accordionRef = useRef(null);
   const navigate = useNavigate();
 
+  /**
+   * Handles click events on links.
+   * @param {string} url - The URL to navigate to.
+   * @param {boolean} isInternal - Whether the URL is internal.
+   */
   const handleClick = (url, isInternal) => {
     setExpanded(false);
     if (isInternal) {
@@ -30,6 +39,10 @@ const HamburgerAccordion = () => {
     }
   };
 
+  /**
+   * Handles click events outside the accordion to collapse it.
+   * @param {Event} event - The click event.
+   */
   const handleOutsideClick = (event) => {
     if (accordionRef.current && !accordionRef.current.contains(event.target)) {
       setExpanded(false);
@@ -45,6 +58,10 @@ const HamburgerAccordion = () => {
     };
   }, []);
 
+  /**
+   * Toggles the expansion of the accordion when the icon is clicked.
+   * @param {Event} event - The click event.
+   */
   const handleIconClick = (event) => {
     event.stopPropagation();
     setExpanded(!expanded);

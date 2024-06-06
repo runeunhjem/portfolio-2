@@ -34,5 +34,5 @@ export const otherProjectsLinks = [
 
 export const portfolioLink = {
   text: "Portfolio README",
-  url: "https://github.com/runeunhjem/portfolio1-ca/blob/main/README.md",
+  url: "https://github.com/runeunhjem/portfolio-2/blob/main/README.md",
 };

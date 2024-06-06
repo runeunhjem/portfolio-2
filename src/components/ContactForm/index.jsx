@@ -3,6 +3,10 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import * as S from "./index.styled";
 
+/**
+ * ContactForm component for sending emails via a form.
+ * @returns {JSX.Element} The ContactForm component.
+ */
 const ContactForm = () => {
   const {
     register,
@@ -10,9 +14,24 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm();
+
+  /**
+   * State for storing the success message.
+   * @type {[string, Function]}
+   */
   const [successMessage, setSuccessMessage] = useState("");
+
+  /**
+   * State for storing error status.
+   * @type {[boolean, Function]}
+   */
   const [isError, setIsError] = useState(false);
 
+  /**
+   * Handles the form submission.
+   * Sends an email via emailjs and sets appropriate success or error messages.
+   * @param {Object} data - The form data.
+   */
   const onSubmit = (data) => {
     emailjs
       .send("service_dg16lkq", "template_23o8209", data, "t4EstH4lvuyAN_D0M")
@@ -33,6 +52,9 @@ const ContactForm = () => {
       );
   };
 
+  /**
+   * Effect to clear the success message after a timeout.
+   */
   useEffect(() => {
     if (successMessage) {
       const timer = setTimeout(() => {
@@ -44,7 +66,6 @@ const ContactForm = () => {
 
   return (
     <S.FormContainer onSubmit={handleSubmit(onSubmit)}>
-      {/* <S.ContactInfoHeader>Mail Me</S.ContactInfoHeader> */}
       <S.FormGroup>
         <S.InputLabel htmlFor="name">Name</S.InputLabel>
         <S.FormInput

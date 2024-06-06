@@ -6,6 +6,10 @@ import logo from "../../assets/logos/rundev-logo-in-brackets.svg";
 // Lazy load the HamburgerAccordion component
 const HamburgerAccordion = lazy(() => import("../HamburgerAccordion"));
 
+/**
+ * Header component containing the site logo, navigation bar, and hamburger accordion.
+ * @returns {JSX.Element} The Header component.
+ */
 const Header = () => {
   return (
     <S.HeaderContainer>
