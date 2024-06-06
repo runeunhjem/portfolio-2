@@ -14,11 +14,12 @@
 
 ## Description
 
-Portfolio-2 is a project that was created as a part of the final exam in the course Frontend Development 2 at Noroff.
+Portfolio-2 is our last school project that was created as at the end of the course Frontend Development 2 at Noroff.
 
-The project is a fictional venue booking site where users can book hotels, send inquiries, and read more about the venues or add their own venues for other users to look at or book.
+The project is made to have a place to display our school / relevant projects.
 
-The project is built with Vite, React and MUI, and the data is fetched from Noroff's Holidaze API.
+The project is built with Vite, React and Tailwind CSS and the Project Gallery is displaying
+the projects made during my time at Noroff's FED education.
 
 The project is responsive and works on all devices.
 
@@ -34,34 +35,44 @@ The project is responsive and works on all devices.
 <br />
 <div align="center">
   <a href="https://github.com/runeunhjem/portfolio-2">
-    <img src="./src/assets/logo/holidaze.png" alt="Portfolio-2 Logo">
+    <img src="/src/assets/logos/rundev-logo-in-brackets.svg" alt="RUNDEV Logo">
   </a>
 
-  <h3 align="center">Project Exam 2 - Portfolio-2 - Built with React</h3>
+  <h3 align="center">Portfolio 2 - Built with React, Vite and Tailwind CSS</h3>
 
   <p align="left">
-    A newly launched accommodation booking site called Holidaze has approached you to develop a brand new front end for their application.
-  </p>
-
-  <p align="left">
-    While they have a list of required features, the design and user experience has not been specified.
+    As a developer, you will have to maintain a level of professionalism. This extends past writing code. We need to document our apps so that other developers can run the code without any issues. We also need to keep a professional-looking portfolio so that others have confidence in us and the work that we do.
   </p>
 
   <p align="left">
-    Working with the official API documentation, plan, design and build a modern front end accommodation booking application.
+    In this assignment, you will be documenting three prior submissions from the first year:
+  </p>
+
+      1. Semester Project 2
+      2 JavaScript Frameworks CA
+      3 Project Exam 2
+
+  <p align="left">
+    You will be creating a README.md file at the root of each of these projects and then documenting the submissions following a given format.
   </p>
 
   <p align="left">
-    There are two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue,
-    and an admin-facing side of the website where users can register and manage venues and bookings at those venues.
+    You will then also be creating a README.md for your own personal GitHub profile.
   </p>
 
   <p align="left">
-    All API functionality is managed by an existing application.
+    Lastly, you will be creating a portfolio webpage that lists these 3 projects.
   </p>
   <p align="left">
-    This project only covers the front-end application for the API.
+    This page must:
   </p>
+
+    *List the 3 projects as cards
+      Each card must have:
+        * the title of the project,
+        * a description,
+        * a screenshot of how the project looks when running,
+        * a link to the GitHub repo and a live site if it is online.
 
 <br />
 <a href="https://github.com/runeunhjem/portfolio-2"><strong>Explore the docs »</strong></a>
@@ -100,17 +111,17 @@ The project is responsive and works on all devices.
 
 ## About The Project
 
-[![Portfolio-2 Screen Shot](src/assets/images/holidaze-home.jpg)](https://github.com/runeunhjem/portfolio-2)
+[![Portfolio-2 Screen Shot](src/assets/images/portfolio.jpg)](https://github.com/runeunhjem/portfolio-2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tools used in the projects
 
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23F24E1E.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23007ACC.svg?style=for-the-badge&logo=vite&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23007ACC.svg?style=for-the-badge&logo=vite&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ### Languages used in the projects
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +163,7 @@ In order to edit and work with the site locally, you need a code editor.
 
 ## Usage
 
-The Portfolio-2 project serves as a comprehensive online portfolio and e-commerce site. It is responsive and optimized for all devices, ensuring a seamless user experience.
+The Portfolio-2 project serves as a comprehensive online portfolio. It is responsive and optimized for all devices, ensuring a seamless user experience.
 
 You can view the latest version of the site at [https://rundev-portfolio.netlify.app/](https://rundev-portfolio.netlify.app/).
 
@@ -166,13 +177,8 @@ You can view the latest version of the site at [https://rundev-portfolio.netlify
 - [x] Develop the Footer component
 - [x] Implement the Layout component
 - [x] Design the Homepage
-- [x] Add the Destinations page
-- [x] Create the Venue details page
-- [x] Develop the Profile page
 - [x] Add the Contact page
 - [x] Add the About page
-- [x] Implement Booking functionalities
-- [x] Add edit and delete functionalities
 - [x] Perform testing and debugging
 
 For a detailed list of proposed features and known issues, see the [open issues](https://github.com/runeunhjem/portfolio-2/issues).
@@ -205,7 +211,7 @@ Call me - [+47 93 26 76 11](tel:+4793267611)
 
 Email - [runeunhjem@gmail.com](mailto:runeunhjem@gmail.com)
 
-Web (Portfolio) - [Rune Unhjem](https://portfolio1-ca.netlify.app/)
+Web (Portfolio) - [Rune Unhjem](https://rundev-portfolio.netlify.app/)
 
 GitHub - [runeunhjem](https://github.com/runeunhjem)
 
@@ -224,7 +230,7 @@ My music project on Spotify - [Rune Unhjem | -=ThE rUnIcOrN=-](https://open.spot
 - [Unsplash.com](https://unsplash.com/)
 - [Iconfinder.com](https://www.iconfinder.com/)
 - [Othneil Drew | README.md template](https://github.com/othneildrew/)
-- [Tailwind](https://tailwindcss.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Lorem Picsum](https://picsum.photos/)
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
@@ -247,5 +253,4 @@ My music project on Spotify - [Rune Unhjem | -=ThE rUnIcOrN=-](https://open.spot
 [license-url]: https://github.com/runeunhjem/portfolio-2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/runeunhjem
-[product-screenshot]: ./public/holidaze.png
-
+[product-screenshot]: /portfolio.jpg
