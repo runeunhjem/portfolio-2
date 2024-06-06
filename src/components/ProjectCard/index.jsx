@@ -26,8 +26,6 @@ const ProjectCard = ({ project }) => {
       <div className="carousel-container px-6 pb-2 pt-6">
         <Slider {...imageSliderSettings}>
           {project.images
-            .slice()
-            .reverse()
             .map((image, idx) => (
               <div key={idx} className="image-wrap w-full">
                 <img

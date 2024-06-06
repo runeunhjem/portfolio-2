@@ -53,13 +53,11 @@ export const Project = styled.div`
     overflow: hidden;
     margin: 0 auto;
     position: relative !important;
-    /* max-width: 90% !important; */
-    /* position:  relative; */
     justify-content: center;
 
     @media (max-width: 640px) {
       margin: 0.5rem 0;
-      height: auto; // CONTAINER HEIGHT MUST BE RESPONSIVE, BUT IMAGE HEIGHT MUST BE FIXED
+      height: auto;
     }
 
     .slick-slide {
@@ -93,7 +91,8 @@ export const Project = styled.div`
     .image-wrap {
       border-radius: 14px !important;
       img {
-        border: 1px solid var(--stone-600);
+        /* border: 1px solid var(--stone-600); */
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
         display: flex;
         justify-content: center;
         margin: 0 auto;
