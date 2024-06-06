@@ -4,7 +4,7 @@ import { CssBaseline } from "@mui/material";
 import Layout from "../Layout";
 import projectsData from "../ProjectGallery/projectsData";
 
-// Lazy load the page components
+
 const HomePage = lazy(() => import("../../pages/HomePage"));
 const AboutPage = lazy(() => import("../../pages/AboutPage"));
 const ContactPage = lazy(() => import("../../pages/ContactPage"));
