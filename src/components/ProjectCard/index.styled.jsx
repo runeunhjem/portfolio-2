@@ -111,7 +111,7 @@ export const Project = styled.div`
           @media screen and (max-width: 468px) {
             height: 200px;
         }
-          @media screen and (min-width: 969px) {
+          @media screen and (min-width: 468px) {
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
         }
       }
