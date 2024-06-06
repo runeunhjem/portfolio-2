@@ -1,5 +1,7 @@
-import ContactForm from "../../components/ContactForm";
+import { lazy, Suspense } from "react";
 import * as S from "../../components/ContactForm/index.styled";
+
+const ContactForm = lazy(() => import("../../components/ContactForm"));
 
 const ContactPage = () => {
   return (
@@ -59,7 +61,9 @@ const ContactPage = () => {
           </S.ContactLink>
         </S.ContactInfo>
       </S.InfoSection>
-      <ContactForm />
+      <Suspense fallback={<div>Loading contact form...</div>}>
+        <ContactForm />
+      </Suspense>
     </div>
   );
 };
