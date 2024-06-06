@@ -11,6 +11,10 @@ import {
   portfolioLink,
 } from "./links";
 import * as S from "./index.styled";
+import {
+  addAriaLabels,
+  updateFocusableElements,
+} from "../../utilities/accessibilityUtils";
 
 const HamburgerAccordion = () => {
   const [expanded, setExpanded] = useState(false);
@@ -34,6 +38,8 @@ const HamburgerAccordion = () => {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
+    addAriaLabels();
+    updateFocusableElements();
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
@@ -47,10 +53,9 @@ const HamburgerAccordion = () => {
   return (
     <S.Accordion expanded={expanded} ref={accordionRef}>
       <S.AccordionSummary
-
         expandIcon={
           <S.IconContainer
-            className="hover-links xs:!mx-1 !mx-3 !cursor-pointer"
+            className="hover-links !mx-3 !cursor-pointer xs:!mx-1"
             onClick={handleIconClick}
           >
             <MenuIcon
@@ -67,7 +72,6 @@ const HamburgerAccordion = () => {
             padding: "0 1rem 0 0 !important",
             "@media (max-width: 640px)": {
               padding: "0 0 0 0 !important",
-
             },
           },
         }}

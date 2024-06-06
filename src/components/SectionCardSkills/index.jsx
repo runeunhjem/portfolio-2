@@ -50,11 +50,11 @@ const SectionCardSkills = () => {
               quick and responsive UI development.
             </li>
             <li>
-              <strong>Vite</strong>: Familiar with Vite for fast and optimized
-              development builds.
+              <strong>Vite</strong>: Proficient in using Vite for efficient and
+              optimized development builds.
             </li>
             <li>
-              <strong>React</strong>: Competent in building dynamic and
+              <strong>React</strong>: Experienced in building dynamic and
               interactive web applications using React.
             </li>
             <li>
@@ -70,21 +70,21 @@ const SectionCardSkills = () => {
             >
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg"
-                alt="Photoshop"
+                alt="Illustration of the Photoshop icon"
               />
               <span className="visually-hidden">Photoshop</span>
             </a>
             <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg"
-                alt="Figma"
+                alt="Illustration of the Figma icon"
               />
               <span className="visually-hidden">Figma</span>
             </a>
             <a href="https://wordpress.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://skillicons.dev/icons?i=wordpress"
-                alt="WordPress"
+                alt="Illustration of the WordPress icon"
               />
               <span className="visually-hidden">WordPress</span>
             </a>
@@ -93,7 +93,10 @@ const SectionCardSkills = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="https://skillicons.dev/icons?i=vscode" alt="VSC" />
+              <img
+                src="https://skillicons.dev/icons?i=vscode"
+                alt="Illustration of the VSC icon"
+              />
               <span className="visually-hidden">VSC</span>
             </a>
             <a
@@ -103,7 +106,7 @@ const SectionCardSkills = () => {
             >
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                alt="HTML5"
+                alt="Illustration of the HTML5 icon"
               />
               <span className="visually-hidden">HTML5</span>
             </a>
@@ -114,14 +117,14 @@ const SectionCardSkills = () => {
             >
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                alt="CSS3"
+                alt="Illustration of the CSS3 icon"
               />
               <span className="visually-hidden">CSS3</span>
             </a>
             <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg"
-                alt="Sass"
+                alt="Illustration of the Sass icon"
               />
               <span className="visually-hidden">Sass</span>
             </a>
@@ -132,7 +135,7 @@ const SectionCardSkills = () => {
             >
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                alt="JavaScript"
+                alt="Illustration of the JavaScript icon"
               />
               <span className="visually-hidden">JavaScript</span>
             </a>
@@ -143,28 +146,28 @@ const SectionCardSkills = () => {
             >
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg"
-                alt="Bootstrap"
+                alt="Illustration of the Bootstrap icon"
               />
               <span className="visually-hidden">Bootstrap</span>
             </a>
             <a href="https://vite.org/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
-                alt="Vite"
+                alt="Illustration of the Vite icon"
               />
               <span className="visually-hidden">Vite</span>
             </a>
             <a href="https://react.dev/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                alt="React"
+                alt="Illustration of the React icon"
               />
               <span className="visually-hidden">React</span>
             </a>
             <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
-                alt="Tailwind CSS"
+                alt="Illustration of the Tailwind CSS icon"
               />
               <span className="visually-hidden">Tailwind CSS</span>
             </a>

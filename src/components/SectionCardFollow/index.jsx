@@ -40,7 +40,7 @@ const SectionCardFollow = () => {
                 href="https://discord.gg/F6bqMEqR"
                 target="_blank"
                 rel="noreferrer"
-                className="!text-red-600 hover:underline hover:text-red-800"
+                className="!text-red-700 hover:underline hover:text-red-800"
                 style={{ whiteSpace: "nowrap" }}
               >
                 The Coffee Table
