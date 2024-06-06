@@ -9,15 +9,15 @@ import gamehub8 from "../../assets/images/gamehub/gamehub-8.webp";
 import gamehub9 from "../../assets/images/gamehub/gamehub-9.webp";
 import gamehub10 from "../../assets/images/gamehub/gamehub-10.webp";
 
-import csm1 from "../../assets/images/csm/cms-1.jpg";
-import csm2 from "../../assets/images/csm/cms-2.jpg";
-import csm3 from "../../assets/images/csm/cms-3.jpg";
-import csm4 from "../../assets/images/csm/cms-4.jpg";
-import csm5 from "../../assets/images/csm/cms-5.jpg";
-import csm6 from "../../assets/images/csm/cms-6.jpg";
-import csm7 from "../../assets/images/csm/cms-7.jpg";
-import csm8 from "../../assets/images/csm/cms-8.jpg";
-import csm9 from "../../assets/images/csm/cms-9.jpg";
+import csm1 from "../../assets/images/csm/cms-1.webp";
+import csm2 from "../../assets/images/csm/cms-2.webp";
+import csm3 from "../../assets/images/csm/cms-3.webp";
+import csm4 from "../../assets/images/csm/cms-4.webp";
+import csm5 from "../../assets/images/csm/cms-5.webp";
+import csm6 from "../../assets/images/csm/cms-6.webp";
+import csm7 from "../../assets/images/csm/cms-7.webp";
+import csm8 from "../../assets/images/csm/cms-8.webp";
+import csm9 from "../../assets/images/csm/cms-9.webp";
 
 import chefsTable1 from "../../assets/images/chefs-table/ct-1.jpg";
 import chefsTable2 from "../../assets/images/chefs-table/ct-2.jpg";

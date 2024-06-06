@@ -10,7 +10,7 @@ const urlsToCache = [
   "/src/assets/images/rune-social-pic.webp",
   "/src/assets/images/rune-skills-pic.webp",
 
-  // Game Hub images
+  // Game Hub images - webp updated
   "/src/assets/images/gamehub/gamehub-1.webp",
   "/src/assets/images/gamehub/gamehub-2.webp",
   "/src/assets/images/gamehub/gamehub-3.jpg",
@@ -21,16 +21,16 @@ const urlsToCache = [
   "/src/assets/images/gamehub/gamehub-8.webp",
   "/src/assets/images/gamehub/gamehub-9.webp",
   "/src/assets/images/gamehub/gamehub-10.webp",
-  // CSM images
-  "/src/assets/images/csm/cms-1.jpg",
-  "/src/assets/images/csm/cms-2.jpg",
-  "/src/assets/images/csm/cms-3.jpg",
-  "/src/assets/images/csm/cms-4.jpg",
-  "/src/assets/images/csm/cms-5.jpg",
-  "/src/assets/images/csm/cms-6.jpg",
-  "/src/assets/images/csm/cms-7.jpg",
-  "/src/assets/images/csm/cms-8.jpg",
-  "/src/assets/images/csm/cms-9.jpg",
+  // CSM images - webp updated
+  "/src/assets/images/csm/cms-1.webp",
+  "/src/assets/images/csm/cms-2.webp",
+  "/src/assets/images/csm/cms-3.webp",
+  "/src/assets/images/csm/cms-4.webp",
+  "/src/assets/images/csm/cms-5.webp",
+  "/src/assets/images/csm/cms-6.webp",
+  "/src/assets/images/csm/cms-7.webp",
+  "/src/assets/images/csm/cms-8.webp",
+  "/src/assets/images/csm/cms-9.webp",
   // Chef's Table images
   "/src/assets/images/chefs-table/ct-1.jpg",
   "/src/assets/images/chefs-table/ct-2.jpg",
