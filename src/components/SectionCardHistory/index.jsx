@@ -1,6 +1,7 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
-import profilePicYoungster from "../../assets/images/rune-profile-pic-youngster.png";
+import profilePicYoungster from "../../assets/images/rune-profile-pic-youngster.webp";
+// import profilePicYoungster from "../../assets/images/rune-profile-pic-youngster.png";
 
 const SectionCardHistory = () => {
   return (

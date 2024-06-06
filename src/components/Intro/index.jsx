@@ -1,5 +1,6 @@
 import * as S from "./index.styled";
-import introImage from "../../assets/images/rune-profile-pic-medium.png";
+import introImage from "../../assets/images/rune-profile-pic-medium.webp";
+// import introImage from "../../assets/images/rune-profile-pic-medium.png";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 

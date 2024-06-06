@@ -9,7 +9,8 @@ import {
 } from "react-icons/fa";
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
-import followPic from "../../assets/images/rune-social-pic.png";
+import followPic from "../../assets/images/rune-social-pic.webp";
+// import followPic from "../../assets/images/rune-social-pic.png";
 import { FaX } from "react-icons/fa6";
 
 const SectionCardFollow = () => {

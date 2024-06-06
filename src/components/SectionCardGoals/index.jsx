@@ -1,6 +1,7 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
-import goalsPic from "../../assets/images/rune-goals-pic.png";
+import goalsPic from "../../assets/images/rune-goals-pic.webp";
+// import goalsPic from "../../assets/images/rune-goals-pic.png";
 
 const SectionCardGoals = () => {
   return (

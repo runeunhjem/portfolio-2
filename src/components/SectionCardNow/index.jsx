@@ -1,6 +1,7 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
-import profilePicMedium from "../../assets/images/rune-profile-pic-medium.png";
+import profilePicMedium from "../../assets/images/rune-profile-pic-medium.webp";
+// import profilePicMedium from "../../assets/images/rune-profile-pic-medium.png";
 
 const SectionCardNow = () => {
   return (

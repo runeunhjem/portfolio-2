@@ -4,8 +4,17 @@ const urlsToCache = [
   "/index.html",
   "/src/main.jsx",
   "/src/assets/logos/rundev-logo-in-brackets.svg",
-  "/src/assets/images/rune-social-pic.png",
-  "/src/assets/images/rune-skills-pic.png",
+  "/src/assets/images/rune-profile-pic-medium.webp",
+  // "/src/assets/images/rune-profile-pic-medium.png",
+  "/src/assets/images/rune-profile-pic-youngster.webp",
+  // "/src/assets/images/rune-profile-pic-youngster.png",
+  "/src/assets/images/rune-goals-pic.webp",
+  // "/src/assets/images/rune-goals-pic.png",
+  "/src/assets/images/rune-social-pic.webp",
+  // "/src/assets/images/rune-social-pic.png",
+  "/src/assets/images/rune-skills-pic.webp",
+  // "/src/assets/images/rune-skills-pic.png",
+  
   // Add all other assets and images paths here
   // Game Hub images
   "/src/assets/images/gamehub/gamehub-1.jpg",

@@ -1,6 +1,7 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
-import skillsPic from "../../assets/images/rune-skills-pic.png";
+import skillsPic from "../../assets/images/rune-skills-pic.webp";
+// import skillsPic from "../../assets/images/rune-skills-pic.png";
 
 const SectionCardSkills = () => {
   return (
