@@ -1,7 +1,10 @@
 import * as S from "./index.styled";
-import HamburgerAccordion from "../HamburgerAccordion";
+import { lazy, Suspense } from "react";
 import NavBar from "../NavBar";
 import logo from "../../assets/logos/rundev-logo-in-brackets.svg";
+
+// Lazy load the HamburgerAccordion component
+const HamburgerAccordion = lazy(() => import("../HamburgerAccordion"));
 
 const Header = () => {
   return (
@@ -12,7 +15,9 @@ const Header = () => {
         </S.LogoLink>
         <S.NavContainer>
           <div>
-            <HamburgerAccordion />
+            <Suspense fallback={<div>Loading...</div>}>
+              <HamburgerAccordion />
+            </Suspense>
           </div>
           <NavBar />
         </S.NavContainer>
