@@ -19,14 +19,14 @@ import csm7 from "../../assets/images/csm/cms-7.webp";
 import csm8 from "../../assets/images/csm/cms-8.webp";
 import csm9 from "../../assets/images/csm/cms-9.webp";
 
-import chefsTable1 from "../../assets/images/chefs-table/ct-1.jpg";
-import chefsTable2 from "../../assets/images/chefs-table/ct-2.jpg";
-import chefsTable3 from "../../assets/images/chefs-table/ct-3.jpg";
-import chefsTable4 from "../../assets/images/chefs-table/ct-4.jpg";
-import chefsTable5 from "../../assets/images/chefs-table/ct-5.jpg";
-import chefsTable6 from "../../assets/images/chefs-table/ct-6.jpg";
-import chefsTable7 from "../../assets/images/chefs-table/ct-7.jpg";
-import chefsTable8 from "../../assets/images/chefs-table/ct-8.jpg";
+import chefsTable1 from "../../assets/images/chefs-table/ct-1.webp";
+import chefsTable2 from "../../assets/images/chefs-table/ct-2.webp";
+import chefsTable3 from "../../assets/images/chefs-table/ct-3.webp";
+import chefsTable4 from "../../assets/images/chefs-table/ct-4.webp";
+import chefsTable5 from "../../assets/images/chefs-table/ct-5.webp";
+import chefsTable6 from "../../assets/images/chefs-table/ct-6.webp";
+import chefsTable7 from "../../assets/images/chefs-table/ct-7.webp";
+import chefsTable8 from "../../assets/images/chefs-table/ct-8.webp";
 
 import movieTalk1 from "../../assets/images/movietalk/mt-1.png";
 import movieTalk2 from "../../assets/images/movietalk/mt-2.png";
