@@ -16,11 +16,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <!-- Preload Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
 
     <!-- Main script -->
     <script type="module" src="/src/main.jsx" defer></script>
+
+    <!-- Inline Critical CSS -->
+    <style>
+      /* Add the critical CSS needed to render above-the-fold content */
+      body {
+        font-family: 'KoHo', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffedd5;
+        color: #57534e;
+      }
+      /* Include more critical CSS here */
+    </style>
   </head>
   <body>
     <div id="root"></div>
