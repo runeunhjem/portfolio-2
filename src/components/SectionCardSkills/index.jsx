@@ -1,8 +1,12 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import skillsPic from "../../assets/images/rune-skills-pic.webp";
-// import skillsPic from "../../assets/images/rune-skills-pic.png";
 
+/**
+ * SectionCardSkills component displays a section with skills information and an image.
+ *
+ * @returns {JSX.Element} The SectionCardSkills component.
+ */
 const SectionCardSkills = () => {
   return (
     <S.SectionCard id="skills-section">
@@ -151,7 +155,7 @@ const SectionCardSkills = () => {
               />
               <span className="visually-hidden">Bootstrap</span>
             </a>
-            <a href="https://vite.org/" target="_blank" rel="noreferrer">
+            <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
                 alt="Illustration of the Vite icon"

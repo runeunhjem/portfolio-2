@@ -10,6 +10,13 @@ import ProjectCard from "../ProjectCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/**
+ * ProjectGallery component that displays a gallery of projects using a slider.
+ *
+ * @param {Object} _props - The component props.
+ * @param {React.Ref} ref - The ref to be forwarded to the slider component.
+ * @returns {JSX.Element} The ProjectGallery component.
+ */
 const ProjectGallery = forwardRef((_props, ref) => {
   useEffect(() => {
     addAriaLabels();

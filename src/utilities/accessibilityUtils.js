@@ -1,3 +1,7 @@
+/**
+ * Adds ARIA labels to elements with specified roles if they lack inner text or an ARIA label.
+ * The roles updated are "button", "link", and "menuitem".
+ */
 export const addAriaLabels = () => {
   const rolesToUpdate = ["button", "link", "menuitem"];
 
@@ -13,6 +17,10 @@ export const addAriaLabels = () => {
   });
 };
 
+/**
+ * Updates focusable elements within elements that have aria-hidden="true".
+ * Sets tabindex to -1 for these focusable elements to remove them from the tab order.
+ */
 export const updateFocusableElements = () => {
   const ariaHiddenElements = document.querySelectorAll('[aria-hidden="true"]');
 

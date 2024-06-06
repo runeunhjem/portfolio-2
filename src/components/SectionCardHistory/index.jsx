@@ -1,8 +1,12 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import profilePicYoungster from "../../assets/images/rune-profile-pic-youngster.webp";
-// import profilePicYoungster from "../../assets/images/rune-profile-pic-youngster.png";
 
+/**
+ * SectionCardHistory component displays a section with personal history and an image.
+ *
+ * @returns {JSX.Element} The SectionCardHistory component.
+ */
 const SectionCardHistory = () => {
   return (
     <S.SectionCard id="history-section">

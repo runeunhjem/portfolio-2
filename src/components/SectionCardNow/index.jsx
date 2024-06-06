@@ -1,8 +1,12 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import profilePicMedium from "../../assets/images/rune-profile-pic-medium.webp";
-// import profilePicMedium from "../../assets/images/rune-profile-pic-medium.png";
 
+/**
+ * SectionCardNow component displays a section with current personal information and an image.
+ *
+ * @returns {JSX.Element} The SectionCardNow component.
+ */
 const SectionCardNow = () => {
   return (
     <S.SectionCard id="now-section">
@@ -16,9 +20,8 @@ const SectionCardNow = () => {
           <ul>
             <li>
               I live in Kristiansand with my fiancé, and I have just finished 2
-              years as a student of{" "}
-              <b>Front End Development</b> at Noroff School of Technology and
-              Digital Media with graduation June 2024.
+              years as a student of <b>Front End Development</b> at Noroff
+              School of Technology and Digital Media with graduation June 2024.
             </li>
             <li>
               I find coding to be highly engaging, and love solving the everyday

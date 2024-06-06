@@ -90,9 +90,10 @@ export const Project = styled.div`
 
     .image-wrap {
       border-radius: 14px !important;
+      padding: 1rem !important;
+
       img {
-        /* border: 1px solid var(--stone-600); */
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        border: 1px solid var(--stone-600);
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -103,11 +104,15 @@ export const Project = styled.div`
         border-radius: 14px;
         object-fit: cover;
         object-position: top center;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.0);
         @media screen and (max-width: 641px) {
           height: 300px;
+          }
+          @media screen and (max-width: 468px) {
+            height: 200px;
         }
-        @media screen and (max-width: 468px) {
-          height: 200px;
+          @media screen and (min-width: 969px) {
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
         }
       }
     }

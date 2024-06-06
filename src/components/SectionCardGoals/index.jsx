@@ -1,8 +1,12 @@
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import goalsPic from "../../assets/images/rune-goals-pic.webp";
-// import goalsPic from "../../assets/images/rune-goals-pic.png";
 
+/**
+ * SectionCardGoals component displays a section with goals and an image.
+ *
+ * @returns {JSX.Element} The SectionCardGoals component.
+ */
 const SectionCardGoals = () => {
   return (
     <S.SectionCard id="goals-section">

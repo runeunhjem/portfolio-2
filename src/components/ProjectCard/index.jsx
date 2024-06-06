@@ -4,6 +4,22 @@ import * as S from "./index.styled";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/**
+ * ProjectCard component that displays project information, including title, tagline,
+ * login information, a carousel of images, description, and links.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.project - The project details.
+ * @param {string} props.project.title - The title of the project.
+ * @param {string} props.project.tagline - The tagline of the project.
+ * @param {string} props.project.login - The login information for the project.
+ * @param {string[]} props.project.images - Array of image URLs for the project.
+ * @param {string} props.project.description - The description of the project.
+ * @param {Object[]} props.project.links - Array of link objects for the project.
+ * @param {string} props.project.links.label - The label for the link.
+ * @param {string} props.project.links.url - The URL for the link.
+ * @returns {JSX.Element} The ProjectCard component.
+ */
 const ProjectCard = ({ project }) => {
   const imageSliderSettings = {
     dots: true,
@@ -25,19 +41,18 @@ const ProjectCard = ({ project }) => {
       <p className="text-center text-red-700">{project.login}</p>
       <div className="carousel-container px-6 pb-2 pt-6">
         <Slider {...imageSliderSettings}>
-          {project.images
-            .map((image, idx) => (
-              <div key={idx} className="image-wrap w-full">
-                <img
-                  src={image}
-                  alt={
-                    project.title
-                      ? `${project.title} screenshot ${project.images.length - idx}`
-                      : `Project screenshot ${project.images.length - idx}`
-                  }
-                />
-              </div>
-            ))}
+          {project.images.map((image, idx) => (
+            <div key={idx} className="image-wrap w-full">
+              <img
+                src={image}
+                alt={
+                  project.title
+                    ? `${project.title} screenshot ${project.images.length - idx}`
+                    : `Project screenshot ${project.images.length - idx}`
+                }
+              />
+            </div>
+          ))}
         </Slider>
         <div className="carousel-counter !mb-0 pt-4 ">
           {project.images.length} images (Hover to stop slider)

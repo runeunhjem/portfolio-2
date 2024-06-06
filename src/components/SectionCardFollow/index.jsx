@@ -4,15 +4,18 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  // FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import followPic from "../../assets/images/rune-social-pic.webp";
-// import followPic from "../../assets/images/rune-social-pic.png";
 import { FaX } from "react-icons/fa6";
 
+/**
+ * SectionCardFollow component displays social media links and an image.
+ *
+ * @returns {JSX.Element} The SectionCardFollow component.
+ */
 const SectionCardFollow = () => {
   return (
     <S.SectionCard id="follow-section">
@@ -41,7 +44,7 @@ const SectionCardFollow = () => {
                 href="https://discord.gg/F6bqMEqR"
                 target="_blank"
                 rel="noreferrer"
-                className="!text-red-700 hover:underline hover:text-red-800"
+                className="!text-red-700 hover:text-red-800 hover:underline"
                 style={{ whiteSpace: "nowrap" }}
               >
                 The Coffee Table

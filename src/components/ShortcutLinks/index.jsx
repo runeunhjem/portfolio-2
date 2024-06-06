@@ -1,5 +1,10 @@
 import * as S from "./index.styled";
 
+/**
+ * ShortcutLinks component displays a set of links for navigating to different sections of the page.
+ *
+ * @returns {JSX.Element} The ShortcutLinks component.
+ */
 const ShortcutLinks = () => {
   return (
     <S.ShortcutLinks>

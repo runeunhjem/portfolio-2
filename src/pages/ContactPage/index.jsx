@@ -3,6 +3,11 @@ import * as S from "../../components/ContactForm/index.styled";
 
 const ContactForm = lazy(() => import("../../components/ContactForm"));
 
+/**
+ * ContactPage component displays the contact information and a contact form.
+ *
+ * @returns {JSX.Element} The ContactPage component.
+ */
 const ContactPage = () => {
   return (
     <div

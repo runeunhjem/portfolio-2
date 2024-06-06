@@ -5,15 +5,29 @@ import Intro from "../../components/Intro";
 import ProjectGallery from "../../components/ProjectGallery";
 import * as S from "./index.styled";
 
+/**
+ * HomePage component displays the homepage with an introduction, project gallery,
+ * and navigation links to old portfolio and school projects.
+ *
+ * @param {Object} props - The component props.
+ * @param {number} props.numberOfProjects - The total number of projects to be displayed.
+ * @returns {JSX.Element} The HomePage component.
+ */
 const HomePage = ({ numberOfProjects }) => {
   const sliderRef = useRef(null);
   const [projectNumber, setProjectNumber] = useState(1);
 
+  /**
+   * Move to the next project in the slider.
+   */
   const nextProject = () => {
     sliderRef.current.slickNext();
     setProjectNumber((prev) => (prev < numberOfProjects ? prev + 1 : 1));
   };
 
+  /**
+   * Move to the previous project in the slider.
+   */
   const previousProject = () => {
     sliderRef.current.slickPrev();
     setProjectNumber((prev) => (prev > 1 ? prev - 1 : numberOfProjects));
@@ -23,7 +37,7 @@ const HomePage = ({ numberOfProjects }) => {
     <S.Container>
       <S.Heading>
         <Link
-          className="hover-links portfolio-link mb-2 !flex !flex-wrap whitespace-pre-line justify-center xs:justify-end"
+          className="hover-links portfolio-link mb-2 !flex !flex-wrap justify-center whitespace-pre-line xs:justify-end"
           to="https://portfolio1-ca.netlify.app/"
           target="_blank"
         >
