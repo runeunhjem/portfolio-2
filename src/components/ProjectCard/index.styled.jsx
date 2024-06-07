@@ -94,7 +94,7 @@ export const Project = styled.div`
         right: 14px !important;
       }
       @media (min-width: 1069px) {
-        right: 24px !important;
+        right: 20px !important;
       }
     }
 
