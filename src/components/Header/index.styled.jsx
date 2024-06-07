@@ -35,7 +35,7 @@ export const LogoLink = styled(Link)`
     width: 300px !important;
     height: 86.422px;
     margin-left: 0.75rem;
-    max-width: none !important; /* Add this line */
+    max-width: none !important;
 
     @media screen and (max-width: 468px) {
       width: 250px !important;

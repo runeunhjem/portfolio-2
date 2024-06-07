@@ -84,8 +84,15 @@ export const HighlightText = styled.span`
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  width: fit-content;
+  padding-left: 0;
+  transition: all 0.3s ease-in-out;
+  height: 30px;
   &:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    padding-left: 10px;
+    border-bottom: 1px solid var(--red-600);
+    transform: scale(1.1);
   }
 `;
 

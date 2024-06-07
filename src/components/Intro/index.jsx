@@ -15,19 +15,28 @@ const Intro = () => {
           <img src={introImage} alt="Illustration of Rune Unhjem" />
         </S.IntroImageContainer>
         <S.AllText>
-          <p>Hi there and welcome.</p>
           <p>
-            Based in Kristiansand, I just finished up a 2 year study of{" "}
-            <strong>Frontend Development</strong> at Noroff School of Technology
-            and Digital Media, and have signed up for a 1 year study of{" "}
-            <strong>Backend Development</strong> from August &apos;24.
+            <b>Hi</b> there and welcome.
           </p>
           <p>
-            Take a look at my relevant projects, or if interested, get a little
-            more personal information in the about section.
+            <b>Based</b> in Kristiansand, I just finished up a 2 year study of{" "}
+            <strong>
+              <i>Frontend Development</i>
+            </strong>{" "}
+            at Noroff School of Technology and Digital Media, and have signed up
+            for a 1 year study of{" "}
+            <strong>
+              <i>Backend Development</i>
+            </strong>{" "}
+            from August &apos;24.
           </p>
-          <p>Don&apos;t hesitate to contact me if you like what you see.</p>
-          <p>I am available for hire.</p>
+          <p>
+            <b>Take</b> a look at my relevant projects, or if interested, get a
+            little more personal information in the about section.
+          </p>
+          <p>
+            <b>Don&apos;t</b> hesitate to contact me if you like what you see.
+          </p>
           <Link to="/about">
             <S.HighlightText>
               About section <FaArrowRight />
@@ -36,21 +45,29 @@ const Intro = () => {
         </S.AllText>
         <S.InitialText>
           <p>
-            Hi there and welcome. Based in Kristiansand, I just finished up a 2
-            year study of <strong>Frontend Development</strong> at Noroff School
-            of Technology and Digital Media, and have signed up for a 1 year
-            study of <strong>Backend Development</strong> from August &apos;24.
+            <b>Hi</b> there and welcome. Based in Kristiansand, I just finished
+            up a 2 year study of{" "}
+            <strong>
+              <i>Frontend Development</i>
+            </strong>{" "}
+            at Noroff School of Technology and Digital Media, and have signed up
+            for a 1 year study of{" "}
+            <strong>
+              <i>Backend Development</i>
+            </strong>{" "}
+            from August &apos;24.
           </p>
         </S.InitialText>
       </S.FlexContainer>
       <S.IntroTextContainer>
         <S.RemainingText>
           <p>
-            Take a look at my relevant projects, or if interested, get a little
-            more personal information in the about section.
+            <b>Take</b> a look at my relevant projects, or if interested, get a
+            little more personal information in the about section.
           </p>
-          <p>Don&apos;t hesitate to contact me if you like what you see.</p>
-          <p>I am available for hire. </p>
+          <p>
+            <b>Don&apos;t</b> hesitate to contact me if you like what you see.
+          </p>
           <Link to="/about">
             <S.HighlightText>
               About section

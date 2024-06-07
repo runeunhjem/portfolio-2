@@ -85,11 +85,14 @@ export const Project = styled.div`
     .slick-next {
       right: 10px !important;
       z-index: 1000 !important;
-      @media (min-width: 468px) {
+      @media (min-width: 469px) {
         right: -10px !important;
       }
-      @media (max-width: 1069px) {
-        right: 14px;
+      @media (max-width: 1068px) {
+        right: 14px !important;
+      }
+      @media (min-width: 1069px) {
+        right: 24px !important;
       }
     }
 
