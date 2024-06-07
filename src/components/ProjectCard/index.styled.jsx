@@ -76,6 +76,8 @@ export const Project = styled.div`
     .slick-slider {
       justify-content: center;
       margin: 0 2rem !important;
+      width: 100% !important;
+      margin: 0 !important;
     }
 
     .slick-prev {
