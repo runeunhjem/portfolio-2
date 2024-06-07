@@ -99,7 +99,7 @@ export const SocialLink = styled.a`
   }
 `;
 
-export const Logo = styled.img`
+export const FooterLogo = styled.img`
   width: 250px;
   max-width: 100%;
   height: auto;

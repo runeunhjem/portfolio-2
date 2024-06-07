@@ -115,7 +115,7 @@ const Footer = () => {
           </S.FooterSection>
           <S.FooterSection>
             <Link to="/">
-              <S.Logo src={footerLogo} alt="Illustration of RUNDEV Logo" />
+              <S.FooterLogo src={footerLogo} alt="Illustration of RUNDEV Logo" />
             </Link>
           </S.FooterSection>
         </S.FooterContent>

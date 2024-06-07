@@ -73,15 +73,20 @@ export const Project = styled.div`
       }
     }
 
+    .slick-slider {
+      justify-content: center;
+      margin: 0 2rem !important;
+    }
+
     .slick-prev {
       left: 2px;
       z-index: 1000;
     }
     .slick-next {
-      z-index: 1000;
-      right: 20px;
-      @media (max-width: 640px) {
-        right: 0px;
+      right: 10px !important;
+      z-index: 1000 !important;
+      @media (min-width: 468px) {
+        right: -10px !important;
       }
       @media (max-width: 1069px) {
         right: 14px;
@@ -90,7 +95,7 @@ export const Project = styled.div`
 
     .image-wrap {
       border-radius: 14px !important;
-      padding: 1rem !important;
+      /* padding: 1rem !important; */
 
       img {
         border: 1px solid var(--stone-600);
@@ -104,15 +109,15 @@ export const Project = styled.div`
         border-radius: 14px;
         object-fit: cover;
         object-position: top center;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.0);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0);
         @media screen and (max-width: 641px) {
           height: 300px;
-          }
-          @media screen and (max-width: 468px) {
-            height: 200px;
         }
-          @media screen and (min-width: 468px) {
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        @media screen and (max-width: 468px) {
+          height: 200px;
+        }
+        @media screen and (min-width: 468px) {
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
         }
       }
     }
