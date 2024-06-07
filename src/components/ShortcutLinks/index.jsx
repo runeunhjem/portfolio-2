@@ -11,21 +11,21 @@ const ShortcutLinks = () => {
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
-    let currentSection = "top"; // Default to "top" if no sections are in view
+    let closestSection = "top"; // Default to "top" if no sections are in view
+    let minDistance = Infinity;
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      const sectionTop = rect.top + window.scrollY - 125; // Adjust for sticky header height
-      const sectionHeight = section.clientHeight;
-      const sectionBottom = sectionTop + sectionHeight;
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const sectionMiddle = rect.top + rect.height / 2;
+      const distance = Math.abs(sectionMiddle - window.innerHeight / 2);
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        currentSection = section.getAttribute("id");
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestSection = section.getAttribute("id");
       }
     });
 
-    setActiveSection(currentSection);
+    setActiveSection(closestSection);
   };
 
   useEffect(() => {
