@@ -96,11 +96,11 @@ const projectsData = [
       { label: "Visit Game Hub", url: "https://gamehub-wp-ca.netlify.app/" },
       {
         label: "GitHub Repository",
-        url: "https://github.com/runeunhjem/gamehub-wp-ca",
+        url: "https://github.com/runeunhjem/gamehub-ixd-ca",
       },
       {
         label: "Project README",
-        url: "https://github.com/runeunhjem/gamehub-wp-ca/blob/main/README.md",
+        url: "https://github.com/runeunhjem/gamehub-ixd-ca/blob/main/README.md",
       },
     ],
   },
