@@ -182,6 +182,7 @@ main {
 
 .active-link {
   background-color: var(--orange-200);
+  height: 27px;
 }
 
 .slick-prev:before,

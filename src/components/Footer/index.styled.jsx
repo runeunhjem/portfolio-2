@@ -45,7 +45,7 @@ export const FooterSection = styled.div`
 
 export const FooterLink = styled(NavLink)`
   width: 120px;
-  height: 24px;
+  height: 27px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   transition:
@@ -71,7 +71,7 @@ export const ExternalLink = styled.a`
     transform 0.2s ease-in-out,
     border-bottom 0.2s ease-in-out;
   border-radius: 12px;
-  height: 24px;
+  height: 27px;
   border-radius: 12px;
   width: 200px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);

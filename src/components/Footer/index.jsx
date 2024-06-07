@@ -37,7 +37,7 @@ const Footer = () => {
             </S.FooterLink>
             <S.ExternalLink
               href="https://github.com/runeunhjem/portfolio-2/blob/main/README.md"
-              style={ { width: "120px" } }
+              style={{ width: "120px" }}
               target="_blank"
             >
               README
@@ -114,8 +114,11 @@ const Footer = () => {
             </div>
           </S.FooterSection>
           <S.FooterSection>
-            <Link to="/">
-              <S.FooterLogo src={footerLogo} alt="Illustration of RUNDEV Logo" />
+            <Link to="/" className="flex items-center sm:pt-3">
+              <S.FooterLogo
+                src={footerLogo}
+                alt="Illustration of RUNDEV Logo"
+              />
             </Link>
           </S.FooterSection>
         </S.FooterContent>

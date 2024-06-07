@@ -27,7 +27,7 @@ const SectionCardFollow = () => {
         </S.ProfilePic>
         <S.IntroRight className="mx-auto">
           <ul>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://discord.com/users/rUnIcOrN"
                 target="_blank"
@@ -39,19 +39,20 @@ const SectionCardFollow = () => {
                 </S.IconContainer>
                 Discord
               </a>
-              &nbsp;|&nbsp;Mostly active in&nbsp;
-              <a
-                href="https://discord.gg/F6bqMEqR"
-                target="_blank"
-                rel="noreferrer"
-                className="!text-red-700 hover:text-red-800 hover:underline"
-                style={{ whiteSpace: "nowrap" }}
-              >
-                The Coffee Table
-              </a>
-              &nbsp;server
+              <span className="whitespace-nowrap">
+                &nbsp;|&nbsp;Active in&nbsp;
+                <a
+                  href="https://discord.gg/F6bqMEqR"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="!text-red-700 hover:text-red-800 hover:underline"
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  The Coffee Table
+                </a>
+              </span>
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://www.facebook.com/runeunhjem"
                 target="_blank"
@@ -65,7 +66,7 @@ const SectionCardFollow = () => {
               </a>
               &nbsp;| Purely personal
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://www.github.com/runeunhjem"
                 target="_blank"
@@ -77,9 +78,9 @@ const SectionCardFollow = () => {
                 </S.IconContainer>
                 GitHub
               </a>
-              &nbsp;| All relevant repositories are public
+              &nbsp;| Relevant repositories are public
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="http://www.instagram.com/runeunhjem"
                 target="_blank"
@@ -93,7 +94,7 @@ const SectionCardFollow = () => {
               </a>
               &nbsp;| Food and family photos
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://www.linkedin.com/in/runeunhjem"
                 target="_blank"
@@ -105,9 +106,9 @@ const SectionCardFollow = () => {
                 </S.IconContainer>
                 LinkedIn
               </a>
-              &nbsp;| Professional and career related content
+              &nbsp;| Career related content
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://www.twitter.com/runeunhjem"
                 target="_blank"
@@ -121,7 +122,7 @@ const SectionCardFollow = () => {
               </a>
               &nbsp;| Twitter (not active)
             </li>
-            <li className="flex flex-wrap">
+            <li className="flex flex-col xs:flex-row">
               <a
                 href="https://www.youtube.com/c/runeunhjem"
                 target="_blank"
@@ -133,7 +134,7 @@ const SectionCardFollow = () => {
                 </S.IconContainer>
                 <span>YouTube</span>
               </a>
-              &nbsp;| Mostly private videos and playlists
+              &nbsp;| Private videos and playlists
             </li>
           </ul>
           <S.SkillIcons>

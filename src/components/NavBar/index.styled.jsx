@@ -5,7 +5,7 @@ export const NavBarContainer = styled.nav`
   display: none;
   justify-content: space-between;
   margin-right: 1.3rem;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   z-index: 1001;
   gap: 1.2rem;
 
