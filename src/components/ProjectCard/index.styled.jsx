@@ -90,9 +90,6 @@ export const Project = styled.div`
       @media (min-width: 469px) {
         right: -12px !important;
       }
-      /* @media (min-width: 1069px) {
-        right: 14px !important;
-      } */
       @media (max-width: 1068px) {
         right: 12px !important;
       }

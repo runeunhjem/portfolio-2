@@ -9,7 +9,6 @@ import {
 import * as S from "../sharedStyles";
 import ShortcutLinks from "../ShortcutLinks";
 import followPic from "../../assets/images/rune-social-pic.webp";
-import { FaX } from "react-icons/fa6";
 
 /**
  * SectionCardFollow component displays social media links and an image.
@@ -110,20 +109,6 @@ const SectionCardFollow = () => {
             </li>
             <li className="flex flex-col xs:flex-row">
               <a
-                href="https://www.twitter.com/runeunhjem"
-                target="_blank"
-                rel="noreferrer"
-                className="social-link"
-              >
-                <S.IconContainer>
-                  <FaX />
-                </S.IconContainer>
-                <span>X</span>
-              </a>
-              &nbsp;| Twitter (not active)
-            </li>
-            <li className="flex flex-col xs:flex-row">
-              <a
                 href="https://www.youtube.com/c/runeunhjem"
                 target="_blank"
                 rel="noreferrer"
@@ -192,17 +177,6 @@ const SectionCardFollow = () => {
                 alt="LinkedIn icon"
               />
               <span className="visually-hidden">LinkedIn</span>
-            </a>
-            <a
-              href="https://www.twitter.com/runeunhjem"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg"
-                alt="Twitter icon"
-              />
-              <span className="visually-hidden">Twitter</span>
             </a>
             <a
               href="https://www.youtube.com/c/runeunhjem"
