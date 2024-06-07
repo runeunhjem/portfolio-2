@@ -19,7 +19,7 @@ const SectionCardNow = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>I</strong> live in Kristiansand with my fiancé, and I have
+              <strong>I live</strong> in Kristiansand with my fiancé, and I have
               just finished 2 years as a student of{" "}
               <b>
                 <i>Front End Development</i>
