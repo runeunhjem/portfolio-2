@@ -1,5 +1,6 @@
 export const mainLinks = [
   { text: "Home", url: "/" },
+  { text: "Projects", url: "/#project-cards" },
   { text: "About", url: "/about" },
   { text: "Contact", url: "/contact" },
 ];

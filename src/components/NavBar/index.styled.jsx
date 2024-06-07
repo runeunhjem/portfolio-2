@@ -7,7 +7,7 @@ export const NavBarContainer = styled.nav`
   margin-right: 1.3rem;
   margin-top: 3.5rem;
   z-index: 1001;
-  gap: 1.2rem;
+  gap: 0.5rem;
 
   @media (min-width: 640px) {
     display: flex;
@@ -15,9 +15,8 @@ export const NavBarContainer = styled.nav`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  /* margin-right: 1.20rem; */
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   height: 30px;
   color: var(--stone-600);
   padding: 0 0.5rem;
@@ -40,5 +39,16 @@ export const StyledNavLink = styled(NavLink)`
     border-radius: 0px !important;
     transform: scale(1);
     cursor: default;
+  }
+
+  &.project-active {
+    cursor: pointer !important;
+    text-decoration: none !important;
+    border-bottom: 0px solid var(--red-600) !important;
+    &.active {
+      font-weight: 400 !important;
+      border-radius: 0px !important;
+      transform: scale(0.95) !important;
+    }
   }
 `;

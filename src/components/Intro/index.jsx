@@ -37,7 +37,7 @@ const Intro = () => {
           <p>
             <b>Don&apos;t</b> hesitate to contact me if you like what you see.
           </p>
-          <Link to="/about">
+          <Link to="/about" style={{ display: "flex", width: "fit-content" }}>
             <S.HighlightText>
               About section <FaArrowRight />
             </S.HighlightText>

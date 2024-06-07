@@ -49,7 +49,7 @@ export const ProjectCount = styled.div`
   .project-count {
     width: 50px;
     text-align: center;
-    font-size: calc(0rem + 0.5vw);
+    font-size: calc(0.8rem + 0.5vw);
     font-weight: 700;
   }
 `;
