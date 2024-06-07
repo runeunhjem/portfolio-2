@@ -88,16 +88,22 @@ export const Project = styled.div`
       right: 10px !important;
       z-index: 1000 !important;
       @media (min-width: 469px) {
-        right: -10px !important;
+        right: -12px !important;
       }
-      @media (max-width: 1068px) {
+      /* @media (min-width: 1069px) {
         right: 14px !important;
+      } */
+      @media (max-width: 1068px) {
+        right: 12px !important;
       }
       @media (min-width: 1069px) {
         right: 16px !important;
       }
       @media (min-width: 1340px) {
         right: 18px !important;
+      }
+      @media (min-width: 1440px) {
+        right: 22px !important;
       }
     }
 
