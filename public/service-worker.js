@@ -1,6 +1,6 @@
 const CACHE_NAME = "my-cache-v1";
 const urlsToCache = [
-  "/",
+  // "/",
   // "/index.html",
   "/src/main.jsx",
   "/src/assets/logos/rundev-logo-in-brackets.svg",
