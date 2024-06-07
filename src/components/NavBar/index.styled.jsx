@@ -36,8 +36,9 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     font-weight: bold;
     text-decoration: none;
-    border-bottom: none;
-    transform: scale(1.0);
+    border-bottom: 1px solid var(--red-600) !important;
+    border-radius: 0px !important;
+    transform: scale(1);
     cursor: default;
   }
 `;

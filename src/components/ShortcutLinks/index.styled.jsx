@@ -10,15 +10,16 @@ export const ShortcutLinks = styled.div`
   gap: 0.5rem;
   z-index: 999;
   width: 600px;
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   left: 0;
   right: 0;
   padding: 0.5rem;
   background-color: var(--orange-100);
-  /* box-shadow: 2px 4px 3px 0 rgba(0, 0, 0, 0.4); */
+  /* box-shadow: 0 1px 1px 0 rgba(255, 0, 0, 0.4); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   align-items: center;
-  border-radius: 12px;
+  border-radius: 0px;
 
   @media (max-width: 600px) {
     gap: 0.25rem;
@@ -40,12 +41,12 @@ export const ShortcutLinks = styled.div`
       width: 60px;
       height: 25px;
     }
-  &.active {
-    border-bottom: 2px solid var(--red-600);
-    /* color: var(--red-600) !important; */
-    /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4); */
-    /* font-weight: bold !important; */
-  }
+    &.active {
+      border-bottom: 2px solid var(--red-600);
+      /* color: var(--red-600) !important; */
+      /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4); */
+      /* font-weight: bold !important; */
+    }
   }
 `;
 
