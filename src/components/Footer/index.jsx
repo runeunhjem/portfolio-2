@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className="hover-icons social-media mb-6 mt-3 flex space-x-4 md:mb-1">
               <S.SocialLink
-                href="https://www.linkedin.com/in/rune-unhjem-7b0b4b1b0/"
+                href="https://www.linkedin.com/in/runeunhjem/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
