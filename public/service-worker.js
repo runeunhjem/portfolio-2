@@ -1,7 +1,7 @@
 const CACHE_NAME = "my-cache-v1";
 const urlsToCache = [
-  // "/",
-  // "/index.html",
+  "/",
+  "/index.html",
   "/src/main.jsx",
   "/src/assets/logos/rundev-logo-in-brackets.svg",
   "/src/assets/images/rune-profile-pic-medium.webp",
