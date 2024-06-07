@@ -7,7 +7,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import * as S from "../sharedStyles";
-import ShortcutLinks from "../ShortcutLinks";
 import followPic from "../../assets/images/rune-social-pic.webp";
 
 /**
@@ -17,8 +16,7 @@ import followPic from "../../assets/images/rune-social-pic.webp";
  */
 const SectionCardFollow = () => {
   return (
-    <S.SectionCard id="follow-section">
-      <ShortcutLinks />
+    <S.SectionCard>
       <S.CardHeader>Follow...</S.CardHeader>
       <S.AboutMeCard>
         <S.ProfilePic>

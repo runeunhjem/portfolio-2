@@ -1,5 +1,4 @@
 import * as S from "../sharedStyles";
-import ShortcutLinks from "../ShortcutLinks";
 import goalsPic from "../../assets/images/rune-goals-pic.webp";
 
 /**
@@ -9,8 +8,7 @@ import goalsPic from "../../assets/images/rune-goals-pic.webp";
  */
 const SectionCardGoals = () => {
   return (
-    <S.SectionCard id="goals-section">
-      <ShortcutLinks />
+    <S.SectionCard>
       <S.CardHeader>Goals...</S.CardHeader>
       <S.AboutMeCard>
         <S.ProfilePic>

@@ -14,6 +14,7 @@ const ContactPage = () => {
       className="contact-container mx-auto flex flex-col items-center"
       style={{
         width: "100%",
+        marginTop: "110px",
       }}
     >
       <S.InfoSection>

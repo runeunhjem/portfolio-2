@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  position: fixed; /* Add this line */
+  top: 0; /* Add this line */
+  left: 0; /* Add this line */
+  width: 100%; /* Add this line */
+  z-index: 1000; /* Add this line to ensure it's on top */
   margin: 0 auto;
   display: flex;
-  width: 100%;
-  justify-content: between;
+  justify-content: space-between; /* Changed from "justify-content: between" to correct the property */
   padding: 1rem 0.25rem;
   color: var(--stone-600);
   background-color: var(--orange-200);
@@ -21,7 +25,7 @@ export const InnerContainer = styled.div`
   display: flex;
   width: 100%;
   max-width: 1200px;
-  justify-content: between;
+  justify-content: space-between; /* Changed from "justify-content: between" to correct the property */
   margin: 0 auto;
   padding: 0 0.5rem;
 `;
@@ -48,17 +52,17 @@ export const LogoLink = styled(Link)`
   }
 `;
 
-
 export const NavContainer = styled.div`
   position: relative;
   display: flex;
   width: 100%;
   max-width: 100%;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end; /* Changed from "align-items: end" to correct the property */
   margin: 0 auto 0 auto;
 
-  > div { // Menu container
+  > div {
+    // Menu container
     position: absolute;
     top: 0;
     right: 0;

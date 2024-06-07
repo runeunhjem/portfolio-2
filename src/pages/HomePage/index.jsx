@@ -46,7 +46,7 @@ const HomePage = ({ numberOfProjects }) => {
         </Link>
       </S.Heading>
       <Intro />
-      <h2 className="mb-0 mt-12 text-center text-3xl font-bold">
+      <h2 className="mb-0 mt-12 text-center text-3xl font-bold" id="projects">
         School Projects
       </h2>
 

@@ -1,5 +1,4 @@
 import * as S from "../sharedStyles";
-import ShortcutLinks from "../ShortcutLinks";
 import skillsPic from "../../assets/images/rune-skills-pic.webp";
 
 /**
@@ -9,8 +8,7 @@ import skillsPic from "../../assets/images/rune-skills-pic.webp";
  */
 const SectionCardSkills = () => {
   return (
-    <S.SectionCard id="skills-section">
-      <ShortcutLinks />
+    <S.SectionCard>
       <S.CardHeader>Skills...</S.CardHeader>
       <S.AboutMeCard>
         <S.ProfilePic>

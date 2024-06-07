@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 0 auto 2rem auto;
+  margin: 110px auto 2rem auto;
   max-width: 1200px;
   width: 100%;
   padding: 0 20px;
@@ -43,13 +43,13 @@ export const ProjectCount = styled.div`
       color: var(--red-600);
       box-shadow: none;
       border-bottom: 1px solid var(--red-600);
-      transform: scale(1.05)
+      transform: scale(1.05);
     }
   }
   .project-count {
     width: 50px;
     text-align: center;
-    font-size: calc(0.rem + 0.5vw);
+    font-size: calc(0rem + 0.5vw);
     font-weight: 700;
   }
 `;
