@@ -15,6 +15,7 @@ export const HeaderContainer = styled.header`
   background-color: var(--orange-200);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid var(--stone-400);
+  height: 113px !important;
 
   @media (min-width: 640px) {
     padding: 1rem;
