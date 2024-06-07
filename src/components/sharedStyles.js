@@ -41,6 +41,7 @@ export const ProfilePic = styled.div`
     margin-bottom: 2rem;
     border-radius: 50%;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+    background-color: var(--intro) !important;
   }
 `;
 

@@ -28,7 +28,8 @@ export const IntroImageContainer = styled.div`
     width: 250px;
     height: auto;
     border-radius: 50%;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.4);
+    background-color: var(--intro) !important;
   }
 
   @media (max-width: 368px) {
