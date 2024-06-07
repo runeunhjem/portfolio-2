@@ -33,7 +33,21 @@ const HamburgerAccordion = () => {
   const handleClick = (url, isInternal) => {
     setExpanded(false);
     if (isInternal) {
-      navigate(url);
+      if (url.includes("#")) {
+        const [path, hash] = url.split("#");
+        navigate(path, { replace: true });
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            const headerHeight = 113; // Height of the header
+            const offset = 10; // Additional offset
+            const sectionTop = element.offsetTop - headerHeight - offset;
+            window.scrollTo({ top: sectionTop, behavior: "smooth" });
+          }
+        }, 100); // Adding a small delay to ensure the navigation has completed
+      } else {
+        navigate(url);
+      }
     } else {
       window.open(url, "_blank");
     }
