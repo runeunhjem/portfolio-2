@@ -8,12 +8,12 @@ import * as S from "./index.styled";
  */
 const ShortcutLinks = () => {
   const [activeSection, setActiveSection] = useState("top");
-  const headerHeight = 113; // Height of the header
-  const shortcutLinksHeight = 75; // Approximate height of the ShortcutLinks bar
+  const headerHeight = 113;
+  const shortcutLinksHeight = 75;
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
-    let closestSection = "top"; // Default to "top" if no sections are in view
+    let closestSection = "top";
     let minDistance = Infinity;
 
     sections.forEach((section) => {

@@ -4,11 +4,9 @@ export const Project = styled.div`
   padding: 0;
   margin: 0 auto !important;
   background: var(--orange-100);
-  /* box-shadow: inset -1px -1px 10px rgba(0, 0, 0, 0.6); */
   border-radius: 12px;
   text-align: center;
   overflow: hidden;
-  /* align-items: center; */
 
   @media (max-width: 640px) {
     padding: 0.5rem;
@@ -18,6 +16,7 @@ export const Project = styled.div`
     max-width: 100%;
     margin: 0 auto !important;
   }
+
   h3 {
     margin: 0 auto !important;
     max-width: 90%;
@@ -47,6 +46,30 @@ export const Project = styled.div`
   .description {
     overflow-y: auto;
     height: 74px;
+
+    /* Custom scrollbar styles */
+    &::-webkit-scrollbar {
+      width: 8px;
+      color: var(--arrows) !important;
+      background-color: var(--orange-100) !important;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--orange-100) !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--arrows) !important;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--red-600);
+    }
+
+    /* For Firefox / Chrome */
+    scrollbar-width: thin;
+    scrollbar-color: var(--arrows) var(--orange-100);
   }
 
   .carousel-container {
@@ -106,7 +129,6 @@ export const Project = styled.div`
 
     .image-wrap {
       border-radius: 14px !important;
-      /* padding: 1rem !important; */
 
       img {
         border: 1px solid var(--stone-600);

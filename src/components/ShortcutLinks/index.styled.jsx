@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ShortcutLinks = styled.div`
   position: sticky;
-  top: 125px;
+  top: 113px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
