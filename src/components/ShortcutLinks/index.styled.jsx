@@ -16,7 +16,6 @@ export const ShortcutLinks = styled.div`
   right: 0;
   padding: 0.5rem;
   background-color: var(--orange-100);
-  /* box-shadow: 0 1px 1px 0 rgba(255, 0, 0, 0.4); */
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   align-items: center;
   border-radius: 0px;
@@ -32,7 +31,6 @@ export const ShortcutLinks = styled.div`
       transform 0.2s ease-in-out,
       border-bottom 0.2s ease-in-out;
     padding: 0 0.5rem;
-    /* border-radius: 12px; */
     display: inline-block;
     width: 70px;
     height: 30px;
@@ -43,9 +41,6 @@ export const ShortcutLinks = styled.div`
     }
     &.active {
       border-bottom: 2px solid var(--red-600);
-      /* color: var(--red-600) !important; */
-      /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4); */
-      /* font-weight: bold !important; */
     }
   }
 `;
@@ -59,7 +54,6 @@ export const ShortcutLink = styled.a`
   }
   &.active {
     color: var(--stone-600) !important;
-    /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4); */
     font-weight: bold !important;
   }
 `;

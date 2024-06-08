@@ -11,6 +11,9 @@ const ShortcutLinks = () => {
   const headerHeight = 113;
   const shortcutLinksHeight = 75;
 
+  /**
+   * Handles the scroll event to update the active link based on the section in view.
+   */
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     let closestSection = "top";
@@ -33,22 +36,31 @@ const ShortcutLinks = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check when component mounts
+    handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  /**
+   * Handles the click event for the "Top" link, scrolling the page to the top.
+   * @param {React.MouseEvent} e - The click event.
+   */
   const handleTopClick = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
     setActiveSection("top");
   };
 
+  /**
+   * Handles the click event for section links, scrolling the page to the specified section.
+   * @param {React.MouseEvent} e - The click event.
+   * @param {string} sectionId - The ID of the section to scroll to.
+   */
   const handleSectionClick = (e, sectionId) => {
     e.preventDefault();
     const section = document.querySelector(sectionId);
-    const offset = headerHeight + shortcutLinksHeight; // Total height to offset
+    const offset = headerHeight + shortcutLinksHeight;
     const sectionTop = section.offsetTop - offset;
     window.scrollTo({ top: sectionTop, behavior: "smooth" });
     setActiveSection(sectionId.slice(1));
