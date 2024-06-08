@@ -2,8 +2,8 @@ import * as S from "./index.styled";
 import { lazy, Suspense } from "react";
 import NavBar from "../NavBar";
 import logo from "../../assets/logos/rundev-logo-in-brackets.svg";
+import { useNavigate } from "react-router-dom";
 
-// Lazy load the HamburgerAccordion component
 const HamburgerAccordion = lazy(() => import("../HamburgerAccordion"));
 
 /**
@@ -11,10 +11,18 @@ const HamburgerAccordion = lazy(() => import("../HamburgerAccordion"));
  * @returns {JSX.Element} The Header component.
  */
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    navigate("/", { replace: true });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <S.HeaderContainer>
       <S.InnerContainer>
-        <S.LogoLink to="/">
+        <S.LogoLink to="/" onClick={handleLogoClick}>
           <img src={logo} alt="RUNDEV Logo" />
         </S.LogoLink>
         <S.NavContainer>

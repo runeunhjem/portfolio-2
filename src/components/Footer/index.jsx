@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import footerLogo from "../../assets/logos/rd-rundev-with-info.svg";
 import {
   FaLinkedin,
@@ -15,6 +15,14 @@ import * as S from "./index.styled";
  * @returns {JSX.Element} The Footer component.
  */
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    navigate("/", { replace: true });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <S.FooterWrapper>
       <S.FooterContainer>
@@ -114,7 +122,11 @@ const Footer = () => {
             </div>
           </S.FooterSection>
           <S.FooterSection>
-            <Link to="/" className="flex items-center sm:pt-3">
+            <Link
+              to="/"
+              className="flex items-center sm:pt-3"
+              onClick={handleLogoClick}
+            >
               <S.FooterLogo
                 src={footerLogo}
                 alt="Illustration of RUNDEV Logo"

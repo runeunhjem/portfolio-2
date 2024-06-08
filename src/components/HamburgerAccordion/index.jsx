@@ -39,12 +39,12 @@ const HamburgerAccordion = () => {
         setTimeout(() => {
           const element = document.getElementById(hash);
           if (element) {
-            const headerHeight = 113; // Height of the header
-            const offset = 10; // Additional offset
+            const headerHeight = 113;
+            const offset = 10;
             const sectionTop = element.offsetTop - headerHeight - offset;
             window.scrollTo({ top: sectionTop, behavior: "smooth" });
           }
-        }, 100); // Adding a small delay to ensure the navigation has completed
+        }, 100);
       } else {
         navigate(url);
       }
