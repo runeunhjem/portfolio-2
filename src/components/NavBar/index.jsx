@@ -11,8 +11,8 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [isProjectLinkActive, setIsProjectLinkActive] = useState(false);
 
-  const headerHeight = 113; // Height of the header
-  const offset = 10; // Offset to account for the position from the header
+  const headerHeight = 113;
+  const offset = 10;
 
   const handleProjectsClick = (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ const NavBar = () => {
           projectCardsElement.offsetTop - headerHeight - offset;
         window.scrollTo({ top: sectionTop, behavior: "smooth" });
       }
-    }, 100); // Adding a small delay to ensure the navigation has completed
+    }, 100);
   };
 
   const handleScroll = () => {
@@ -46,12 +46,12 @@ const NavBar = () => {
     navigate("/", { replace: true });
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 100); // Adding a small delay to ensure the navigation has completed
+    }, 100);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check when component mounts
+    handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

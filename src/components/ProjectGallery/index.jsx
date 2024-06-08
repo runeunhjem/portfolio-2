@@ -22,7 +22,7 @@ const ProjectGallery = forwardRef((_props, ref) => {
     addAriaLabels();
     updateFocusableElements();
 
-    // Add aria-hidden to cloned slides
+    // Add aria-hidden to cloned slides in the slick slider
     const clonedSlides = document.querySelectorAll(".slick-cloned");
     clonedSlides.forEach((slide) => {
       slide.setAttribute("aria-hidden", "true");
