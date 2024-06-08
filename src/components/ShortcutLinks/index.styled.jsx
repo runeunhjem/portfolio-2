@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
-export const ShortcutLinks = styled.div`
+export const ShortcutLinksWrapper = styled.div`
+  width: 100%;
   position: sticky;
   top: 113px;
+  background-color: var(--orange-100);
+  color: var(--stone-600);
+  margin: 0;
+  padding: 0;
+  z-index: 998;
+`;
+
+export const ShortcutLinks = styled.div`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  z-index: 999;
   width: 600px;
   max-width: 100%;
   height: auto;

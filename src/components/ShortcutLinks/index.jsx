@@ -67,55 +67,57 @@ const ShortcutLinks = () => {
   };
 
   return (
-    <S.ShortcutLinks>
-      <S.ShortcutLink
-        href="#"
-        onClick={handleTopClick}
-        className={activeSection === "top" ? "active" : ""}
-      >
-        Top
-      </S.ShortcutLink>
-      |
-      <S.ShortcutLink
-        href="#now-section"
-        onClick={(e) => handleSectionClick(e, "#now-section")}
-        className={activeSection === "now-section" ? "active" : ""}
-      >
-        Now
-      </S.ShortcutLink>
-      |
-      <S.ShortcutLink
-        href="#history-section"
-        onClick={(e) => handleSectionClick(e, "#history-section")}
-        className={activeSection === "history-section" ? "active" : ""}
-      >
-        History
-      </S.ShortcutLink>
-      |
-      <S.ShortcutLink
-        href="#goals-section"
-        onClick={(e) => handleSectionClick(e, "#goals-section")}
-        className={activeSection === "goals-section" ? "active" : ""}
-      >
-        Goals
-      </S.ShortcutLink>
-      |
-      <S.ShortcutLink
-        href="#skills-section"
-        onClick={(e) => handleSectionClick(e, "#skills-section")}
-        className={activeSection === "skills-section" ? "active" : ""}
-      >
-        Skills
-      </S.ShortcutLink>
-      |
-      <S.ShortcutLink
-        href="#follow-section"
-        onClick={(e) => handleSectionClick(e, "#follow-section")}
-        className={activeSection === "follow-section" ? "active" : ""}
-      >
-        Follow
-      </S.ShortcutLink>
-    </S.ShortcutLinks>
+    <S.ShortcutLinksWrapper>
+      <S.ShortcutLinks>
+        <S.ShortcutLink
+          href="#"
+          onClick={handleTopClick}
+          className={activeSection === "top" ? "active" : ""}
+        >
+          Top
+        </S.ShortcutLink>
+        |
+        <S.ShortcutLink
+          href="#now-section"
+          onClick={(e) => handleSectionClick(e, "#now-section")}
+          className={activeSection === "now-section" ? "active" : ""}
+        >
+          Now
+        </S.ShortcutLink>
+        |
+        <S.ShortcutLink
+          href="#history-section"
+          onClick={(e) => handleSectionClick(e, "#history-section")}
+          className={activeSection === "history-section" ? "active" : ""}
+        >
+          History
+        </S.ShortcutLink>
+        |
+        <S.ShortcutLink
+          href="#goals-section"
+          onClick={(e) => handleSectionClick(e, "#goals-section")}
+          className={activeSection === "goals-section" ? "active" : ""}
+        >
+          Goals
+        </S.ShortcutLink>
+        |
+        <S.ShortcutLink
+          href="#skills-section"
+          onClick={(e) => handleSectionClick(e, "#skills-section")}
+          className={activeSection === "skills-section" ? "active" : ""}
+        >
+          Skills
+        </S.ShortcutLink>
+        |
+        <S.ShortcutLink
+          href="#follow-section"
+          onClick={(e) => handleSectionClick(e, "#follow-section")}
+          className={activeSection === "follow-section" ? "active" : ""}
+        >
+          Follow
+        </S.ShortcutLink>
+      </S.ShortcutLinks>
+    </S.ShortcutLinksWrapper>
   );
 };
 
