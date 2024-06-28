@@ -4,34 +4,22 @@ import { CssBaseline } from "@mui/material";
 import Layout from "../Layout";
 import projectsData from "../ProjectGallery/projectsData";
 
-/**
- * Lazily loads the HomePage component.
- * @returns {React.LazyExoticComponent<React.ComponentType<any>>} The HomePage component.
- */
+// Lazily load the HomePage component.
 const HomePage = lazy(() => import("../../pages/HomePage"));
 
-/**
- * Lazily loads the AboutPage component.
- * @returns {React.LazyExoticComponent<React.ComponentType<any>>} The AboutPage component.
- */
+// Lazily load the AboutPage component.
 const AboutPage = lazy(() => import("../../pages/AboutPage"));
 
-/**
- * Lazily loads the ContactPage component.
- * @returns {React.LazyExoticComponent<React.ComponentType<any>>} The ContactPage component.
- */
+// Lazily load the ContactPage component.
 const ContactPage = lazy(() => import("../../pages/ContactPage"));
 
-/**
- * The total number of projects in the project data.
- * @type {number}
- */
+// Lazily load the ApplicationPage component.
+const ApplicationPage = lazy(() => import("../../pages/ApplicationPage"));
+
+// The total number of projects in the project data.
 const totalProjects = projectsData.length;
 
-/**
- * The main App component that sets up the router and routes for the application.
- * @returns {JSX.Element} The App component.
- */
+// The main App component that sets up the router and routes for the application.
 const App = () => {
   return (
     <Router>
@@ -45,6 +33,7 @@ const App = () => {
             />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/application" element={<ApplicationPage />} />
           </Routes>
         </Suspense>
       </Layout>

@@ -37,3 +37,8 @@ export const portfolioLink = {
   text: "Portfolio README",
   url: "https://github.com/runeunhjem/portfolio-2/blob/main/README.md",
 };
+
+export const jobApplicationLink = {
+  text: "Job Application",
+  url: "/application",
+};
