@@ -35,7 +35,7 @@ export const ProjectCount = styled.div`
   button {
     width: 100px;
     border-radius: 12px;
-    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease-in-out;
     font-size: calc(0.7rem + 0.2vw);
@@ -43,7 +43,7 @@ export const ProjectCount = styled.div`
       color: var(--red-600);
       box-shadow: none;
       border-bottom: 1px solid var(--red-600);
-      transform: scale(1.05);
+      transform: scale(1.13);
     }
   }
   .project-count {
