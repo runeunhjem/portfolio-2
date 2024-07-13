@@ -42,3 +42,8 @@ export const jobApplicationLink = {
   text: "Job Application",
   url: "/application",
 };
+
+export const whyChooseAnElderLink = {
+  text: "Why Choose an Elder",
+  url: "/elder",
+};

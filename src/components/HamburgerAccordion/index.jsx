@@ -9,7 +9,8 @@ import {
   secondYearLinks,
   otherProjectsLinks,
   portfolioLink,
-  jobApplicationLink, // Import the job application link
+  jobApplicationLink,
+  whyChooseAnElderLink,
 } from "./links";
 import * as S from "./index.styled";
 import {
@@ -269,6 +270,15 @@ const HamburgerAccordion = () => {
             <ListItemText
               className="whitespace-nowrap !ps-1"
               primary={jobApplicationLink.text}
+              sx={{ color: "var(--stone-600)" }}
+            />
+          </S.ListItemButton>
+          <S.ListItemButton
+            onClick={() => handleClick(whyChooseAnElderLink.url, true)}
+          >
+            <ListItemText
+              className="whitespace-nowrap !ps-1"
+              primary={whyChooseAnElderLink.text}
               sx={{ color: "var(--stone-600)" }}
             />
           </S.ListItemButton>

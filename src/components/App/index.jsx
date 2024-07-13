@@ -16,6 +16,9 @@ const ContactPage = lazy(() => import("../../pages/ContactPage"));
 // Lazily load the ApplicationPage component.
 const ApplicationPage = lazy(() => import("../../pages/ApplicationPage"));
 
+// Lazily load the WhyChooseElderPage component.
+const WhyChooseElderPage = lazy(() => import("../../pages/WhyChooseElderPage"));
+
 // The total number of projects in the project data.
 const totalProjects = projectsData.length;
 
@@ -34,6 +37,7 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/application" element={<ApplicationPage />} />
+            <Route path="/elder" element={<WhyChooseElderPage />} />
           </Routes>
         </Suspense>
       </Layout>
