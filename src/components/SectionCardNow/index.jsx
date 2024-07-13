@@ -45,7 +45,7 @@ const SectionCardNow = () => {
               <strong>Plan</strong> to do one more year of school starting
               August 2024, this time{" "}
               <b>
-                <i>Backend Development</i>
+                <i>Back-End Development</i>
               </b>
               . I believe having a full-stack skill set will allow me to
               understand and tackle a wider range of challenges in web

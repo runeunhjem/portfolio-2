@@ -14,7 +14,7 @@
 
 ## Description
 
-Portfolio-2 is our last school project that was created as at the end of the course Frontend Development 2 at Noroff.
+Portfolio-2 is our last school project that was created as at the end of the course Front-End Development 2 at Noroff.
 
 The project is made to have a place to display our school / relevant projects.
 

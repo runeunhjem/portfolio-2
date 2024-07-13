@@ -44,8 +44,8 @@ const WhyChooseElderPage = () => {
       </h3>
       <p>
         At 55, I bring a wealth of life experience and a fresh academic
-        background to the table. I have recently completed a two-year frontend
-        development program and am now signed up for a year of backend
+        background to the table. I have recently completed a two-year Front-End
+        development program and am now signed up for a year of Back-End
         development studies.
       </p>
       <p>Here&apos;s why my unique profile makes me a valuable asset:</p>

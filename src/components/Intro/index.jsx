@@ -21,12 +21,12 @@ const Intro = () => {
           <p>
             <b>Based</b> in Kristiansand, I just finished up a 2 year study of{" "}
             <strong>
-              <i>Frontend Development</i>
+              <i>Front-End Development</i>
             </strong>{" "}
             at Noroff School of Technology and Digital Media, and have signed up
             for a 1 year study of{" "}
             <strong>
-              <i>Backend Development</i>
+              <i>Back-End Development</i>
             </strong>{" "}
             from August &apos;24.
           </p>
@@ -48,12 +48,12 @@ const Intro = () => {
             <b>Hi</b> there and welcome. Based in Kristiansand, I just finished
             up a 2 year study of{" "}
             <strong>
-              <i>Frontend Development</i>
+              <i>Front-End Development</i>
             </strong>{" "}
             at Noroff School of Technology and Digital Media, and have signed up
             for a 1 year study of{" "}
             <strong>
-              <i>Backend Development</i>
+              <i>Back-End Development</i>
             </strong>{" "}
             from August &apos;24.
           </p>
