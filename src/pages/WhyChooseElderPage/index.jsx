@@ -25,7 +25,7 @@ const WhyChooseElderPage = () => {
           fontSize: "20px",
         }}
       >
-        Why on earth would you choose an elder?
+        Why on earth would you choose an &quot;elder&quot;?
       </h2>
       <p
         style={{
