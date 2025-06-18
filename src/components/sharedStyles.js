@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const SectionCard = styled.section`
   width: 1200px;
   max-width: 90%;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 4rem auto; /* Endret fra 2rem */
+  padding: 2rem; /* Endret fra 1rem */
   background-color: var(--orange-100);
   border-radius: 8px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 `;
+
 
 export const CardHeader = styled.h2`
   font-size: 2.5rem;
@@ -114,4 +115,20 @@ export const SkillIcons = styled.div`
       border: 0;
     }
   }
+`;
+
+export const SkillListItem = styled.li`
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--stone-300);
+  color: var(--stone-600);
+`;
+
+export const SectionDivider = styled.hr`
+  border: none;
+  border-top: 2px dashed var(--stone-300);
+  margin: 4rem auto;
+  opacity: 0.6;
+  width: 100%;
+  max-width: 60%;
 `;

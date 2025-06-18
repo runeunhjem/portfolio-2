@@ -17,27 +17,31 @@ const SectionCardGoals = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>My</strong> main goal at the moment is to acquire the
-              skills and experience needed to produce professional content. I am
-              focused on mastering the latest technologies and best practices in
-              web development.
+              <strong>Right now,</strong> I&apos;m focused on landing that first
+              real job after graduating — ideally in web development, but
+              I&apos;m also open to other roles where I can apply my tech skills
+              and people experience.
             </li>
             <li>
-              <strong>Eventually</strong> get that perfect job where I can show
-              off my skills. I aim to work in a dynamic and innovative
-              environment where I can continuously learn and contribute.
+              <strong>I aim</strong> to keep learning and building, whether
+              through hands-on projects, freelance work, or upskilling in areas
+              like cloud services, automation, or AI-powered tools.
             </li>
             <li>
-              <strong>Contribute</strong> in all levels of the field within the
-              business that chooses me. I am keen on collaborating with
-              cross-functional teams to deliver exceptional products and
-              solutions.
+              <strong>My long-term goal</strong> is to contribute meaningfully
+              in a role where I&apos;m trusted, challenged, and encouraged to
+              grow — preferably in a team that values both creativity and code
+              quality.
             </li>
             <li>
-              <strong>100% devotion</strong> to the company that hires me
-              full-time, until the day I retire. I am committed to professional
-              growth and long-term success, both for myself and the organization
-              I join.
+              <strong>Loyalty and dedication</strong> come naturally to me. If a
+              company gives me a chance, I will show up, learn fast, solve
+              problems, and stick around.
+            </li>
+            <li>
+              <strong>Bonus dream?</strong> Maybe one day start something of my
+              own — a service, a tool, a side business. But first, I want to
+              contribute to someone else&apos;s success story.
             </li>
           </ul>
         </S.IntroRight>

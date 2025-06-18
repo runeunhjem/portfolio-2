@@ -17,46 +17,41 @@ const SectionCardNow = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>I live</strong> in Kristiansand with my fiancé, and I have
-              just finished 2 years as a student of{" "}
-              <b>
-                <i>Front-End Development</i>
-              </b>{" "}
-              at Noroff School of Technology and Digital Media with graduation
-              June 2024.
+              <strong>I live</strong> in Kristiansand with my fiancé, and
+              I&apos;ve just graduated from
+              <b> Noroff School of Technology and Digital Media</b> after
+              completing
+              <i> two years of Front-End Development</i> (2024) and
+              <i> one year of Back-End Development</i> (2025) - with top grades
+              throughout.
             </li>
             <li>
-              <strong>Coding</strong> and design is to me highly engaging, and I
-              love solving the everyday issues that will always occur. I am
-              particularly interested in creating beautiful, user-friendly, and
-              responsive web applications.
+              <strong>Fullstack-ready</strong> and currently seeking exciting
+              opportunities — whether in frontend, backend, or fullstack roles.
+              I&apos;m also open to tech support or electronics-related jobs in
+              the Kristiansand area.
             </li>
             <li>
-              <strong>Still</strong> learning every day, and hope to soon join
-              the real world of applicable coding and design. I am continuously
-              improving my skills through online courses and personal projects.
+              <strong>Passionate</strong> about building intuitive, responsive,
+              and well-structured applications. I&apos;ve worked on everything
+              from e-commerce platforms to hotel booking systems using tools
+              like React, Express, Sequelize, MySQL, Redis, Jest, and more.
             </li>
             <li>
-              <strong>Don&apos;t</strong> hesitate to reach out if you like what
-              you see. I am available for hire and eager to contribute to
-              innovative projects.
+              <strong>Always learning,</strong> improving my skills through
+              hands-on projects and staying updated on the latest in web, cloud,
+              and AI tech.
             </li>
             <li>
-              <strong>Plan</strong> to do one more year of school starting
-              August 2024, this time{" "}
-              <b>
-                <i>Back-End Development</i>
-              </b>
-              . I believe having a full-stack skill set will allow me to
-              understand and tackle a wider range of challenges in web
-              development.
+              <strong>Feel free</strong> to reach out — whether you&apos;re
+              hiring, collaborating, or just curious about what I do. I&apos;m
+              ready for the next chapter.
             </li>
             <li>
-              <strong>My</strong> spare time goes to a passion for cooking,
-              watching great movies and tv-shows, as well as keeping up with all
-              things tech and science. I also enjoy gaming a bit on my PS5,
-              bathing in the summer, hiking to well-known tourist attractions
-              like Dronningstien or places like Preikestolen.
+              <strong>Outside of tech,</strong> I enjoy cooking, late-night
+              movies, hiking to places like Preikestolen and Dronningstien,
+              gaming on my PS5, and deep-diving into music, science, or a good
+              conspiracy theory.
             </li>
           </ul>
         </S.IntroRight>

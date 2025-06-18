@@ -17,28 +17,30 @@ const SectionCardHistory = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>Born</strong> in Sandefjord, Norway, August 3rd 1969.
+              <strong>Born</strong> in Sandefjord, Norway, on August 3rd, 1969.
             </li>
             <li>
-              <strong>After</strong> 12 years at Elkjøp, I decided it was time
-              for a career change, and I have always loved everything tech and
-              science. My journey from retail to tech has equipped me with
-              valuable skills in customer service, sales, and team management.
+              <strong>Worked</strong> for 12 years at Elkjøp, mostly as a seller
+              and department manager for computers. I gained hands-on experience
+              with people, tech, and troubleshooting — skills that still serve
+              me well in the digital world.
             </li>
             <li>
-              <strong>I made</strong> my first real subscription based website
-              back in the late &apos;90&apos;s, and made an average of 30K
-              NOK/month. Unfortunately that was just about what the ISDN phone
-              bill was as well every month, so it did not last too long. This
-              experience taught me early lessons in web development and the
-              importance of sustainable business models.
+              <strong>Created</strong> my first subscription-based website in
+              the late &apos;90s, making about 30K NOK/month. Sadly, ISDN phone
+              bills were just as high. Still, it gave me a taste for web dev and
+              sparked the journey I&apos;m continuing today.
             </li>
             <li>
-              <strong>Back</strong> in the day I made a music album available on
-              Spotify, done sales, interviews and for many years seller and
-              department manager, computers at Elkjøp Ålesund. These diverse
-              experiences have enriched my problem-solving skills and
-              adaptability.
+              <strong>Explored</strong> a lot — from recording an album and
+              doing interviews, to running sales departments and building
+              customer trust. That variety has helped shape me into a calm,
+              reliable problem-solver who thrives on both logic and creativity.
+            </li>
+            <li>
+              <strong>Today</strong>, with 3 years of education behind me — 2 in
+              Front-End and 1 in Back-End — I&apos;m proud to call myself a
+              fullstack developer, with plenty of life experience to back it up.
             </li>
           </ul>
         </S.IntroRight>
