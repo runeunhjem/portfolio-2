@@ -1,3 +1,8 @@
+/**
+ * WhyChooseElderPage component displays a few reasons as to why one would choose an elder.
+ *
+ * @returns {JSX.Element} The WhyChooseElderPage component.
+ */
 const WhyChooseElderPage = () => {
   return (
     <div
@@ -42,7 +47,8 @@ const WhyChooseElderPage = () => {
         As a child of the Summer of &apos;69, I bring a wealth of life
         experience and a fresh academic background to the table. I recently
         completed a two-year Front-End Development program and followed it with
-        a one-year Back-End Development track — all finished with top grades.
+        a one-year Back-End Development track &mdash; all finished with top
+        grades.
       </p>
       <p>Here&apos;s why my unique profile makes me a valuable asset:</p>
 
@@ -70,8 +76,8 @@ const WhyChooseElderPage = () => {
         Problem-Solving Skills:
       </h3>
       <p>
-        Life teaches resilience. I’ve developed a grounded, solution-oriented
-        mindset that translates well to technical challenges.
+        Life teaches resilience. I&apos;ve developed a grounded,
+        solution-oriented mindset that translates well to technical challenges.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Adaptability:</h3>
@@ -84,7 +90,7 @@ const WhyChooseElderPage = () => {
         Diverse Perspectives:
       </h3>
       <p>
-        My background brings a fresh and balanced perspective to teams —
+        My background brings a fresh and balanced perspective to teams &mdash;
         blending creativity, practicality, and empathy.
       </p>
 
@@ -100,26 +106,29 @@ const WhyChooseElderPage = () => {
         Leadership Potential:
       </h3>
       <p>
-        From leading departments to raising a family, I’ve built strong
-        leadership qualities — through both personal and professional roles.
+        From leading departments to raising a family, I&apos;ve built strong
+        leadership qualities &mdash; through both personal and professional
+        roles.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
         Work-Life Balance:
       </h3>
       <p>
-        I understand the value of balance and boundaries. While I’m no stranger
-        to overtime, I cap extended work sessions to around 16 hours if needed —
-        ensuring long-term productivity. With grown-up children and no family
-        distractions, I remain focused and available.
+        I understand the value of balance and boundaries. While I&apos;m no
+        stranger to overtime, I cap extended work sessions to around 16 hours if
+        needed &mdash; ensuring long-term productivity. With grown-up children
+        and no family distractions, I remain focused and available.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Mentorship:</h3>
       <p>
-        Even as a newly graduated developer, I offer a mentoring presence. I’ve
-        coached in sports, led teams at Elkjøp, and raised three successful
-        children — now an investor, an interior designer, and a top chef in
-        training.
+        Even as a newly graduated developer, I can offer perspective and
+        support. I&apos;ve coached in sports, managed departments, and raised
+        three very different and capable kids. One is investing in funds, one is
+        working creatively with space and design, and the youngest is developing
+        real talent as a home cook. I enjoy cooking too &mdash; especially for
+        friends and family.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -127,13 +136,13 @@ const WhyChooseElderPage = () => {
       </h3>
       <p>
         Pivoting to tech at this age requires a deep drive and razor-sharp focus
-        — both of which I bring into every project.
+        &mdash; both of which I bring into every project.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Stability:</h3>
       <p>
-        I’m not chasing job titles — I’m looking to invest in something
-        meaningful and stay the course.
+        I&apos;m not chasing job titles &mdash; I&apos;m looking to invest in
+        something meaningful and stay the course.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -147,8 +156,8 @@ const WhyChooseElderPage = () => {
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Empathy:</h3>
       <p>
-        Life experience has taught me to understand others — a trait that boosts
-        collaboration, teamwork, and client satisfaction.
+        Life experience has taught me to understand others &mdash; a trait that
+        boosts collaboration, teamwork, and client satisfaction.
       </p>
     </div>
   );

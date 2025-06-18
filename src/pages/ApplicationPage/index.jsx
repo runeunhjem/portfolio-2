@@ -1,3 +1,8 @@
+/**
+ * ApplicationPage component displays a general job application.
+ *
+ * @returns {JSX.Element} The ApplicationPage component.
+ */
 const ApplicationPage = () => {
   return (
     <div
@@ -21,10 +26,10 @@ const ApplicationPage = () => {
       </p>
 
       <p>
-        I’m excited to submit my application for a position at your company.
-        With a solid foundation in front-end development, a passion for clean
-        code, and a drive for continuous learning, I’m confident I can bring
-        value to your team.
+        I&apos;m excited to submit my application for a position at your
+        company. With a solid foundation in front-end development, a passion for
+        clean code, and a drive for continuous learning, I&apos;m confident I
+        can bring value to your team.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -51,9 +56,10 @@ const ApplicationPage = () => {
       </h3>
       <p>
         To expand my capabilities and deepen my understanding of back-end
-        development, I’ve also completed a dedicated one-year program focused on
-        databases, APIs, server-side logic, and deployment. This transition
-        reflects my commitment to becoming a truly full-stack developer.
+        development, I&apos;ve also completed a dedicated one-year program
+        focused on databases, APIs, server-side logic, and deployment. This
+        transition reflects my commitment to becoming a truly full-stack
+        developer.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -62,8 +68,8 @@ const ApplicationPage = () => {
       <p>
         As part of my career transition through NAV, I am currently eligible for
         wage subsidy support. If your company offers a contract, this
-        arrangement could reduce hiring costs without compromising quality —
-        tailored to your specific needs at no extra expense to you.
+        arrangement could reduce hiring costs without compromising quality
+        &mdash; tailored to your specific needs at no extra expense to you.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -72,22 +78,22 @@ const ApplicationPage = () => {
       <p>
         While I bring life experience to the table, I also bring strong energy
         and focus. I regularly dedicate long hours to learning and development
-        and thrive in fast-paced environments. I’m open to remote work or
+        and thrive in fast-paced environments. I&apos;m open to remote work or
         on-site roles in Kristiansand, flexible with hours, and committed to
         delivering consistent, high-quality results.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Conclusion:</h3>
       <p>
-        I’m eager to bring my enthusiasm, reliability, and growing full-stack
-        skill set into a collaborative team. With my academic background,
-        practical experience, and strong work ethic, I’m confident I can
-        contribute meaningfully to your goals.
+        I&apos;m eager to bring my enthusiasm, reliability, and growing
+        full-stack skill set into a collaborative team. With my academic
+        background, practical experience, and strong work ethic, I&apos;m
+        confident I can contribute meaningfully to your goals.
       </p>
 
       <p>
-        Thank you for your time and consideration. I’d be happy to discuss how I
-        can contribute to your team. Please feel free to reach out at{" "}
+        Thank you for your time and consideration. I&apos;d be happy to discuss
+        how I can contribute to your team. Please feel free to reach out at{" "}
         <a
           href="mailto:runeunhjem@gmail.com"
           style={{ color: "#007bff", textDecoration: "none" }}
