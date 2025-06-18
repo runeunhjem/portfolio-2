@@ -125,10 +125,7 @@ const WhyChooseElderPage = () => {
       <p>
         Even as a newly graduated developer, I can offer perspective and
         support. I&apos;ve coached in sports, managed departments, and raised
-        three very different and capable kids. One is investing in funds, one is
-        working creatively with space and design, and the youngest is developing
-        real talent as a home cook. I enjoy cooking too &mdash; especially for
-        friends and family.
+        three very different and capable kids (Investor/Realtor, Interior Design/Architecture, Chef in Training).
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
