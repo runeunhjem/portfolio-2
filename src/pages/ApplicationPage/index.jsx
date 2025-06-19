@@ -18,7 +18,7 @@ const ApplicationPage = () => {
       }}
     >
       <h2 style={{ fontWeight: "bold", marginTop: "1rem", fontSize: "20px" }}>
-        Job Application: Front-End Developer Transitioning to Full-Stack
+        Job Application: Fullstack Developer
       </h2>
 
       <p>
@@ -27,19 +27,22 @@ const ApplicationPage = () => {
 
       <p>
         I&apos;m excited to submit my application for a position at your
-        company. With a solid foundation in front-end development, a passion for
-        clean code, and a drive for continuous learning, I&apos;m confident I
-        can bring value to your team.
+        company. As a recent graduate of both Front-End and Back-End Development
+        at Noroff School of Technology and Digital Media, I bring a robust,
+        modern fullstack skill set, a passion for clean code, and a drive for
+        continuous learning.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
         Education and Skills:
       </h3>
       <p>
-        I recently completed a two-year Front-End Development program at Noroff
-        School of Technology and Digital Media, graduating with top marks.
-        During this time, I built projects using HTML, CSS, JavaScript, React,
-        and related technologies. My portfolio, available at{" "}
+        I have successfully completed a two-year Front-End Development program{" "}
+        <strong>and</strong> a one-year Back-End Development program at Noroff
+        School of Technology and Digital Media, both with top marks. My
+        expertise spans the entire web stack: from HTML, CSS, JavaScript, and
+        React, to Node.js (Express), Sequelize, MySQL, EJS, and cloud
+        deployment. My portfolio, available at{" "}
         <a
           href="https://rundev-portfolio.netlify.app/"
           target="_blank"
@@ -48,18 +51,20 @@ const ApplicationPage = () => {
         >
           rundev-portfolio.netlify.app
         </a>
-        , showcases a wide range of applications and problem-solving approaches.
+        , showcases a wide range of applications and problem-solving approaches
+        across both client and server.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
-        Pursuing Full-Stack Expertise:
+        Fullstack Project Experience:
       </h3>
       <p>
-        To expand my capabilities and deepen my understanding of back-end
-        development, I&apos;ve also completed a dedicated one-year program
-        focused on databases, APIs, server-side logic, and deployment. This
-        transition reflects my commitment to becoming a truly full-stack
-        developer.
+        My final projects reflect my evolution into a fullstack developer. I
+        have built RESTful APIs, robust authentication, secure role-based
+        systems, advanced product filtering, dynamic cart/order logic, and full
+        admin dashboards — always focusing on maintainability and user
+        experience. This transition demonstrates my commitment to mastering both
+        front- and back-end technologies.
       </p>
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>
@@ -85,10 +90,10 @@ const ApplicationPage = () => {
 
       <h3 style={{ fontWeight: "bold", marginTop: "1rem" }}>Conclusion:</h3>
       <p>
-        I&apos;m eager to bring my enthusiasm, reliability, and growing
-        full-stack skill set into a collaborative team. With my academic
-        background, practical experience, and strong work ethic, I&apos;m
-        confident I can contribute meaningfully to your goals.
+        I&apos;m eager to bring my enthusiasm, reliability, and fullstack skill
+        set into a collaborative team. With my academic background, practical
+        experience, and strong work ethic, I&apos;m confident I can contribute
+        meaningfully to your goals.
       </p>
 
       <p>
