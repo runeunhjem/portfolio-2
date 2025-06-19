@@ -72,6 +72,23 @@ import holidaze11 from "../../assets/images/holidaze/hd-11.webp";
 import holidaze12 from "../../assets/images/holidaze/hd-12.webp";
 import holidaze13 from "../../assets/images/holidaze/hd-13.webp";
 
+import pulseFront1 from "../../assets/images/pulsemarket/front-end-01.png";
+import pulseFront2 from "../../assets/images/pulsemarket/front-end-02.png";
+import pulseFront3 from "../../assets/images/pulsemarket/front-end-03.png";
+import pulseFront4 from "../../assets/images/pulsemarket/front-end-04.png";
+import pulseFront5 from "../../assets/images/pulsemarket/front-end-05.png";
+import pulseFront6 from "../../assets/images/pulsemarket/front-end-06.png";
+import pulseFront7 from "../../assets/images/pulsemarket/front-end-07.png";
+import pulseFront8 from "../../assets/images/pulsemarket/front-end-08.png";
+import pulseFront9 from "../../assets/images/pulsemarket/front-end-09.png";
+import pulseFront10 from "../../assets/images/pulsemarket/front-end-10.png";
+import pulseFront11 from "../../assets/images/pulsemarket/front-end-11.png";
+import pulseFront12 from "../../assets/images/pulsemarket/front-end-12.png";
+import pulseFront13 from "../../assets/images/pulsemarket/front-end-13.png";
+import pulseFront14 from "../../assets/images/pulsemarket/front-end-14.png";
+import pulseFront15 from "../../assets/images/pulsemarket/front-end-15.png";
+
+
 const projectsData = [
   {
     id: 1,
@@ -157,7 +174,7 @@ const projectsData = [
     title: "movieTALK",
     tagline: "Lets talk movies!",
     login:
-      "Requires login (mail: movieTALKVisitor@stud.noroff.no, password: movieTALKVisitor)",
+      "Requires login for full experience (Register with any @stud.noroff.no and password)",
     description:
       "JavaScript 2 Course Assignment. You have been tasked with producing a new JavaScript front-end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.",
     images: [
@@ -190,7 +207,7 @@ const projectsData = [
     title: "DreamBids",
     tagline: "Find That Dreamy Item!",
     login:
-      "Requires login (mail: DreamBidsVisitor@stud.noroff.no, password: DreamBidsVisitor)",
+      "Requires login for full experience (Register with any @stud.noroff.no and password)",
     description:
       "An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction. Vanilla JS, Bootstrap and Sass were primaries on this project.JavaScript 2 Course Assignment. You have been tasked with producing a new JavaScript front-end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.",
     images: [
@@ -244,7 +261,7 @@ const projectsData = [
     title: "Holidaze",
     tagline: "Travels made easy!",
     login:
-      "Requires login (mail: HolidazeVisitor@stud.noroff.no, password: HolidazeVisitor)",
+      "Requires login for full experience (Register with any @stud.noroff.no and password)",
     description:
       "A newly launched accommodation booking site called Holidaze has approached you to develop a brand new Front-End for their application. While they have a list of required features, the design and user experience has not been specified.",
     images: [
@@ -274,6 +291,46 @@ const projectsData = [
       {
         label: "Project README",
         url: "https://github.com/runeunhjem/holidaze/blob/main/README.md",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "PulseMarket",
+    tagline: "Fullstack E-Commerce platform",
+    login: "Admin Demo: admin@noroff.no / P@ssword2023",
+    description:
+      "PulseMarket is a modern, fullstack e-commerce solution developed as a final exam project at Noroff. Features include user authentication, role-based access, memberships with discount levels, product search & filters, dynamic cart, orders, and a separate admin panel for product/user management. Built with Node.js (Express), Sequelize (MySQL), EJS, and Bootstrap.",
+    images: [
+      pulseFront1,
+      pulseFront2,
+      pulseFront3,
+      pulseFront4,
+      pulseFront5,
+      pulseFront6,
+      pulseFront7,
+      pulseFront8,
+      pulseFront9,
+      pulseFront10,
+      pulseFront11,
+      pulseFront12,
+      pulseFront13,
+      pulseFront14,
+      pulseFront15,
+    ],
+    links: [
+      {
+        label: "Visit (Coming)",
+        url: "#",
+        disabled: true,
+      },
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/runeunhjem/PulseMarket",
+      },
+      {
+        label: "Project README",
+        url: "https://github.com/runeunhjem/PulseMarket/blob/main/README.md",
       },
     ],
   },

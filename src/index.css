@@ -8,7 +8,7 @@
   --black: #000000;
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
-  --arrows: #0ea5e9;
+  --arrows: #ffae00;
   --intro: hsla(24, 57%, 67%, 0.664);
   --stone-300: #d6d3d1;
   --stone-400: #a8a29e;
@@ -27,6 +27,7 @@
   --color-blue-dreambids: #1572b9;
   --color-purple-cgg: rgb(128, 0, 145);
   --color-sky-holidaze: rgb(125, 211, 252);
+  --color-brown-pulsemarket: #8b4513;
 
   --font-family-koho: "KoHo", sans-serif;
 }
@@ -191,7 +192,6 @@ main {
 .slick-next:before {
   color: var(--arrows) !important;
   font-size: calc(1.5rem + 1vw) !important;
-  /* box-shadow: none !important; */
 }
 
 .slick-dots {

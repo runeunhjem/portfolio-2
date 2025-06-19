@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => {
       <h3>{project.title}</h3>
       <p className="!text-xl">{project.tagline}</p>
       <p className="text-center text-red-700">{project.login}</p>
-      <div className="carousel-container sm:px-6 lg:px-36 pb-2 pt-6">
+      <div className="carousel-container pb-2 pt-6 sm:px-6 lg:px-36">
         <Slider {...imageSliderSettings}>
           {project.images.map((image, idx) => (
             <div key={idx} className="image-wrap w-full !p-0 sm:!px-4">
@@ -71,11 +71,13 @@ const ProjectCard = ({ project }) => {
         {project.links.map((link, idx) => (
           <button
             key={idx}
-            onClick={() => window.open(link.url, "_blank")}
+            onClick={() => !link.disabled && window.open(link.url, "_blank")}
             className={`button-${project.title
               .replace(/[^a-zA-Z0-9\s]/g, "")
               .replace(/\s+/g, "-")
               .toLowerCase()}`}
+            disabled={link.disabled}
+            title={link.disabled ? "Demo not available yet - Clone locally from github" : link.label}
           >
             {link.label}
           </button>

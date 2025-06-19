@@ -228,6 +228,17 @@ export const Project = styled.div`
         color: var(--stone-950);
       }
 
+      &.button-pulsemarket {
+        background-color: var(--color-brown-pulsemarket);
+        color: var(--stone-300);
+      }
+      &.button-pulsemarket:disabled {
+        background-color: var(--color-brown-pulsemarket);
+        color: var(--stone-300);
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
       &:hover {
         opacity: 0.8;
       }
