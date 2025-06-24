@@ -320,17 +320,17 @@ const projectsData = [
     ],
     links: [
       {
-        label: "Visit (Coming)",
+        label: "Visit (Not deployed)",
         url: "#",
         disabled: true,
       },
       {
         label: "GitHub Repository",
-        url: "https://github.com/runeunhjem/PulseMarket",
+        url: "https://github.com/runeunhjem/PulseMarket-Untouched",
       },
       {
         label: "Project README",
-        url: "https://github.com/runeunhjem/PulseMarket/blob/main/README.md",
+        url: "https://github.com/runeunhjem/PulseMarket-Untouched/blob/main/README.md",
       },
     ],
   },
