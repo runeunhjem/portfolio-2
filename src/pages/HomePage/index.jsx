@@ -42,7 +42,7 @@ const HomePage = ({ numberOfProjects }) => {
           target="_blank"
         >
           <span className="whitespace-nowrap">Old portfolio here</span>
-          <span className="whitespace-nowrap">&nbsp;(No  - Not being updated)</span>
+          <span className="whitespace-nowrap">&nbsp;(No frameworks - Not being updated)</span>
         </Link>
       </S.Heading>
       <Intro />
