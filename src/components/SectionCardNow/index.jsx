@@ -17,7 +17,7 @@ const SectionCardNow = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>I live</strong> in Harstad, and based in Harstad and sumer
+              <strong>I live</strong> in Harstad, and summer
               2025 I graduated from
               <b> Noroff School of Technology and Digital Media</b> after
               completing
