@@ -84,7 +84,7 @@ const ApplicationPage = () => {
         While I bring life experience to the table, I also bring strong energy
         and focus. I regularly dedicate long hours to learning and development
         and thrive in fast-paced environments. I&apos;m open to remote work or
-        on-site roles in Kristiansand, flexible with hours, and committed to
+        on-site roles in Harstad, flexible with hours, and committed to
         delivering consistent, high-quality results.
       </p>
 
@@ -112,7 +112,7 @@ const ApplicationPage = () => {
         <strong>Best regards,</strong>
       </p>
       <p>Rune Unhjem</p>
-      <p className="mb-4">Kristiansand, Norway</p>
+      <p className="mb-4">Harstad, Norway</p>
 
       <p style={{ height: "30px" }}>
         Shortcuts:{" "}

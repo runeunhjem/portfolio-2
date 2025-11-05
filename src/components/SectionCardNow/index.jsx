@@ -17,8 +17,8 @@ const SectionCardNow = () => {
         <S.IntroRight>
           <ul>
             <li>
-              <strong>I live</strong> in Kristiansand with my fiancé, and
-              I&apos;ve just graduated from
+              <strong>I live</strong> in Harstad, and based in Harstad and sumer
+              2025 I graduated from
               <b> Noroff School of Technology and Digital Media</b> after
               completing
               <i> two years of Front-End Development</i> (2024) and
@@ -29,7 +29,7 @@ const SectionCardNow = () => {
               <strong>Fullstack-ready</strong> and currently seeking exciting
               opportunities — whether in frontend, backend, or fullstack roles.
               I&apos;m also open to tech support or electronics-related jobs in
-              the Kristiansand area.
+              the Harstad area.
             </li>
             <li>
               <strong>Passionate</strong> about building intuitive, responsive,

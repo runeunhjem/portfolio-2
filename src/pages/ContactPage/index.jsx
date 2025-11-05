@@ -30,11 +30,11 @@ const ContactPage = () => {
               boxShadow: "1px 2px 3px rgba(0, 0, 0, 0.4)",
             }}
             target="_blank"
-            href="https://www.google.com/maps/place/Slettheiveien+81E,+4626+Kristiansand/@58.1365238,7.9343861,14z/data=!4m6!3m5!1s0x463802a4c32a6519:0x551444ef8f3fd02b!8m2!3d58.1349737!4d7.939219!16s%2Fg%2F11cs932l7p?authuser=0&entry=ttu"
+            href="https://maps.app.goo.gl/x68o9Zrr916HPPct9"
           >
             <S.ContactInfoText>Rune Unhjem</S.ContactInfoText>
-            <S.ContactInfoText>Slettheiveien 81E</S.ContactInfoText>
-            <S.ContactInfoText>4624 Kristiansand</S.ContactInfoText>
+            <S.ContactInfoText>Seljehaugen 23</S.ContactInfoText>
+            <S.ContactInfoText>9414 Harstad</S.ContactInfoText>
           </S.ContactLink>
           <S.ContactLink
             className="hover-links"

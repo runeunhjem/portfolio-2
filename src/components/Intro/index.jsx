@@ -19,8 +19,8 @@ const Intro = () => {
             <b>Hi</b> there and welcome.
           </p>
           <p>
-            <b>I&apos;m</b> based in Kristiansand and have just completed a
-            3-year journey at{" "}
+            <b>I&apos;m</b> based in Harstad and summer 2025 I completed a 3-year
+            journey at{" "}
             <strong>Noroff School of Technology and Digital Media</strong>{" "}
             &mdash; two years of <i>Front-End Development</i> and one year of{" "}
             <i>Back-End Development</i>, finishing with top grades.
@@ -42,8 +42,8 @@ const Intro = () => {
         </S.AllText>
         <S.InitialText>
           <p>
-            <b>Hi</b> there and welcome. I&apos;m based in Kristiansand and
-            recently completed 3 years at{" "}
+            <b>Hi</b> there and welcome. I&apos;m based in Harstad and summer
+            2025 I completed 3 years at{" "}
             <strong>Noroff School of Technology and Digital Media</strong>{" "}
             &mdash; studying <i>Front-End</i> and <i>Back-End Development</i>.
           </p>
