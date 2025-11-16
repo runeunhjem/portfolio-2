@@ -16,7 +16,7 @@ const Intro = () => {
         </S.IntroImageContainer>
         <S.AllText>
           <p>
-            <b>Hi</b> there and welcome.
+            <b>Hi</b> there and welcome. 
           </p>
           <p>
             <b>I&apos;m</b> based in Harstad and summer 2025 I completed a 3-year
